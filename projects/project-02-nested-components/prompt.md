@@ -7,3 +7,10 @@ Amend your __Post__'s render method to include reference to a variable, __commen
 > __HINT I:__ If you're using __.map__, you should only have to return one __<Comment />__ inside of __.map__.
 
 > __HINT II:__ Remember that whenever you write vanilla Javascript inside of JSX, you need to surround it with single brackets (__{}__).
+
+
+## Solution
+
+Your solution should look as follows:
+
+![Solution for Project](SOLUTION.png)
