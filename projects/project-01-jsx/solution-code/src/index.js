@@ -4,13 +4,13 @@ import Post from './App';
 import './index.css';
 
 const post = {
-  title: "Baby's First Post",
-  author: "Baby",
-  body: "Look at me I'm a posting baby.",
+  title: "Baby's first post",
+  author: "baby",
+  body: "look at me i'm a posting baby!",
   comments: [
     "First!",
-    "Great post",
-    "Hire him"
+    "Great post!",
+    "hire him!"
   ]
 }
 
@@ -19,6 +19,7 @@ ReactDOM.render(
     title={post.title}
     author={post.author}
     body={post.body}
-    comments={post.comments} />,
+    comments={post.comments}
+  />,
   document.getElementById('root')
 );
