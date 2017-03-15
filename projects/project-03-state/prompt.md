@@ -9,6 +9,14 @@ Let's implement state in our Blog by making __body__ a mutable value.
   - How can you get a user input? Keep it simple and start with __prompt__.
 4. Add a button to __Post__'s __render__ method that triggers __handleClick__.
 
+## Solution
+
+Your solution should look as follows:
+
+![Solution for Project](SOLUTION_ALERT.png)
+
+![Solution for Project](SOLUTION.png)
+
 ### Bonus I ###
 
 Use a form to take in user input.
@@ -16,3 +24,9 @@ Use a form to take in user input.
 - The post body should be updated using a method that is triggered by __onSubmit__.
 - One option is to keep track of what the new input is going to be by triggering a method using __onChange__ on the __< input >__
 - Another option is to pass an event object to the __onSubmit__ method and traverse the DOM from __e.target__ to find the __< input >__ value.
+
+## Bonus Solution
+
+Your solution should look as follows:
+
+![Solution for Project](BONUS_SOLUTION.png)
