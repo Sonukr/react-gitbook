@@ -9,6 +9,13 @@ Still using Fetch and OMDB, recreate the Netflix carousel with your 10 favorite 
 	- When this event fires, take the `event.target.value` and `fetch()` from the OMDB api. 
 	- OMDBI can be searched using query strings - `http://www.omdbapi.com/?t=Star+Wars` and returns a JSON result.
 - Each time you query the server, a new list item should be added to your component by updating the carousel.
+- You will need to break down each movie into a component as well as a a component that is a container (list) of all of them.
+
+## Solution
+
+Your solution should look similar to the following:
+
+![SOLUTION.png](SOLUTION.png)
 
 ### Bonus I ###
 
