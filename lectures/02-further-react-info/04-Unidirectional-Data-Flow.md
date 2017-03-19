@@ -2,7 +2,7 @@
 
 In React applications, data usually flows from the top down. Facebook has defined this data flow in [Flux architecture](https://facebook.github.io/flux/). We won't get into the specifics of Flux here, but talk generally about how this works in a React app.
 
-When several components in a view need to share state, you "lift" the state so that it's available to all the components that need it. Let's look at a search filter as an example. This app will have two basic components - one that displays a list of data, and one that captures user input to filter the data.
+When several components in a view need to share state, you lift, or "hoist", the state so that it's available to all the components that need it. Let's look at a search filter as an example. This app will have two basic components - one that displays a list of data, and one that captures user input to filter the data.
 
 ## I do: Build a fruit filter
 
@@ -30,7 +30,7 @@ I have two sibling components (components at the same level of the tree/app) tha
 
 ![basic data flow needed](./assets/fruit-filter-data.png)
 
-How to achieve this though? Using unidrectional data flow, of course! If I create a container component to hold both the filter value and the filtered list, it will be trivial to display it in the child components. The data will flow like this:
+How to achieve this though? Using unidrectional data flow, of course! If I create a container component to hold both the filter value and the filtered list, I can hoist the state to the container so it's available to all the children. It will then be trivial to display it in the child components. The data will flow like this:
 
 ![unidirectional approach](./assets/fruit-list-unidirectional.png)
 
@@ -46,9 +46,16 @@ const FruitList = props => (
 );
 
 const FruitFilter = props => (
-  <input type="text" value={props.value} onChange={props.onChange} />
+  <div>
+    <label htmlFor="fruit-filter">Filter these Fruits: </label>
+    <input type="text" value={props.value} onChange={props.onChange} name="fruit-filter" />
+   </div>
 );
 ```
+
+`FruitList` renders an unordered list (`ul`) which contains an array of `li` elements, each with a single `fruit` string. `FruitList` uses [array map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) to convert the array of fruit strings in our data to an array of fruit `li` elements to render. Using `map` to convert data arrays to arrays of UI elements is a common pattern you will use, and see used, in React. 
+
+`FruitFilter` renders a single input. Its value and onChange callbacks will both be set by the container component.
 
 ### Conatiner component
 
@@ -71,19 +78,19 @@ I'll need a method to update the state when the filter value changes. This metho
 
 ```javascript
 handleFilterChange(event) {
-    event.preventDefault();
-    const filterValue = event.target.value;
-    this.setState((prevState, props) => {
-      // remove fruits that don't contain the filter value
-      const filteredFruitList = props.fruits.filter(fruit =>
-        fruit.toLocaleLowerCase().indexOf(filterValue) !== -1);
-      // return new state with the filtered fruit list and the new value of the filter
-      return {
-        fruitsToDisplay: filteredFruitList,
-        filterValue,
-      };
-    })
-  }
+  event.preventDefault();
+  const filterValue = event.target.value;
+  this.setState((prevState, props) => {
+    // remove fruits that don't contain the filter value
+    const filteredFruitList = props.fruits.filter(fruit =>
+      fruit.toLocaleLowerCase().includes(filterValue.toLocaleLowerCase()));
+    // return new state with the filtered fruit list and the new value of the filter
+    return {
+      fruitsToDisplay: filteredFruitList,
+      filterValue,
+    };
+  })
+}
 ```
 
 Finally, I need to render my child components.
@@ -102,7 +109,7 @@ render() {
 The full container component looks like this:
 
 ```javascript
-class FruitContainer extends React.Component {
+class FruitContainer extends Component {
   
   constructor(props) {
     super(props);
@@ -112,7 +119,7 @@ class FruitContainer extends React.Component {
       // intialize the filter value to an empty string
       filterValue: '',
     };
-    // bind the context of our filterChagne event handler
+    // bind the context of our filterChange event handler
     this.handleFilterChange = this.handleFilterChange.bind(this);
   }
   
@@ -121,13 +128,14 @@ class FruitContainer extends React.Component {
     const filterValue = event.target.value;
     this.setState((prevState, props) => {
       // remove fruits that don't contain the filter value
-      const filteredFruitList = props.fruits.filter(fruit => fruit.toLocaleLowerCase().indexOf(filterValue) !== -1);
+      const filteredFruitList = props.fruits.filter(fruit =>
+        fruit.toLocaleLowerCase().includes(filterValue.toLocaleLowerCase()));
       // return new state with the filtered fruit list and the new value of the filter
       return {
         fruitsToDisplay: filteredFruitList,
         filterValue,
       };
-    });
+    })
   }
   
   render() {
@@ -142,7 +150,7 @@ class FruitContainer extends React.Component {
 }
 ```
 
-All of the data lives at the top of the tree in the container, and I pass it to the child components.
+All of the data is hoisted to the top of the tree in the container, and I pass it to the child components.
 
 ## You do: Also display the fruits that do _not_ match the filter
 
@@ -150,7 +158,7 @@ Once you have your data structured well, it's easier to add features to your app
 
 ## Finally
 
-It's important that you think through your applications before you start writing code. It's often helpful to sketch out your app, and identify the **components** you need, the **state** you need, and where that state needs to live. Use the unidirectional data flow pattern - keep your state toward the top of the component tree so it's available to the children that need it.
+It's important that you think through your applications before you start writing code. It's often helpful to sketch out your app, and identify the **components** you need, the **state** you need, and where that state needs to live. Use the unidirectional data flow pattern - hoist your state toward the top of the component tree so it's available to the children that need it.
 
 ## Additional Resources
   - [React Docs - Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
