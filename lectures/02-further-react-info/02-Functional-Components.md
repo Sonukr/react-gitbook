@@ -60,6 +60,36 @@ const data = [
 
 ![Rendered fruit table](./assets/fruit-table.png)
 
+[Try it yourself in this CodePen](http://codepen.io/andrewdushane/pen/rypdpq).
+
+This component written as a class would look like this:
+
+```javascript
+class FruitTable extends React.Component {
+
+  render() {
+    return (
+      <table style={{ borderSpacing: 20, borderStyle: 'solid' }}>
+        <tbody>
+          {this.props.data.map((fruitList, index) => (
+            <tr key={index}>
+              {fruitList.map((fruit, i) => (
+                <td key={i}>
+                  {fruit}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )
+  }
+
+}
+```
+
+But using a class here doesn't give you any benefits over a Functional component, it just requires you to write a few more lines of code.
+
 * _A quick note on the `key`s in this example - When you render an array of items in React, you need to give each member of the array a unique `key`. React uses these keys to optimize changes to the DOM._
 
 So, when should you use Functional Components, and when should you use class Components? If you need your component to be stateful - that is, if you need the ability to use `setState` to respond to changes, use a class. If you need lifecycle methods - if you need to do something when the component mounts, or receives props, or unmounts - use a class. If you need a `ref` - that is, a reference to the DOM element rendered by the component, use a class. And if you _don't_ need any of those things - use a Functional Component.
