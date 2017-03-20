@@ -1,7 +1,7 @@
 ---
 title: Introduction to Fetch
 type: lesson
-duration: "0:15"
+duration: "0:35"
 creator:
     name: James Traver
     company: Gogo
