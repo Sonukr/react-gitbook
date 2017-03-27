@@ -1,3 +1,14 @@
+---
+title: Imperative and Declarative Programming
+type: lesson
+duration: "0:20"
+creator:
+    name: James Traver
+    company: Gogo
+    city: Chicago
+competencies: ES6, Javascript
+---
+
 ## Imperative and Declarative Programming
 
 Imperative and declarative programming are two words that you have likely encountered as someone who writes code for a living. Most developers begin by writing _imperative_ code. That is to say, most developers outline what they need to do and write it out step by step. If you've ever been asked to write pseudo code before actually writing code then you are familiar with writing out things _step by step_. For example, if we were to ask everyone in the room to say there name we could conceptually write it out as follows:
