@@ -2,6 +2,11 @@
 
 This is great so far - but our stegosaurus is actually outsourcing the blog, so each post has multiple authors. Let's set that up.
 
+Your `Author` component should render "Written by ", followed by a list of the authors.
+
+The Post component will be receiving an `allAuthors` prop, which is will pass in an `authorList` to `Author`.
+
+So overall, you will:
 Amend your __Post__'s render method to include reference to a variable, __authors__, that is equal to the return value of generating multiple __<Author /__> elements. Make sure to pass in the __allAuthors__ body as an argument to each __Author__ component. Then render the __authors__ somewhere inside the UI for a __Post__.
 
 Besides Stealthy Stegosaurus, the other two authors are Tiny Trex and Ivory Iguanadon.
