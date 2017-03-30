@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import Post from './App';
 import './index.css';
 
-const post = {
-  title: "Baby's first post",
-  author: "baby",
-  body: "look at me i'm a posting baby!",
+var post = {
+  title: "Dinosaurs are awesome",
+  author: "Stealthy Stegosaurus",
+  body: "Check out this body property!",
   comments: [
     "First!",
     "Great post!",
-    "hire him!"
+    "Hire him!"
   ]
 }
 
