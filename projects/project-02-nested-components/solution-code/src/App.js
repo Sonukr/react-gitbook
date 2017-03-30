@@ -1,21 +1,26 @@
-import React, { Component } from 'react';
-import Comment from './Comment.js'
-import './App.css';
-
-class Post extends Component {
+/*class Post extends Component {
   render() {
     let comments = this.props.comments.map( (comment, index) => (
       <Comment body={comment} key={index} />
     ))
+*/
+    
+import React, { Component } from 'react';
+import './App.css';
+import Comment from './Comment.js'
+import Author from './Author.js'
+
+class Post extends Component {
+  render() {
     return (
       <div>
         <h1>{this.props.title}</h1>
-        <p>by {this.props.author}</p>
+        <Author authorList={this.props.allAuthors[0]} />
         <div>
           <p>{this.props.body}</p>
         </div>
         <h3>Comments:</h3>
-        <p>{comments}</p>
+        <Comment body={this.props.comments[0]} />
       </div>
     );
   }
