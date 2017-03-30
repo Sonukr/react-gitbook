@@ -1,13 +1,14 @@
 # You Do: Implement State (20 minutes) #
 
 Let's implement state in our Blog by making __body__ a mutable value.
+> Remember to switch the running application!
 
-1. Initialize a state using a __constructor()__ method for our __Post__ to set a initial state. It should create a state value called __body__. Set it to the __body__ of your hard-coded __post__.
+1. Initialize a state using a __constructor()__ method for our __Post__ to set a initial state. It should create a state value called __body__. Set it to the __body__ prop that's passed in to the component.
 2. Modify __Post__'s __render__ method so that __body__ comes from __state__, not __props__.
-3. Create a __handleClick__ method inside __Post__ that updates __body__ based on a user input.
+3. Create a __changeBody__ method inside __Post__ that updates __body__ based on a user input.
   - You should use __setState__ somewhere in this method.
   - How can you get a user input? Keep it simple and start with __prompt__.
-4. Add a button to __Post__'s __render__ method that triggers __handleClick__.
+4. Add a button to __Post__'s __render__ method that triggers __changeBody__.
 
 ## Solution
 
@@ -30,3 +31,5 @@ Use a form to take in user input.
 Your solution should look as follows:
 
 ![Solution for Project](BONUS_SOLUTION.png)
+
+Solution code for using __onChange__ here.
