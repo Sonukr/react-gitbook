@@ -32,7 +32,7 @@ $ npm start
 
 > Here you have now set up a Hello World app that you will continue working on during this lesson's exercises.
 
-After running `$ npm run start`, you can view the app at `http://localhost:3000`
+After running `$ npm start`, you can view the app at `http://localhost:3000`
 
 One especially cool thing that we'll see is that this tool sets up our application so that the webpage automatically refreshes whenever we save any file in the directory. It's awesome.
 

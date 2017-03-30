@@ -9,12 +9,12 @@ Referring to everything we've done up until now, back up a directory and create 
 In the App.js file, change App component to be a Post component.
 
 - Create a __post__ object literal in __src/index.js__ that has the below properties:
-  - __title__  (value: "My blog!")
-  - __author__ (value: "an awesome react programmer")
-  - __body__ (value: "Check out this body property")
+  - __title__  (value: "Dinosaurs are awesome")
+  - __author__ (value: "Stealthy Stegosaurus")
+  - __body__ (value: "Check out this body property!")
   - __comments__ (array of strings)  (values: "First!" "Great post" and "Hire him")
-- Render these properties using a Post component.
-- Adjust the CSS of your body to align your text to the center of the document.
+- Render these properties (just the first comment) using a Post component.
+- Optionally, adjust the CSS of your index file body to align your text to the center of the document.
 
 ## Solution
 
