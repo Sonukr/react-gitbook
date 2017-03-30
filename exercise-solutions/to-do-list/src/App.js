@@ -44,10 +44,10 @@ class MyList extends Component {
         <ul>
           {todoItems}
         </ul>
-        <form >
+        <form>
           <input type="text"
            placeholder="Type an item here"
-           onChange={this.newItemChange}
+           onChange={(e) => this.newItemChange(e)}
            value={this.state.newItem}
           />
           <button onClick={(e) => this.addItem(e)}>Add it!</button>
