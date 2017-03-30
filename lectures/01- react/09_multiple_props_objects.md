@@ -75,4 +75,6 @@ If you check now, it prints the entire array, since that's what was passed in. I
 </div>
 ```
 
-Check it out! 
+Check it out!
+
+[More on props, if you'd like](https://facebook.github.io/react/docs/jsx-in-depth.html)
