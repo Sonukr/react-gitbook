@@ -3,21 +3,25 @@ import ReactDOM from 'react-dom';
 import Post from './App';
 import './index.css';
 
-const post = {
-  title: "Baby's first post",
-  author: "baby",
-  body: "look at me i'm a posting baby!",
+var post = {
+  title: "Dinosaurs are awesome",
+  authors: [
+    "Stealthy Stegosaurus",
+    "Tiny trex",
+    "Iguanadon Ivory"
+  ],
+  body: "Check out this body property!",
   comments: [
     "First!",
     "Great post!",
-    "hire him!"
-  ]
+    "Hire him!"
+]
 }
 
 ReactDOM.render(
   <Post
     title={post.title}
-    author={post.author}
+    allAuthors={post.authors}
     body={post.body}
     comments={post.comments}
   />,
