@@ -3,6 +3,10 @@
 
 So, we've gone through all of the basics of React. To really hammer it home with practice, let's walk through complete creation of an app. This will be a to-do list, keeping track of everything we need to do for the day (after we finish this!). It's a lot, so we're going to want it to be editable.
 
+This is what our list will look like when we're finished:
+
+![finished-list](./images/todo-list-finished.png)
+
 Let's get started!
 
 * Because this is a new exercise, be sure to close the running application in terminal first.
@@ -65,6 +69,10 @@ We've learned that we should make new files for each component, and that differe
 At this point, our app looks like this:
 
 ![list-preview](./images/todo-list-1.png)
+
+## Side note - let's just quickly format it a little nicer!
+
+Since we'll be looking at this for a while, let's make it less of an eyesore. Feel free to change the index.css file to be anything you'd like; on mine, I've centered the text and given it a light green background. You can grab my .css file here:
 
 ## Second, props.
 
@@ -206,7 +214,3 @@ export default ListItem;
 Now what we have is:
 Our app now looks like this:
 ![list-preview](./images/todo-list-3.png)
-
-
-
-The final solution code for this todo list is here.
