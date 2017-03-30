@@ -1,41 +1,42 @@
 import React, { Component } from 'react';
-import Comment from './Comment.js'
 import './App.css';
+import Comment from './Comment.js'
+import Author from './Author.js'
 
 class Post extends Component {
+
   constructor (props) {
     super()
     this.state = {
       body: props.body
     }
   }
-  handleClick (e) {
+  changeBody (e) {
     let newBody = prompt("What should the new body be?")
     this.setState({
       body: newBody
     })
   }
-  handleChange (e) {
-    console.log(e);
-    this.setState({
-      body: e.target.value
-    })
-  }
+
+  handleFormInput (e) {
+  console.log(e);
+  this.setState({
+    body: e.target.value
+  })
+}
+
   render() {
-    let comments = this.props.comments.map( (comment, index) => (
-      <Comment body={comment} key={index} />
-    ))
     return (
       <div>
         <h1>{this.props.title}</h1>
-        <p>by {this.props.author}</p>
+        <Author authorList={this.props.allAuthors[0]} />
         <div>
           <p>{this.state.body}</p>
-          <button onClick={(e) => this.handleClick(e)}>Edit Body</button>
-          <input type="text" onChange={(e) => this.handleChange(e)} />
+          <button onClick={(e) => this.changeBody(e)}>Edit Body</button>
+          <input type="text" onChange={(e) => this.handleFormInput(e)} />
         </div>
         <h3>Comments:</h3>
-        <p>{comments}</p>
+        <Comment body={this.props.comments[0]} />
       </div>
     );
   }
