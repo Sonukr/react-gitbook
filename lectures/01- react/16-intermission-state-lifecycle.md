@@ -1,8 +1,6 @@
 ## State Recap
 
-Now that you've wrapped up the Blog project for now, you should take a moment to review the component lifecycle diagram.
-
-#### LINK TO COMPONENT DIAGRAM HERE THANKYOU SUSI :D ####
+Now that you've wrapped up the Blog project for now, you should take a moment to review the component lifecycle at a high level.
 
 An example of a Post Component could be seen as follows:
 
@@ -45,7 +43,7 @@ In your _Post_ Component (or the one above), there are three methods:
 - `changeBody()`
 - `render()`
 
-Upon instantiation of your Component, the _constructor_ method is called. We call `super()` to call the base class (React.Component)'s constructor. Next, the constructor's state is set. Here we define that our Component's state contains a `body` attribute that contains whatever the _body_ prop is passed to the component. For example, let's consider the data flow. Feel free to print out the component diagram and follow along the method lifecycle if you wish.
+Upon instantiation of your Component, the _constructor_ method is called. We call `super()` to call the base class (React.Component)'s constructor. Next, the constructor's state is set. Here we define that our Component's state contains a `body` attribute that contains whatever the _body_ prop is passed to the component. For example, let's consider the data flow.
 
 ```jsx
 <Post body="This is my first blog post" />
@@ -79,7 +77,7 @@ changeBody (e) {
 }
 ```
 
-From here, we use `prompt()` to get a new value from the user (but please do not ever do this in production). `setState()` is then called which then will eventually lead to `render()` being called to automatically re-rendering your new data. Understanding the component lifecycle is key to being a productive React developer (and it will save you headaches).
+From here, we use `prompt()` to get a new value from the user (but please do not ever do this in production - users hate popups!). `setState()` is then called which then will eventually lead to `render()` being called to automatically re-rendering your new data. Understanding the component lifecycle is key to being a productive React developer (and it will save you headaches).
 
 #### Check Yourself
 
