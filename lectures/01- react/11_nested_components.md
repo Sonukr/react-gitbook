@@ -46,7 +46,7 @@ Now, we'll need to render it inside of our `Post` component.
 ```
 But what just happened? We made a call to a component inside another component. Technically, we just **nested components**. Instead of calling App.js from index.js as well as Comment.js from index.js, we still are only calling App.js from index.js. Then, inside App.js, we're using some of the props and simply passing the comments prop on to Comment.js. So the flow of the props looks like this:
 
-# IMAGE FROM GARETT HERE
+![nested components chart](./images/nested_components_chart.jpg)
 
 
 
