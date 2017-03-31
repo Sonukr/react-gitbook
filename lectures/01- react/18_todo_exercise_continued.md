@@ -1,6 +1,6 @@
 ### Making the todo list dynamic
 
-Now we have a todo list! But.. it isn't changeable, and we can't just think about eating ice cream and gingo to the gym forever. At some point, we have to actually eat the ice cream (deleting it from the list) and find a gym buddy (adding that to the list). In other words, we need to be able to change the list.
+Now we have a todo list! But.. it isn't changeable, and we can't just think about eating ice cream and going to the gym forever. At some point, we have to actually eat the ice cream (deleting it from the list) and find a gym buddy (adding that to the list). In other words, we need to be able to change the list.
 
 Remember, in a React component, `state` is just another object, like props. The only difference is that it can only be changed through the method `setState`. The exception is setting the initial state, which is only done once when initializing a React component. In order to pass items to the ToDoList component and make them mutable, we'll need to set the state of our MyList. Let's continue refactoring our MyList component to change the todoItems array through state.
 
