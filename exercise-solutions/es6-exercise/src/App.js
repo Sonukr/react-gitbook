@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
 import ListItem from './ListItem';
 
 class MyList extends Component {
-
     constructor (props) {
     super()
     this.state = {
@@ -33,8 +31,7 @@ class MyList extends Component {
   }
 
   render() {
-
-    let todoItems = this.state.toDoItemArray.map( (item, index) => (
+    const todoItems = this.state.toDoItemArray.map( (item, index) => (
       <ListItem doThis={item} key={index} />
     ))
 
