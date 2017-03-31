@@ -62,4 +62,15 @@ this.food = 'Knife please?';
 
 Look at the code for your todo list (it's uploaded here). Edit the App.js and index.js files to follow the ES6 rules above.
 
-Then check yours against the solution here:
+<details>
+ <summary>Then check yours against the solution here:</summary>
+ * change the `var` to `const` inside index.js.
+ * change `let` to `const` for `todoItems` in **App.js**
+ 
+ It's ok to change `todoItems` from `let` to `const` in **App.js** because the
+ `render()` function runs every time the state of the application is changed.
+ The `const` keyword only enforces a variable to stay constant each time the
+ function runs. The list of todo items will change as items are added and
+ everything is cleared from it. It will remain constant every one time that
+ the render function is run.
+</details>
