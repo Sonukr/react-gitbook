@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
 const ListItem = props => (
   <div>
-    <li>{this.props.doThis}</li>
+    <li>{props.doThis}</li>
   </div>
 );
 

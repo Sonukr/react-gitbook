@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import ListItem from './ListItem';
+import ToDoList from './ToDoList';
 
 class MyList extends Component {
-
     constructor (props) {
     super()
     this.state = {
@@ -33,17 +32,12 @@ class MyList extends Component {
   }
 
   render() {
-
-    let todoItems = this.state.toDoItemArray.map( (item, index) => (
-      <ListItem doThis={item} key={index} />
-    ))
-
     return (
       <div>
         <h1>Things I should stop procrastinating:</h1>
-        <ul>
-          {todoItems}
-        </ul>
+        
+        <ToDoList toDoItemArray={this.state.toDoItemArray} />
+        
         <form>
           <input type="text"
            placeholder="Type an item here"
