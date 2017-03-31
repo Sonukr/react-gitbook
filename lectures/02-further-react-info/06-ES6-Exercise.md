@@ -60,6 +60,6 @@ this.food = 'Knife please?';
 
 ### Let's put this together.
 
-Look at the code for your todo list (it's uploaded here). Edit the App.js, index.js, and ListItem.js files to follow the ES6 rules above.
+Look at the code for your todo list (it's uploaded here). Edit the App.js and index.js files to follow the ES6 rules above.
 
 Then check yours against the solution here:

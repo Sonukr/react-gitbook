@@ -1,8 +1,15 @@
 # React Component Lifecycle
 
-React class components provide several lifecycle methods that you can use to control your application based on the state of the UI. 
+Okay - you've aced it so far. Let's get technical!
 
-These methods are called at specific points in the rendering process. You can use these methods to perform actions based on what's happening on the DOM. `componentDidMount`, for example, is called immediately *after* a component is rendered to the DOM. `componentWillUnmount` is called immediately *before* a component is removed from the DOM. 
+React class components provide several lifecycle methods that you can use to control your application based on the state of the UI.
+
+These methods happen automatically - but you can call them to modify them.
+
+These methods are called at specific points in the rendering process. You can use these methods to perform actions based on what's happening on the DOM.
+
+* `componentDidMount`, for example, is called immediately *after* a component is rendered to the DOM.
+* `componentWillUnmount` is called immediately *before* a component is removed from the DOM.
 
 Some common uses of lifecycle methods are making asynchronous requests, binding event listeners, and optimizing for performance.
 
@@ -18,9 +25,13 @@ Some common uses of lifecycle methods are making asynchronous requests, binding 
   - `componentWillUpdate()`
   - `componentDidUpdate()`
 
+Let's go through them. Again, you don't need to write these - only if you want to change something in them.
+
+Here they are in a diagram - ![Lifecycles](./assets/React_Component_Lifecycle.png) Open this image in a new window next to this one, and follow along as we go through the methods.
+
 ## `constructor()`
 
-Like any JavaScript class, the `constructor` method is called when a component is instantiated (when it's first rendered).  
+This is something we've already seen when we were learning `state`. Like any JavaScript class, the `constructor` method is called when a component is instantiated (when it's first rendered).  
 In a class constructor, you must call `super` before you do anything else. So a React component constructor in its most basic form looks like this:
 
 ```javascript
@@ -29,7 +40,7 @@ constructor(props) {
 }
 ```
 
-You don't need to define a constructor if that's all it does, though. This happens automatically when your component is invoked. A common use of the constructor is to initialize state using the props passed to the component.
+You don't need to define a constructor if that's all it does, though. This happens automatically when your component is invoked. A common use of the constructor is to initialize state using the props passed to the component - as we have been doing!
 
 ```javascript
 constructor(props) {
@@ -40,11 +51,11 @@ constructor(props) {
 }
 ```
 
-This constructor sets the initial `fruits` state of the component to the `fruits` prop passed to the component. Then, using `setState`, your user can add fruits, delete them, or whatever else your component allows.
+> This constructor sets the initial `fruits` state of the component to the `fruits` prop passed to the component. Then, using `setState`, your user can add fruits, delete them, or whatever else your component allows.
 
-Another common use of the constructor method is to bind class methods. 
+Another common use of the constructor method is to bind class methods.
 
-When a method is "bound" to a component, it means that when the method is invoked, `this` will refer to the component, and not to the context that invoked the method. So, if you pass a component's method to a child component from a parent component, you can be sure that `this.setState` will set the state of the parent component if the method is bound to it. 
+When a method is "bound" to a component, it means that when the method is invoked, `this` will refer to the component, and not to the context that invoked the method. So, if you pass a component's method to a child component from a parent component, you can be sure that `this.setState` will set the state of the parent component if the method is bound to it.
 
 In JavaScript classes, methods aren't bound by default. So, if you pass a component's method to a child component without binding it, it can lose its context, and not behave the way you intended. Here's an example:
 
@@ -70,9 +81,9 @@ class FruitTable extends React.Component {
 
 Notice that in the constructor, `this.addFruit` is bound to the class - `this.addFruit = this.addFruit.bind(this);`
 
-Now, if I pass `this.addFruit` to a child component as an onChange callback, it will be bound to `FruitTable` and will update its state when it's invoked. 
+Now, if I pass `this.addFruit` to a child component as an onChange callback, it will be bound to `FruitTable` and will update its state when it's invoked.
 
-Again, you _don't_ need a constructor in every React component. If you need to initialize state by props or bind methods, the constructor is where you do it.
+Again, you _don't_ need a constructor in every React component, but if you need to initialize state by props or bind methods, the constructor is where you do it.
 
 ## `componentWillMount()`
 
@@ -80,7 +91,7 @@ This method is called immediately before a component is rendered to the DOM. You
 
 ## `componentDidMount()` and `componentWillUnmount()`
 
-The `componentDidMount` method is called once, immediately after your component is rendered to the DOM. If you want to make an AJAX request when your component first renders, this is where to do it (_not_ in the constructor, or in `componentWillMount`). `componentWillMount` shouldn't be used for server requests because it may be invoked multiple times before render in future versions of React. [Side effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science)) should be avoided in the `constructor`, and so server requests shouldn't be made there. The accepted answer on [this Stack Overflow](http://stackoverflow.com/questions/41612200/in-react-js-should-i-make-my-initial-network-request-in-componentwillmount-or-co) from a member of the React team at Facebook gives more detail. In the following example, I fetch data from the server, then set the state of the component using the response.
+The `componentDidMount` method is called once, immediately after your component is rendered to the DOM. If you want to make an AJAX request when your component first renders, this is where to do it (_not_ in the constructor, or in `componentWillMount`). `componentWillMount` shouldn't be used for server requests because it may be invoked multiple times before render in future versions of React. [Side effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science) should be avoided in the `constructor`, and so server requests shouldn't be made there. The accepted answer on [this Stack Overflow](http://stackoverflow.com/questions/41612200/in-react-js-should-i-make-my-initial-network-request-in-componentwillmount-or-co) from a member of the React team at Facebook gives more detail. In the following example, I fetch data from the server, then set the state of the component using the response.
 
 ```javascript
 componentDidMount() {

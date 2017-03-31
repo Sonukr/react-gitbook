@@ -12,7 +12,7 @@ You learned to write cleaner, more concise and more readable code with ESNext sy
   - Template literals: ``const greet = person => `Hi, ${person.firstName} ${person.lastName};``
   - Imports and modules: `import MyModule from './MyModule';`
 
-## Functional Components 
+## Functional Components
 
 Functional components are React components that JavaScript functions. They take props as their argument, and return UI.
 
@@ -33,16 +33,16 @@ React class components have lifecycle methods that are invoked at certain stages
   - `componentWillUnmount()`: Unbind event listeners, other cleanup
   - `componentWillReceiveProps()`: Update state based on changes in components
   - `render()`: return markup/UI
- 
+
 ## Unidrectional Data Flow
 
 In React, data flows from the top down. Keep your data higher in your component tree, so it's availble to the sibling/children components that need it.
 
 ## Immutable Data
 
-A React component's state and props are to be treated as immutable - never change them directly. 
+A React component's state and props are to be treated as immutable - never change them directly.
 
-For state, use `setState`: 
+For state, use `setState`:
 
 ```javascript
 handleChange(event) {
@@ -56,4 +56,11 @@ Never change props in a component - changes to props happen in the component tha
 
 ## Moving Forward
 
-In the next section, we'll talk about using React Router to create dynamic React single-page-applications with client-rendered routes. 
+In the next section, we'll talk about using React Router to create dynamic React single-page-applications with client-rendered routes.
+
+
+
+## Additional Resources
+  - [React Docs - Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
+  - [A Cartoon Guide To Flux by Lin Clark](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207#.m53psmlww)
+  - [Redux State Management Library](http://redux.js.org/)
