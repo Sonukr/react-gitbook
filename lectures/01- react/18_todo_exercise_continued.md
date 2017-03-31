@@ -104,4 +104,4 @@ Lastly, add this form to your render method.
 
  > Check it out! Have you done it?
 
- > The final solution code for this todo list is here.
+ > The final solution code for this todo list is [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/exercise-solutions/to-do-list).

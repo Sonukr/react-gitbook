@@ -32,4 +32,4 @@ Your solution should look as follows:
 
 ![Solution for Project](BONUS_SOLUTION.png)
 
-Solution code for using __onChange__ here.
+Solution code, including for using __onChange__, [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/projects/project-03-state).

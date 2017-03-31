@@ -18,6 +18,8 @@ const ListItem = props => (
 );
 ```
 
+You can view that [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/exercise-solutions/functional-component-exercise)
+
 Check it - does it still work? What else in your projects can you change?
 
 <details>

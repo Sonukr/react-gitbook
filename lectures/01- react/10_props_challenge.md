@@ -21,3 +21,5 @@ In the App.js file, change App component to be a Post component.
 Your solution should look as follows:
 
 ![Solution for Project](SOLUTION.png)
+
+And you can see the final code [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/projects/project-01-jsx).
