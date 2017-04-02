@@ -2,24 +2,28 @@
 
 Let's have some practice creating a React component from scratch. How about a blog post?
 
-Referring to everything we've done up until now, back up a directory and create a new project using `create-react-app` (refer to the Initial Setup section if you don't remember this or view the official [Github repository](https://github.com/facebookincubator/create-react-app)).
+1. Change directories back into the main directory where you want to keep your code (outside the `hello_world` React app directory we've been working on).
 
-> Note: Because create-react-app runs on port :3000, you'll have to stop the current hello_world app that's running to view this new app.
+2. Referring to everything we've done up until now, create a new project using `create-react-app`. If you need to refresh your memory, refer to the Initial Setup section or view the official [`create-react-app` Github repository](https://github.com/facebookincubator/create-react-app).
 
-In the App.js file, change App component to be a Post component.
+  <blockquote> Note: Because create-react-app runs on port 3000, you'll have to stop the current `hello_world` app that's running in order to view this new app.</blockquote>
 
-- Create a __post__ object literal in __src/index.js__ that has the below properties:
-  - __title__  (value: "Dinosaurs are awesome")
-  - __author__ (value: "Stealthy Stegosaurus")
-  - __body__ (value: "Check out this body property!")
-  - __comments__ (array of strings)  (values: "First!" "Great post" and "Hire him")
-- Render these properties (just the first comment) using a Post component.
-- Optionally, adjust the CSS of your index file body to align your text to the center of the document.
+3. In `src/App.js`, change the `App` component to be a `Post` component.
+
+4. Create a `post` object literal in `src/index.js` that has the following properties:
+    - `title`  (example value: `"Dinosaurs are awesome"`)
+    - `author` (example value: `"Stealthy Stegosaurus"`)
+    - `body` (example value: `"Check out this body property!"`)
+    - `comments` (example value: `["First!", "Great post", "Hire this author now!"]`)
+
+5. Render a `Post` component with the information from your `post` object as its props values. For now, only include one of the comments. You decide how you want to display the title, author, body, and comment, or you can use the screenshot in the Solution section below as inspiration.  
+
+6. Optional: adjust the CSS of your index file body to align your text to the center of the document.
 
 ## Solution
 
-Your solution should look as follows:
+Here's what the solution might look like:
 
 ![Solution for Project](../../projects/project-01-jsx/SOLUTION.png)
 
-And you can see the final code [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/projects/project-01-jsx).
+You can see sample solution code [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/projects/project-01-jsx).
