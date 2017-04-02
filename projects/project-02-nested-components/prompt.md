@@ -1,25 +1,33 @@
-# You Do: Add Nested Posts To Blog #
+# You Do: Add Nested Posts To Blog
 
-This is great so far - but our stegosaurus is actually outsourcing the blog, so each post has multiple authors. Let's set that up.
+This blog is great so far! Now, our stegosaurus is actually collaborating more on the blog, so each post has multiple authors. Let's set that up.
 
-Your __Author__ component should render "Written by ", followed by a list of the authors.
+### Steps
 
-The Post component will be receiving an __allAuthors__ prop, which is will pass in an __authorList__ to __Author__.
+1. Modify the `Post` component to receive an `allAuthors` prop and pass in as a prop called `authorList` to the `Author` component class.
 
-So overall, you will:
-Amend your __Post__'s render method to include reference to a variable, __authors__, that is equal to the return value of generating multiple __<Author /__> elements. Make sure to pass in the __allAuthors__ body as an argument to each __Author__ component. Then render the __authors__ somewhere inside the UI for a __Post__.
+2. Create an `Author` component that renders "Written by ", followed by a list of the authors. The prop name should be `authorList`.
+
+3. Amend your `Post`'s render method to include reference to a variable, `authors`, that is equal to the return value of generating multiple `<Author />` elements.
+
+4. Make sure to pass in the `allAuthors` body as an argument to each `Author` component. Then render the `authors` somewhere inside the UI for a `Post`.
 
 Besides Stealthy Stegosaurus, the other two authors are Tiny Trex and Ivory Iguanadon.
 
-> __NOTE:__ If you'd like, you can use __.map__ in __Post__'s __render__ method to avoid having to hard-code all your __Author__s. Read more about it [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) and [here](http://cryto.net/~joepie91/blog/2015/05/04/functional-programming-in-javascript-map-filter-reduce/).
+<blockquote>
+Note: If you'd like, you can use JavaScript's array `map` method in `Post`'s `render` method to avoid having to hard-code all your `Author`s. Read more about it [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) and [here](http://cryto.net/~joepie91/blog/2015/05/04/functional-programming-in-javascript-map-filter-reduce/).
+</blockquote>
 
-> __HINT I:__ If you're using __.map__, you should only have to return one __<MyPost />__ inside of __.map__.
+<blockquote>
+HINT 1: If you're using `map`, you should only have to return one `<MyPost />` inside of `map`.
+</blockquote>
 
-> __HINT II:__ Remember that whenever you write vanilla Javascript inside of JSX, you need to surround it with single brackets (__{}__).
-
+<blockquote>
+HINT 2: Remember that whenever you write Javascript expressions inside of JSX, you need to surround them with single brackets (`{}`).
+</blockquote>
 
 ## Solution
 
 Your solution should look as follows:
 
-![Solution for Project](SOLUTION.png)
+![Solution for Project](../../projects/project-02-nested-components/SOLUTION.png)
