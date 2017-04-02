@@ -6,7 +6,7 @@
 	 * [Component Setup](lectures/01-react/04_component_setup.md)
 	* [JSX](lectures/01-react/05_jsx.md)
 	* [Virtual DOM](lectures/01-react/06_virtual_dom.md)
-  * [Props](lectures/02-further-react-info/07_props.md)
+  * [Props](lectures/01-react/07_props.md)
 	 * [Multiple Props](lectures/01-react/08_multiple_props.md)
 	 * [Multiple Props - Using Objects](lectures/01-react/09_multiple_props_objects.md)
 	 * [Props Challenge](lectures/01-react/10_props_challenge.md)
