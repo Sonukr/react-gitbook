@@ -42,7 +42,7 @@ ReactDOM.render(
 )
 ```
 
-Now we're passing the prop into the component, but the component isn't _using_ it yet.
+If you check your application now, nothing has changed.  We're passing the `name` prop into the component, but the component isn't _using_ it yet. 
 
 In our component definition, we will change the `<h1>Hello World!</h1>` to `<h1>Hello {this.props.name}!</h1>`. The portion `{this.props.name}` deserves a closer look:
 
