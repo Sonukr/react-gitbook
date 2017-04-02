@@ -1,4 +1,4 @@
-# You Do: A Blog Post #
+# You Do: A Blog Post
 
 Let's have some practice creating a React component from scratch. How about a blog post?
 
@@ -27,3 +27,4 @@ Here's what the solution might look like:
 ![Solution for Project](../../projects/project-01-jsx/SOLUTION.png)
 
 You can see sample solution code [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/projects/project-01-jsx).
+If you'd like to run the solution code, use `npm install` and then `npm start` from inside the `solution-code` directory.
