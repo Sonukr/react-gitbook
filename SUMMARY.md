@@ -15,7 +15,7 @@
 	* [Section Recap](lectures/01-react/13_section_recap.md)
 	* [State](lectures/01-react/14_state.md)
 		* [State Exercise](lectures/01-react/15_state_exercise.md)
-	* [State Lifecycle](lectures/01-react/16-intermission-state-lifecycle.md)
+	* [State Lifecycle](lectures/01-react/16_intermission_state_lifecycle.md)
 	* [Exercise - Todo list](lectures/01-react/17_todo_exercise.md)
 	* [Exercise - Todo list - part 2](lectures/01-react/18_todo_exercise_continued.md)
 	* [Recap](lectures/01-react/19-recap.md)

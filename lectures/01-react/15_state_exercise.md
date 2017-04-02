@@ -26,6 +26,7 @@ Use a form to take in user input.
 - One option is to keep track of what the new input is going to be by triggering a method using `onChange` on the `<input>`.
 - Another option is to pass an event object to the `onSubmit` method and traverse the DOM from the event's target (for example, `e.target`) to find the `<input>` value.
 
+
 ## Bonus Solution
 
 Your solution should look as follows:
