@@ -14,9 +14,9 @@ Let's implement state in our Blog by making __body__ a mutable value.
 
 Your solution should look as follows:
 
-![Solution for Project](SOLUTION_ALERT.png)
+![Solution for Project](../../projects/project-03-state/SOLUTION_ALERT.png)
 
-![Solution for Project](SOLUTION.png)
+![Solution for Project](](../../projects/project-03-state/SOLUTION.png)
 
 ### Bonus I ###
 
@@ -30,6 +30,6 @@ Use a form to take in user input.
 
 Your solution should look as follows:
 
-![Solution for Project](BONUS_SOLUTION.png)
+![Solution for Project](](../../projects/project-03-state/BONUS_SOLUTION.png)
 
 Solution code, including for using __onChange__, [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/projects/project-03-state).
