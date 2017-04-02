@@ -18,7 +18,7 @@ The question is, how do we add a name to our `Hello` component without hardcodin
 ### Hello World exercise - You do!
 #### Code along: Adding props to our component
 
-Let's use `props` to make our Hello World app more flexible.
+Let's use "props" to make our Hello World app more flexible.
 
 ##### First, a single prop
 
@@ -44,7 +44,7 @@ ReactDOM.render(
 
 Now we're passing the prop into the component, but the component isn't _using_ it yet.
 
-In our component definition, we will change the `<h1>Hello World!</h1>` to `<h1>Hello {this.props.name}</h1>`. The portion `{this.props.name}` has three levels:
+In our component definition, we will change the `<h1>Hello World!</h1>` to `<h1>Hello {this.props.name}!</h1>`. The portion `{this.props.name}` deserves a closer look:
 
 - `this` refers to the specific component instance
 - `this.props` will collect all the props for this component instance
@@ -52,13 +52,14 @@ In our component definition, we will change the `<h1>Hello World!</h1>` to `<h1>
 
 > The `{}` syntax in JSX renders the result of any expression inside it. It works even without props. If you wrote `{2+2}` in your JSX, `4` would be rendered.
 
-Your `App.js` should now look like:
+In `App.js`, your `Hello` class should now look like this:
+
 ```jsx
 class Hello extends Component {
   render () {
     return (
       <div>
-        <h1>Hello {this.props.name}</h1>
+        <h1>Hello {this.props.name}!</h1>
         <h3>It is time for tea.</h3>
       </div>
     )
@@ -71,14 +72,16 @@ In the above example, we replaced "world" with `{this.props.name}`.
 > Check it out! You should be able to browse to http://localhost:3000 to view this change!
 
 
-##### What about... multiple props?
+##### Second... multiple props
 
-We can certainly pass multiple properties to our component! This is just a matter of adding another prop to the component call: `<Hello name={"Nick"} />,` changes to `<Hello name={"Nick"} age={24} />`.
+We can certainly pass multiple properties to our component! We'll use the same two steps we took to add the first prop.
 
-Update your index.js file to reflect this:
+First, add another prop to the component call: `<Hello name={"Nick"} />,` changes to `<Hello name={"Nick"} age={24} />`.
+
+Update your `index.js` file to reflect this:
 
 ```js
-import React from 'react';
+import React from 'react'
 import ReactDOM from 'react-dom'
 import Hello from './App.js'
 
@@ -88,15 +91,15 @@ ReactDOM.render(
 )
 ```
 
-Now, in our component definition we have access to both values, so let's change App.js to use it!
+Now, in our component definition we have access to both values, so the second step is to change the `Hello` component class in `App.js` to use the age information!
 
 ```js
 class Hello extends Component {
   render () {
     return (
       <div>
-        <h1>Hello {this.props.name}</h1>
-        <p>You are {this.props.age} years old</p>
+        <h1>Hello {this.props.name}!</h1>
+        <p>You are {this.props.age} years old.</p>
       </div>
     )
   }
@@ -106,11 +109,11 @@ class Hello extends Component {
 
 > Check it out! You should be able to browse to http://localhost:3000 to view this change!
 
-##### What about... multiple props passed from an object?
+##### What about... multiple props _passed in as an object_?
 
-If we have many props, it might get difficult to keep track in the render function itself. Instead, something we can do is hold our values in an object, and then just pass props to the component from that object. Let's look.
+If we have many props, it might get difficult to keep track when we're passing everything in to  render a component. A better practice is to organize values in an object and then pass props to the component from that object. Let's see this strategy.
 
-Currently, in index.js, we are directly putting Nick's name and age into the ReactDOM.render() call. Instead, we'll create an object that holds Nick's name and age, making it clearer for other developers to change in the future. In your index.js file, below the imports, add the object definition:
+Currently, in `index.js`, we are directly putting Nick's name and age into the `ReactDOM.render` call. Instead, we'll create an object that holds Nick's name and age, making it clearer for other developers and easier to change in the future. In your `index.js file`, below the `import`s, add this object definition:
 
 ``` js
 var person = {
@@ -119,7 +122,7 @@ var person = {
 }
 ```
 
-Then, we'll just change our component call. At the bottom of your index.js, update what's passed in to the class function.
+Next, we'll change our component call. Near the bottom of your `index.js`, update what's passed in to the component.
 
 ``` js
 ReactDOM.render(
@@ -128,11 +131,11 @@ ReactDOM.render(
     age={person.personAge}
   />,
   document.getElementById('root')
-);
+)
 ```
 
-We don't have to change anything in App.js, because it's still receiving two props - "name" and "age".
+We don't have to change anything in `App.js`, because it's still receiving exactly the same values for exactly the same two props - `name` and `age`. We're just sending it those values in a slightly different way.
 
 > Check it out! If you browse to http://localhost:3000 nothing should have changed.
 
-Try changing the values in the `person` object, without changing the ReactDOM.render() call, and see how the page updates.
+Try changing the values inside the `person` object without changing the `ReactDOM.render` call. See how the page updates.
