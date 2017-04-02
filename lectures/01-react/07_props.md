@@ -35,8 +35,8 @@ ReactDOM.render(
 
 Now, we're passing the prop into the component, but the component isn't using it yet. In our component definition, we will change the `<h1>Hello World!</h1>` to `<h1>Hello {this.props.name}</h1>`. This is a reference to that data via as a property on the `props` object, rendering the prop that was passed in.
 
-Your `index.js` should now look like:
-```js
+Your `App.js` should now look like:
+```jsx
 class Hello extends Component {
   render () {
     return (
