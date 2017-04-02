@@ -8,9 +8,13 @@ The basic unit you'll be working with in ReactJS is a **component**. Components 
 <details>
   <summary>Using components is a pretty different way of approaching web development.</summary>
 
-  > With components, there is more integration and less separation of HTML CSS and JS.
+  <blockquote>
+  With components, there is more integration and less separation of HTML CSS and JS.
+  </blockquote>
 
-  > Instead, the pattern is to organize a web app into small, reusable components that encompass their own content, presentation and behavior.
+  <blockquote>
+  Instead, the pattern is to organize a web app into small, reusable components that encompass their own content, presentation and behavior.
+  </blockquote>
 
 </details>
 
