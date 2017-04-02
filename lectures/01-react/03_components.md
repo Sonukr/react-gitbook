@@ -10,8 +10,9 @@ If you're used to writing out all of one page's view in one HTML file, using com
 <blockquote>
 With components, there is more integration and less separation of HTML, CSS, and JavaScript.
 
-Instead of creating a few "monolithic" files, the pattern is to organize a web app into small, reusable components that encompass their own content, presentation and behavior.
+Instead of creating a few large files, the pattern is to organize a web app into small, reusable components that encompass their own content, presentation and behavior.
 </blockquote>
+
 
 
 In fact, with React, the main front end task is building components. Since they're so encapsulated, components make code reuse, testing, and separation of concerns easy.

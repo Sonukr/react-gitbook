@@ -52,8 +52,8 @@ In our component definition, we will change the `<h1>Hello World!</h1>` to `<h1>
 
 > The `{}` syntax in JSX renders the result of any expression inside it. It works even without props. If you wrote `{2+2}` in your JSX, `4` would be rendered.
 
-Your `index.js` should now look like:
-```js
+Your `App.js` should now look like:
+```jsx
 class Hello extends Component {
   render () {
     return (

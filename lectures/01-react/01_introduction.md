@@ -21,17 +21,12 @@
 
 # VIDEO HERE: What is React?
 
-<details>
+The React framework was built to solve one problem: building large applications with data that changes over time.
 
-  <summary>So, the React framework was built to solve one problem: building large applications with data that changes over time. </summary>
-
-  <blockquote> Before React, re-rendering one thing meant re-rendering everything.
-  This had negative implications on processing power and ultimately user experience, which at times became glitchy and laggy.</blockquote>
-
-</details>
+<blockquote> Before React, re-rendering one thing meant re-rendering everything.
+This had negative implications on processing power and ultimately user experience, which at times became glitchy and laggy.</blockquote>
 
 
-<br>
 
 React is "agnostic" to other tools in your front end. This means that React can co-exist with other Javascript frameworks, letting the other frameworks handle the models and controllers and having React sort out the views.
 
