@@ -20,9 +20,7 @@ For an intro to our next topic, watch this video.
 
 <iframe src="//fast.wistia.net/embed/iframe/tep72w77ir?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 
-**React Router** is a third-party library that makes it easy for us to route
-specific URLs to specific content on our page. In our React app different
-content will be grouped up in its own regular React component. Once we
+**React Router** is a third party library that makes it easy for us to route URLs - not to different pages, but by dynamically loading different components on the same page as the user navigates to different URLs. Once we
 define how the URLs are routed to the components, **React Router** will
 manage our Single Page App's browser history automatically.
 
@@ -33,6 +31,8 @@ Here's what React Router provides:
   content.
 
 React Router is actually a **third-party** library. Third Party just means it's
-not built by React and it's not built by ourselves. It's been written by some
+not built by React and not built by ourselves; it's been written by some
 other "third-party" group of developers. Even though React Router is third-party
-software, it's extremely useful, trustworthy, and popular - don't be afraid to use it.
+software, it's extremely useful, trustworthy, and popular - don't be afraid to use it. With more than 20,000 stars on Github, it’s safe to assume React Router is here to stay.
+
+So let's use it!

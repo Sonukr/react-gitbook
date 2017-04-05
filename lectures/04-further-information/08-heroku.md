@@ -1,23 +1,18 @@
----
-title: Deploying a React app to Heroku
-type: lesson
-duration: "1:00"
-creator:
-    name: James Traver
-    company: Gogo
-    city: Chicago
-competencies: ES6, Fetch, React
----
-
 # Deploying a React App
 
-> Before moving forward, it is _strongly_ suggested that you have a working knowlegde of Git. Read the [Git basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) guide or [try Git](https://try.github.io/levels/1/challenges/1) if you have **no experience** with Git before moving forward.
+> Before moving forward, it is _strongly_ suggested that you have a working knowledge of Git. Read the [Git basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) guide or [try Git](https://try.github.io/levels/1/challenges/1) if you have **no experience** with Git before moving forward.
 
 ## Objectives
 
 * Discover what Heroku is, why it is useful, and register an account
 * Install the Heroku Command Line Interface & use it (a Platform as a Service) to deploy a React application
 * Fine-tune your React application for the web
+
+
+## Why are we learning Heroku?
+
+We're using `create-react-app` to make our app, but that's local. Heroku's incredibly popular forWe can use Heroku to deploy a React application to the internet in under five minutes. Heroku also provides five free applications to every user.
+
 
 ## What is Heroku?
 
@@ -68,7 +63,7 @@ Setting buildpack to https://github.com/mars/create-react-app-buildpack.git... d
 https://your_app_name_here.herokuapp.com/ | https://git.heroku.com/your_app_name_here.git
 ```
 
-Now, we need to add all of the files and changes that we may have added. In theory, we'll have actually built an application. For our purposes, we are going to use what has been provided with `create-react-app`. We'll use git to add _all_ of the files and commit our changes. 
+Now, we need to add all of the files and changes that we may have added. In theory, we'll have actually built an application. For our purposes, we are going to use what has been provided with `create-react-app`. We'll use git to add _all_ of the files and commit our changes.
 
 ```
 git add -A
@@ -87,7 +82,7 @@ Congrats - you've now deployed your React app live! Good job.
 
 ## Deploying your Project Live
 
-Now that you have seen how to deploy your application live, it is time for you to push your project live. Since you have created an application already using `create-react-app`, you can skip that step. Before pushing live, you'll need to make a few minor adjustments to make everything look great. 
+Now that you have seen how to deploy your application live, it is time for you to push your project live. Since you have created an application already using `create-react-app`, you can skip that step. Before pushing live, you'll need to make a few minor adjustments to make everything look great.
 
 #### Routing clean URLs with React Router
 

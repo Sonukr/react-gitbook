@@ -41,6 +41,11 @@
 * [Introduction to APIs](lectures/04-further-information/01-fetch.md)
 	* [API Response](lectures/04-further-information/02-data-types.md)
 	* [fetch](lectures/04-further-information/03-fetch.md)
-	* [fetch exercse](lectures/04-further-information/04-fetch-exercise.md)
+	* [fetch exercise](lectures/04-further-information/04-fetch-exercise.md)
+	* [fetch project](lectures/04-further-information/05-fetch-project.md)
+* [Imperative vs Declarative](lectures/04-further-information/06-declarative-imperative.md)
+* [Practice makes perfect!](lectures/04-further-information/07-self-exercise.md)
+* [Heroku](lectures/04-further-information/08-heroku.md)
+* [Second self exercise](lectures/04-further-information/09-self2.md)
 
 * [Copyright & Terms of Service](license.md)
