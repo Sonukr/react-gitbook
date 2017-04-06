@@ -6,7 +6,7 @@ We've learned:
 
 * <details>
  <summary>`const` and `let` instead of `var`</summary>
-Remember, When declaring variables using ES6 syntax, if you need to declare a variable whose value will _not_ change, declare it as a `const`. If the variable's value _will_ or _might_ change, declare it as a `let`.
+Remember, When declaring variables using ES6 syntax, if you need to declare a variable whose value will _not_ change, declare it as a `const`. If the variable's value _will_ or _might_ change, unless you need a global scope, you'll likely declare it as a `let`.
 </details>
 
 
@@ -53,24 +53,13 @@ this.food = 'Knife please?';
 
 * <details>
  <summary>Template literals for string interpolation</summary>
- ```javascript
+ ```
  const greeting = name => `Hi, ${name}.`;
  ```
 </details>
 
 ### Let's put this together.
 
-Look at the code for your todo list (it's uploaded here). Edit the App.js and index.js files to follow the ES6 rules above.
+Look at [this codepen](https://codepen.io/susir/pen/yMWvWm). Try to modify it to ES6 syntax.
 
-<details>
- <summary>Then check yours against the solution here:</summary>
- * change the `var` to `const` inside index.js.
- * change `let` to `const` for `todoItems` in **App.js**
- 
- It's ok to change `todoItems` from `let` to `const` in **App.js** because the
- `render()` function runs every time the state of the application is changed.
- The `const` keyword only enforces a variable to stay constant each time the
- function runs. The list of todo items will change as items are added and
- everything is cleared from it. It will remain constant every one time that
- the render function is run.
-</details>
+When you think you have it, look at the codepen solution [here](https://codepen.io/susir/pen/OpYvqK).

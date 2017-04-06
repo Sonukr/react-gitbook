@@ -5,7 +5,9 @@ So we know about React properties, and how they relate to our component's data.
 * The thing is, `props` represent data that will be the same every time our component is rendered. What about data in our application that may change depending on user action?
 * That's where `state` comes in..
 
-# STATE VIDEO HERE #
+Watch this video and follow along using [this codepen](https://codepen.io/susir/pen/GWONLp) to try it yourself!
+
+<iframe src="//fast.wistia.net/embed/iframe/3ldc3tnyv0?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 
 
 Values stored in a component's state are mutable attributes.

@@ -3,7 +3,9 @@
 
 The basic unit you'll be working with in ReactJS is a **component**. Components are pieces of our application that we can define once and reuse all over the place.
 
-# VIDEO HERE: Components
+For an intro to components, watch this video:
+
+<iframe src="//fast.wistia.net/embed/iframe/h64z7lp1ir?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 
 <details>
   <summary>Using components is a pretty different way of approaching web development.</summary>

@@ -6,7 +6,9 @@ This is great, but overall, our `Hello` component isn't too helpful. Let's make 
 * Rather than simply display "Hello world", let's display a greeting to the user. Let's make that dynamically changeable based on the user's name.
 * So the question is, how do we feed a name to our `Hello` component without hardcoding it into our render method?
 
-# PROPS VIDEO here
+Watch this video and follow along using [this codepen](https://codepen.io/susir/pen/vxWypq) to try it yourself!
+
+<iframe src="//fast.wistia.net/embed/iframe/v5qyqsir0s?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 
 
 ### Hello World exercise - You do!

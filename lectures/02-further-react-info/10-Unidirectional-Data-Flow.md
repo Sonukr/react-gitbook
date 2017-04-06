@@ -1,8 +1,11 @@
 # Unidirectional Data Flow
 
-# UNIDIRECTIONAL FLOW VIDEO
+Let's start with a video:
 
-In React applications, data usually flows from the top down.
+<iframe src="//fast.wistia.net/embed/iframe/v2uenqkgwk?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
+
+
+So, in React applications, data usually flows from the top down. Why do we care? How does this apply?
 
 When several components in a view need to share state, you lift, or "hoist", the state so that it's available to all the components that need it. Let's look at a search filter as an example. This app will have two basic components - one that displays a list of data, and one that captures user input to filter the data.
 

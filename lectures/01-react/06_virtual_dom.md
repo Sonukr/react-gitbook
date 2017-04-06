@@ -28,9 +28,9 @@ The last change is that `ReactDOM.render(
     <Hello />,`.
 > This changes the default call to explicitly say "Render whatever the component `Hello` returns."
 
-`ReactDOM`, specifically, doesn't call the regular DOM as we know it. Instead, it calls the Virtual DOM. How is that different?
+`ReactDOM`, specifically, doesn't call the regular DOM as we know it. Instead, it calls the Virtual DOM. How is that different? Watch this video to find out.
 
-# VIRTUAL DOM VIDEO here
+<iframe src="//fast.wistia.net/embed/iframe/v5qyqsir0s?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 
 So for React, the virtual DOM is a staging area for changes that will eventually be implemented.
 ![Virtual DOM Diagram](https://docs.google.com/drawings/d/11ugBTwDkqn6p2n5Fkps1p3Elp8ZToIRzXzvM4LJMYaU/pub?w=543&h=229)

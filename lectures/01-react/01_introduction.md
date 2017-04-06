@@ -19,7 +19,9 @@
 
 ## What is ReactJS?
 
-# VIDEO HERE: What is React?
+For an intro to React, watch this video:
+
+<iframe src="//fast.wistia.net/embed/iframe/lr8idjxtx8?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 
 <details>
   <summary>So, the React framework was built to solve one problem: building large applications with data that changes over time.</summary>

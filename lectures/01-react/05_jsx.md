@@ -22,9 +22,9 @@ export default Hello
 
 Let's talk about the header that's returned. It looks an awful lot like HTML, but it's not. Often times we write out React components in **JSX**.
 
-What's that?
+Wait, what's that? Try it yourself alongside this video in [this codepen](https://codepen.io/susir/pen/wJPoBw).
 
-# JSX VIDEO HERE
+<iframe src="//fast.wistia.net/embed/iframe/dcps4dqziy?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 
 So, JSX allows us to write code that strongly resembles HTML. It is eventually compiled to lightweight JavaScript objects. We're returning some JSX that creates a header with 'Hello World' in it for our component to render.
 
