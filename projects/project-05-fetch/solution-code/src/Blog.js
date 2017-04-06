@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Comment from './Comment.js';
+import Author from './Author.js';
 
 class Blog extends Component {
   constructor (props) {

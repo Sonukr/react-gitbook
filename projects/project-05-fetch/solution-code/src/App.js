@@ -45,7 +45,7 @@ const App = () => (
       <Route exact path="/food" component={Food}/>
       <Route path="/blog" component={
         () => (<Blog title={post.title}
-                  allAuthors={post.author}
+                  allAuthors={post.authors}
                   body={post.body}
                   comments={post.comments} />
         )}/>
