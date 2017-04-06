@@ -10,4 +10,4 @@ class Author extends Component {
   }
 }
 
-export default Author
+export default Author;

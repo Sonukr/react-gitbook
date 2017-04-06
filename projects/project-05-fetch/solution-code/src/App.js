@@ -13,7 +13,11 @@ import './App.css';
 
 const post = {
   title: "Baby's first post",
-  author: "baby",
+  authors: [
+    "Stealthy Stegosaurus",
+    "Tiny trex",
+    "Iguanadon Ivory"
+  ],
   body: "look at me i'm a posting baby!",
   comments: [
     "First!",
@@ -41,7 +45,7 @@ const App = () => (
       <Route exact path="/food" component={Food}/>
       <Route path="/blog" component={
         () => (<Blog title={post.title}
-                  author={post.author}
+                  allAuthors={post.author}
                   body={post.body}
                   comments={post.comments} />
         )}/>

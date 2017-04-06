@@ -17,9 +17,9 @@ class Post extends Component {
       body: newBody
     })
   }
-  
-  
-  let authors = [
+
+  render() {
+    let authors = [
       <Author author={this.props.allAuthors[0]}/>,
       <Author author={this.props.allAuthors[1]}/>,
       <Author author={this.props.allAuthors[2]}/>
@@ -33,7 +33,6 @@ class Post extends Component {
     //   <Author author={author} key={index} />
     // ));
 
-  render() {
     return (
       <div>
         <h1>{this.props.title}</h1>

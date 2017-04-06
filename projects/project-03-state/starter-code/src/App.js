@@ -5,6 +5,7 @@ import Author from './Author.js'
 
 class Post extends Component {
   render() {
+
     let authors = [
       <Author author={this.props.allAuthors[0]}/>,
       <Author author={this.props.allAuthors[1]}/>,
