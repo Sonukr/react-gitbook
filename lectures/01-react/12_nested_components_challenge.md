@@ -22,6 +22,6 @@ Besides Stealthy Stegosaurus, the other two authors are Tiny Trex and Ivory Igua
 
 Your solution should look as follows:
 
-![Solution for Project](SOLUTION.png)
+![Solution for Project](../../projects/project-02-nested-components/SOLUTION.png)
 
 And the solution is [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/projects/project-02-nested-components).

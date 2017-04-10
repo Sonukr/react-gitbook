@@ -10,9 +10,15 @@ For an intro to components, watch this video:
 <details>
   <summary>Using components is a pretty different way of approaching web development.</summary>
 
-  > With components, there is more integration and less separation of HTML CSS and JS.
 
-  > Instead, the pattern is to organize a web app into small, reusable components that encompass their own content, presentation and behavior.
+  <blockquote>
+  With components, there is more integration and less separation of HTML CSS and JS.
+  </blockquote>
+
+  <blockquote>
+  Instead, the pattern is to organize a web app into small, reusable components that encompass their own content, presentation and behavior.
+  </blockquote>
+
 
 </details>
 
