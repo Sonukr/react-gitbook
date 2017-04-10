@@ -33,6 +33,6 @@ So, JSX allows us to write code that strongly resembles HTML. It is eventually c
 ### Challenge: Greet the day!
 In your component, return multiple lines. Instead of just the Hello World! header, also add a line below it that would print out "It is time for tea." in an h3.
 
-> Hint: Remember, the return statement in `render` can only return one DOM element. You can, however, place multiple elements within a parent DOM element.*
+> Hint: Remember, the return statement in `render` can only return one DOM element. You can, however, place multiple elements within a parent `div` element.*
 
-You can check your solution here.
+You can check your solution [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/exercise-solutions/jsx-hello-world).
