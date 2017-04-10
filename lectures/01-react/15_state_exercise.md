@@ -1,35 +1,36 @@
 # You Do: Implement State (20 minutes) #
 
-Let's implement state in our Blog by making __body__ a mutable value.
+Let's implement state in our Blog by making `body` a mutable value.
 > Remember to switch the running application!
 
-1. Initialize a state using a __constructor()__ method for our __Post__ to set a initial state. It should create a state value called __body__. Set it to the __body__ prop that's passed in to the component.
-2. Modify __Post__'s __render__ method so that __body__ comes from __state__, not __props__.
-3. Create a __changeBody__ method inside __Post__ that updates __body__ based on a user input.
-  - You should use __setState__ somewhere in this method.
-  - How can you get a user input? Keep it simple and start with __prompt__.
-4. Add a button to __Post__'s __render__ method that triggers __changeBody__.
+1. Initialize a state using a `constructor()` method for our `Post` to set a initial state. It should create a state value called `body`. Set it to the `body` prop that's passed in to the component.
+2. Modify `Post`'s `render` method so that `body` comes from `state`, not `props`.
+3. Create a `changeBody` method inside `Post` that updates `body` based on a user input.
+  - You should use `setState` somewhere in this method.
+  - How can you get a user input? Keep it simple and start with `prompt`.
+4. Add a button to `Post`'s `render` method that triggers `changeBody`.
 
 ## Solution
 
 Your solution should look as follows:
 
-![Solution for Project](SOLUTION_ALERT.png)
+![Solution for Project](../../projects/project-03-state/SOLUTION_ALERT.png)
 
-![Solution for Project](SOLUTION.png)
+![Solution for Project](](../../projects/project-03-state/SOLUTION.png)
 
 ### Bonus I ###
 
 Use a form to take in user input.
 
-- The post body should be updated using a method that is triggered by __onSubmit__.
-- One option is to keep track of what the new input is going to be by triggering a method using __onChange__ on the __< input >__
-- Another option is to pass an event object to the __onSubmit__ method and traverse the DOM from __e.target__ to find the __< input >__ value.
+- The post body should be updated using a method that is triggered by `onSubmit`.
+- One option is to keep track of what the new input is going to be by triggering a method using `onChange` on the `< input >`
+- Another option is to pass an event object to the `onSubmit` method and traverse the DOM from `e.target` to find the `< input >` value.
 
 ## Bonus Solution
 
 Your solution should look as follows:
 
-![Solution for Project](BONUS_SOLUTION.png)
 
-Solution code, including for using __onChange__, [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/projects/project-03-state).
+![Solution for Project](](../../projects/project-03-state/BONUS_SOLUTION.png)
+
+Solution code, including for using `onChange`, [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/projects/project-03-state).

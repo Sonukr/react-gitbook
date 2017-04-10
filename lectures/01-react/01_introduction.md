@@ -18,18 +18,18 @@
 ---
 
 ## What is ReactJS?
-
 For an intro to React, watch this video:
 
 <iframe src="//fast.wistia.net/embed/iframe/lr8idjxtx8?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 
 <details>
   <summary>So, the React framework was built to solve one problem: building large applications with data that changes over time.</summary>
-
-  > Without React, re-rendering something meant re-rendering everything.
-  This had negative implications on processing power and ultimately user experience, which at times became glitchy and laggy.
+  
+  <blockquote> Without React, re-rendering something meant re-rendering everything.
+  This had negative implications on processing power and ultimately user experience, which at times became glitchy and laggy. </blockquote>
 
 </details>
+
 React can be used agnostically throughout your stack. This means that React can also co-exist with other Javascript frameworks, letting the other frameworks handle the models and controllers and having React sort out the views.
 
 #### Some History
