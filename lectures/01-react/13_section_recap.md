@@ -7,18 +7,18 @@ It is time to stop for a moment and review all of the topics that we've discusse
 * **JSX** is a standard that React uses to represent HTML elements as XML tags. It looks like a template language but is much more powerful. Each JSX tag represents a React Element and a React Class is composed of multiple elements. You express your visual user interface through nested XML tags that can render additional components.
 * **Properties** are arguments passed into a **Component**, as if they were arguments to a function. The component can then use this data to render or pass it on to another component.
 
-Let's put something together really quickly to re-inforce what you've learned so far. 
+Let's put something together really quickly to re-inforce what you've learned so far.
 
 
 #### Codealong
 
-We're going to spin up yet another _React_ app. Use `create-react-app` to create `mordor` application. 
+We're going to spin up yet another _React_ app. Use `create-react-app` to create `mordor` application.
 
 > Refer to the Initial Setup to remember how to do this; make sure you stop the currently running application first!
 
 Open up your `./src` directory in your favourite text editor.
 
-Inside of `./src` folder, create a new React Component called `Mordor.js`. 
+Inside of `./src` folder, create a new React Component called `Mordor.js`.
 
 ```jsx
 import React, { Component } from 'react';
@@ -51,7 +51,7 @@ The _JSX_ inside your Mordor component's return function will therefore look som
 Notice that this JSX has _properties_, or `props`. When a React Component's render() method is called, it takes any properties that were supplied to the component when it is instantiated. Later, we're going to call the Mordor class from inside App.js. When we call the component, it looks like this:
 
 ```jsx
-<Morder />
+<Mordor />
 ```
 
 However, we also want to pass a prop into the component, right? The Mordor component needs to know whether or not Frodo has the ring. So our call to instantiate the component is instead going to look like:
@@ -90,7 +90,7 @@ class Mordor extends Component {
 export default Mordor;
 ```
 
-Once you're done, open the `./src/App.js`. We're going to render Mordor! We can do so by replacing the interior of `<p className="App-intro" />` with the first version of Mordor. Open your Web browser and you'll notice your component has loaded. 
+Once you're done, open the `./src/App.js`. We're going to render Mordor! We can do so by replacing the interior of `<p className="App-intro" />` with the first version of Mordor. Open your Web browser and you'll notice your component has loaded.
 
 ```jsx
 import React, { Component } from 'react';
@@ -150,7 +150,7 @@ Take a moment to consider the following scenario: it is the year 2007 and you ar
 
 - The use of `prototype` for inheritance vs the ES2015 model of `Class`
 - Pure DOM manipulation using `createElement` and `getElement...` methods.
-- Building constructor objects that contain an `element` (or `el`) that is rendered using a `render()` method. 
+- Building constructor objects that contain an `element` (or `el`) that is rendered using a `render()` method.
 - How would you handle the updating of properties going into the component? How would this affect your constructor?
 
 As you consider this scenario, think about the ease that the Virtual DOM provides you by directly handling the creation and updating of DOM elements on the page. React creates special elements on the Virtual DOM and then elements are rendered for you with ease so you don't have to create individual React Elements to build each React Component.

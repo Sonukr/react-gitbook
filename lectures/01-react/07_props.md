@@ -1,3 +1,5 @@
+# JSX Props
+
 So far, we have a component defined in `App.js` which returns a header written in JSX.
 
 In `index.js`, we are calling this component, appending what `App.js` returns to the virtual DOM, and rendering that.
@@ -8,7 +10,7 @@ This is great, but overall, our `Hello` component isn't too helpful. Let's make 
 
 Watch this video and follow along using [this codepen](https://codepen.io/susir/pen/vxWypq) to try it yourself!
 
-<iframe src="//fast.wistia.net/embed/iframe/v5qyqsir0s?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
+<iframe src="//fast.wistia.net/embed/iframe/gchiu63slo?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 
 
 ### Hello World exercise - You do!
@@ -54,70 +56,3 @@ class Hello extends Component {
 In the above example, we replaced "world" with `{this.props.name}`.
 
 > Check it out! You should be able to browse to http://localhost:3000 to view this change!
-
-
-##### What about... multiple props?
-
-We can certainly pass multiple properties to our component! This is just a matter of adding another prop to the component call: `<Hello name={"Nick"} />,` changes to `<Hello name={"Nick"} age={24} />`.
-
-Update your index.js file to reflect this:
-
-```js
-import React from 'react';
-import ReactDOM from 'react-dom'
-import Hello from './App.js'
-
-ReactDOM.render(
-  <Hello name={"Nick"} age={24} />,
-  document.getElementById('root')
-)
-```
-
-Now, in our component definition we have access to both values, so let's change App.js to use it!
-
-```js
-class Hello extends Component {
-  render () {
-    return (
-      <div>
-        <h1>Hello {this.props.name}</h1>
-        <p>You are {this.props.age} years old</p>
-      </div>
-    )
-  }
-}
-```
-
-
-> Check it out! You should be able to browse to http://localhost:3000 to view this change!
-
-##### What about... multiple props passed from an object?
-
-If we have many props, it might get difficult to keep track in the render function itself. Instead, something we can do is hold our values in an object, and then just pass props to the component from that object. Let's look.
-
-Currently, in index.js, we are directly putting Nick's name and age into the ReactDOM.render() call. Instead, we'll create an object that holds Nick's name and age, making it clearer for other developers to change in the future. In your index.js file, below the imports, add the object definition:
-
-``` js
-var person = {
-  personName: "Nick",
-  personAge: 24
-}
-```
-
-Then, we'll just change our component call. At the bottom of your index.js, update what's passed in to the class function.
-
-``` js
-ReactDOM.render(
-  <Hello
-    name={person.personName}
-    age={person.personAge}
-  />,
-  document.getElementById('root')
-);
-```
-
-We don't have to change anything in App.js, because it's still receiving two props - "name" and "age".
-
-> Check it out! If you browse to http://localhost:3000 nothing should have changed.
-
-Try changing the values in the `person` object, without changing the ReactDOM.render() call, and see how the page updates.
