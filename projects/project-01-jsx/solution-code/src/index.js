@@ -9,8 +9,8 @@ var post = {
   body: "Check out this body property!",
   comments: [
     "First!",
-    "Great post!",
-    "Hire him!"
+    "Great post",
+    "Hire this author now!"
   ]
 }
 

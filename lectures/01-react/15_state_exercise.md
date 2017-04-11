@@ -3,11 +3,12 @@
 Let's implement state in our Blog by making `body` a mutable value.
 > Remember to switch the running application!
 
-1. Initialize a state using a `constructor()` method for our `Post` to set a initial state. It should create a state value called `body`. Set it to the `body` prop that's passed in to the component.
-2. Modify `Post`'s `render` method so that `body` comes from `state`, not `props`.
-3. Create a `changeBody` method inside `Post` that updates `body` based on a user input.
+
+1. Initialize a state using a `constructor()` method for our `Post` to set a initial state. It should create a state attribute called `body`. Set the value associated with the `body` key in the state to be the `body` prop that's passed into the component.
+2. Modify `Post`'s `render` method so that it uses the `body` from `state`, not `props`.
+3. Create a `changeBody` method inside `Post` that updates `body` based on a user's input.
   - You should use `setState` somewhere in this method.
-  - How can you get a user input? Keep it simple and start with `prompt`.
+  - How can you get user input? Keep it simple and start with `prompt`.
 4. Add a button to `Post`'s `render` method that triggers `changeBody`.
 
 ## Solution
@@ -23,13 +24,13 @@ Your solution should look as follows:
 Use a form to take in user input.
 
 - The post body should be updated using a method that is triggered by `onSubmit`.
-- One option is to keep track of what the new input is going to be by triggering a method using `onChange` on the `< input >`
-- Another option is to pass an event object to the `onSubmit` method and traverse the DOM from `e.target` to find the `< input >` value.
+- One option is to keep track of what the new input is going to be by triggering a method using `onChange` on the `<input>`.
+- Another option is to pass an event object to the `onSubmit` method and traverse the DOM from the event's target (for example, `e.target`) to find the `<input>` value.
+
 
 ## Bonus Solution
 
 Your solution should look as follows:
-
 
 ![Solution for Project](](../../projects/project-03-state/BONUS_SOLUTION.png)
 

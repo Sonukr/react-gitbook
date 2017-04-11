@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 
 class Post extends Component {
   render() {
@@ -13,8 +13,8 @@ class Post extends Component {
         <h3>Comments:</h3>
         <p>{this.props.comments[0]}</p>
       </div>
-    );
+    )
   }
 }
 
-export default Post;
+export default Post

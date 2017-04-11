@@ -3,7 +3,7 @@
 
 Let's jump right in! We'll create a skeleton React project and walk through it as we go.
 
-An easy way to start React projects is to use `create-react-app`. This is an excellent tool created by Facebook that will help you set up a barebones React app instantly, so we can just install the package and get coding!
+An easy way to start React projects is to use a Terminal program called `create-react-app`. This is an excellent tool created by Facebook that will help you set up a barebones React app instantly, so we can just install the package and get coding!
 
 Let's use npm to install it globally so we'll always have it available in our Terminal. Run:
 
@@ -11,7 +11,7 @@ Let's use npm to install it globally so we'll always have it available in our Te
 $ npm i -g create-react-app
 ```
 
-Now that it's installed, let's move to the directory wherever you keep all your code and use the tool to start a React app. We're calling the directory "hello_world", since that'll be our first project.
+Once it's installed, move to the directory where you keep all your code.  Then, use the tool to create a new React app. You'll have to give your new app a name; we're calling the example app "hello_world", since that'll be our first project.
 
 
 ```sh
@@ -30,7 +30,7 @@ Use npm start to start a server that will serve your new React application!
 $ npm start
 ```
 
-> Here you have now set up a Hello World app that you will continue working on during this lesson's exercises.
+> You have now set up a Hello World app that you will continue working on during this lesson's exercises!
 
 After running `$ npm start`, you can view the app at `http://localhost:3000`
 
@@ -59,6 +59,6 @@ Most of the important files are in the `/src` directory. Specifically, we'll be 
 
 ### Stop / Catch Up / Investigate
 
-If you finish up early, review and play with the code in `/src/App.js`, `/src/index.js` and `index.html`
+Take some time and look at what's been generated. Specifically pay attention to `App.js` and `index.js`
 
-Take some time and look at what's been generated. Specifically look in `App.js` and `index.js`
+If you finish up early, make small changes to the code in `/src/App.js`, `/src/index.js` and `index.html` to see what happens.
