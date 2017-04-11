@@ -12,6 +12,7 @@ Remember, in a React component, `state` is just another object, like `props`. Th
 
 Now, we'll look into making this list changeable. Remember, updating state will involve calling `setState`. Let's use a simple example with a "clear" button in `MyList`.
 
+
 First, in `MyList`, we define the function that will be called by the button:
 ```js
 clearList (e) {
@@ -22,6 +23,7 @@ clearList (e) {
 ```
 
 Now, we need to display a button to the user. Under the list tags in `MyList`'s `render` method, we'll add JSX for a button definition.
+
 ```js
 <button onClick={(e) => this.clearList(e)}>Finished the list!</button>
 ```
@@ -68,7 +70,7 @@ export default MyList;
 
 Now when we click on the button, the following will occur:
 * `this.setState` will set the state, `toDoItemArray`, to be empty: `{toDoItemArray: []}`
-* The render function for `MyApp` will be called, and re-render the component.
+* The render function for `MyApp` will be called and re-render the component.
 * We'll feel good about ourselves for going to the gym, even if we ate ice cream first.
 
 ## Adding items
@@ -106,7 +108,6 @@ Lastly, we'll need to add a form to our `render` method.
 Notes:
  * We can use `onChange` on the `input` field to trigger an event when the text in the box is changed.  
  * Any function called when an event occurs (like functions that happen `onClick`, `onSubmit`, or `onChange`) can accept an argument that is the event. We pass this in as `e` to `newItemChange` and `addItem`.
-
 
  > Check it out! Have you done it?
 

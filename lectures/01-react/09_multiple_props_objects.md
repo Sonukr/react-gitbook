@@ -1,4 +1,4 @@
-### What about... multiple props passed from an object?
+## What about... multiple props passed from an object?
 
 If we have many props, it might get difficult to keep track when we're passing everything in to  render a component. A better practice is to organize values in some kind of object and then pass props to the component from that. Let's see this strategy.
 
@@ -34,6 +34,7 @@ We don't have to change anything in `App.js`, because it's still receiving exact
 
 Since we're just pulling props out of an object, we can use any object we want. For example, we can nest an array inside it. Let's say our user has some favorite animals. Update your object to include an array:
 
+
 ``` js
 var person = {
   personName: "Nick",
@@ -47,6 +48,7 @@ var person = {
 ```
 
 Now we can use this new information as a prop, just like normal. You could choose to pass a single element (`favorites[0]`) or the entire array.  We'll use the entire array so that the component can display _all_ a person's favorite animals. First, update your `ReactDOM.render` call in `index.js`:
+
 
 ``` js
 ReactDOM.render(

@@ -61,5 +61,4 @@ Most of the important files are in the `/src` directory. Specifically, we'll be 
 
 Take some time and look at what's been generated. Specifically pay attention to `App.js` and `index.js`
 
-
 If you finish up early, make small changes to the code in `/src/App.js`, `/src/index.js` and `index.html` to see what happens.

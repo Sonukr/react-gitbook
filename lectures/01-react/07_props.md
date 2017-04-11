@@ -1,4 +1,4 @@
-### Component Data with Props
+# Component Data with Props
 
 The React framework was built to handle data that changes over time.
 
@@ -12,7 +12,10 @@ Rather than simply display "Hello world", let's display a greeting to the user. 
 
 The question is, how do we add a name to our `Hello` component without hardcoding it into the component's `render` method?
 
-# PROPS VIDEO here
+
+Watch this video and follow along using [this codepen](https://codepen.io/susir/pen/vxWypq) to try it yourself!
+
+<iframe src="//fast.wistia.net/embed/iframe/gchiu63slo?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 
 
 ### Hello World exercise - You do!
@@ -31,6 +34,7 @@ In `src/index.js`, we'll change the line that renders the `Hello` component to i
 > We pass in data wherever we are rendering our component. In rendering the `Hello` component above, we pass in a prop called "name" with a value of "Nick".
 
 Your `index.js` should now look like this:
+
 ```js
 import React from 'react'
 import ReactDOM from 'react-dom'

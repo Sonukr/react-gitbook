@@ -9,6 +9,7 @@ This is what our list will look like when we're finished:
 
 Let's get started!
 
+
 * Because this is a new exercise, be sure to close the running application in Terminal first.
 
 Change directories to the main directory you're storing your projects in. Inside it, run your command:
@@ -24,6 +25,7 @@ $ cd todo-list
 ```
 
 Use `npm start` to start a server that will serve your new React application!
+
 
 ```sh
 $ npm start
@@ -71,6 +73,7 @@ Let's make a component for `ListItem`s. This component can simply render  `<li>M
 
 * Don't forget to import your `ListItem` component into `App.js`.  Then, include the component in what `MyList` renders with `<ListItem />` under the existing header (in place of the existing list item)!
 
+
 At this point, our app looks like this:
 
 ![list-preview](./images/todo-list-1.png)
@@ -109,7 +112,9 @@ class MyList extends Component {
 export default MyList;
 ```
 
+
 ... and in `ListItem.js`:
+
 ```js
 import React, { Component } from 'react';
 import './App.css';
@@ -135,7 +140,8 @@ Our app now looks like this:
 
 If we want to make this a truly extensible list, we could create an array of items, pass them into props through the `ListItem` component, and then render each item. Let's do that now.
 
-Borrowing from a bonus exercise earlier, the easiest way to do this is by using the `map` function. A map is like a for loop. With `map`, you make a new variable and iterate through each item in an array with it. It looks like this:
+Borrowing from a bonus exercise earlier, the easiest way to do this is by using the `map` function. A map is like a `for` loop. With `map`, you make a new variable and iterate through each item in an array with it. It looks like this:
+
 
 ```js
 let <new_Variable_Name> = <the_Array_We_Are_Mapping>.map( (local_Variable_Name_to_Loop, index) => (
@@ -156,7 +162,7 @@ let excitedPhrases = phrases.map( (phrase, index) => {
 ##### Plan
 
 * In the `MyList` component, have an array of items for the list, uncreatively called `theList`.
-* Create a variable to refer to the new array output by the `map` method, uncreatively called `todoItems`.
+* Create a variable to refer to the new array output by the `map` method, uncreatively but helpfully called `todoItems`.
 * Use `map` to iterate through the `todoItems` array, one `item` (this could be any name you'd like) at a time, and use each one to create a `ListItem` component in the `todoItems` list.
 * We can later refer to this list by just calling the variable in JSX (like any other variable).  For example, we could say  `{todoItems}`.
 
@@ -174,6 +180,7 @@ Let's also actually create that array! In `index.js`, create an array variable c
 
 My final `MyList` component class looks like this:
 ```jsx
+
 class MyList extends Component {
 
   render() {

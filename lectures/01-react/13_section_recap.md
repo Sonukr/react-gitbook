@@ -21,6 +21,7 @@ Open up your `./src` directory in your favorite text editor.
 
 Inside of `./src` folder, create a new React Component file called `Mordor.js`.
 
+
 ```jsx
 import React, { Component } from 'react';
 import Sauron from './eye.png';
@@ -41,6 +42,7 @@ Where it says "soon", you're going to create a `<section>` to represent Mordor. 
 
 The JSX inside your Mordor component's `render` function will therefore look something like this:
 
+
 ```jsx
 <section id="mordor">
   <article id="mt-doom">
@@ -53,6 +55,7 @@ Notice that this JSX is using _properties_, or `props`. When a React Component's
 
 ```jsx
 <Morder />
+
 ```
 
 However, we also want to pass a prop into the component, right? The Mordor component needs to know whether or not Frodo has the ring. So our call to instantiate the component is instead going to look like:
@@ -150,7 +153,7 @@ export default App;
 Take a moment to consider the following scenario: it is the year 2007 and you are hard at work on a website. ECMAScript5 is hot and new, and you're working hard to create user interface components using _vanilla JavaScript_. How would you create components like React's using vanilla JavaScript for organization? Here are a few differences to consider:
 
 - The use of `prototype` for inheritance instead of the ES6 model of `Class`.
-- DOM manipulation using `createElement`, `getElement...`, and other vanilla JavaScript DOM API methods.
+- DOM manipulation using `createElement`, `getElement...`, and other vanilla JavaScript DOM API methods versus our ReactDOM.render with JSX on the virtual DOM.
 - Building constructor objects that contain an `element` (or `el`) that is rendered using a `render` method.
 - How would you handle updating properties going into the component? How would this affect your constructor?
 

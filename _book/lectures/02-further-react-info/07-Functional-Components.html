@@ -1,0 +1,954 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Functional Components · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="08-Functional-Component-Exercise.html" />
+    
+    
+    <link rel="prev" href="06-ES6-Exercise.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-react/01_introduction.html">
+            
+                <a href="../01-react/01_introduction.html">
+            
+                    
+                    Welcome to React.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../01-react/02_initial_setup.html">
+            
+                <a href="../01-react/02_initial_setup.html">
+            
+                    
+                    Initial Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../01-react/03_components.html">
+            
+                <a href="../01-react/03_components.html">
+            
+                    
+                    Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../01-react/04_component_setup.html">
+            
+                <a href="../01-react/04_component_setup.html">
+            
+                    
+                    Component Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../01-react/05_jsx.html">
+            
+                <a href="../01-react/05_jsx.html">
+            
+                    
+                    JSX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../01-react/06_virtual_dom.html">
+            
+                <a href="../01-react/06_virtual_dom.html">
+            
+                    
+                    Virtual DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../01-react/07_props.html">
+            
+                <a href="../01-react/07_props.html">
+            
+                    
+                    Props
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../01-react/08_multiple_props.html">
+            
+                <a href="../01-react/08_multiple_props.html">
+            
+                    
+                    Multiple Props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../01-react/09_multiple_props_objects.html">
+            
+                <a href="../01-react/09_multiple_props_objects.html">
+            
+                    
+                    Multiple Props - Using Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../01-react/10_props_challenge.html">
+            
+                <a href="../01-react/10_props_challenge.html">
+            
+                    
+                    Props Challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../01-react/11_nested_components.html">
+            
+                <a href="../01-react/11_nested_components.html">
+            
+                    
+                    Nested Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../01-react/12_nested_components_challenge.html">
+            
+                <a href="../01-react/12_nested_components_challenge.html">
+            
+                    
+                    Nested Components Challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../01-react/13_section_recap.html">
+            
+                <a href="../01-react/13_section_recap.html">
+            
+                    
+                    Section Recap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../01-react/14_state.html">
+            
+                <a href="../01-react/14_state.html">
+            
+                    
+                    State
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../01-react/15_state_exercise.html">
+            
+                <a href="../01-react/15_state_exercise.html">
+            
+                    
+                    State Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../01-react/16-intermission-state-lifecycle.html">
+            
+                <a href="../01-react/16-intermission-state-lifecycle.html">
+            
+                    
+                    State Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../01-react/17_todo_exercise.html">
+            
+                <a href="../01-react/17_todo_exercise.html">
+            
+                    
+                    Exercise - Todo list
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../01-react/18_todo_exercise_continued.html">
+            
+                <a href="../01-react/18_todo_exercise_continued.html">
+            
+                    
+                    Exercise - Todo list - part 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../01-react/19-recap.html">
+            
+                <a href="../01-react/19-recap.html">
+            
+                    
+                    Recap
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../01-react/20_calculator_exercise.html">
+            
+                <a href="../01-react/20_calculator_exercise.html">
+            
+                    
+                    Calculator Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="01-ES6.html">
+            
+                <a href="01-ES6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="02-ES6-ConstLet.html">
+            
+                <a href="02-ES6-ConstLet.html">
+            
+                    
+                    Const and Let
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="03-ES6-Arrow.html">
+            
+                <a href="03-ES6-Arrow.html">
+            
+                    
+                    Arrow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="04-ES6-Arrow2.html">
+            
+                <a href="04-ES6-Arrow2.html">
+            
+                    
+                    Arrows, Continued
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="05-ES6-Literals.html">
+            
+                <a href="05-ES6-Literals.html">
+            
+                    
+                    Literals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="06-ES6-Exercise.html">
+            
+                <a href="06-ES6-Exercise.html">
+            
+                    
+                    ES6 Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="07-Functional-Components.html">
+            
+                <a href="07-Functional-Components.html">
+            
+                    
+                    Functional Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="08-Functional-Component-Exercise.html">
+            
+                <a href="08-Functional-Component-Exercise.html">
+            
+                    
+                    Functional Components Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="09-Component-Lifecycle.html">
+            
+                <a href="09-Component-Lifecycle.html">
+            
+                    
+                    Component Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="10-Unidirectional-Data-Flow.html">
+            
+                <a href="10-Unidirectional-Data-Flow.html">
+            
+                    
+                    Unidirectional Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="11-Immutable-Data.html">
+            
+                <a href="11-Immutable-Data.html">
+            
+                    
+                    Immutable Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../03-router/00-router-introduction.html">
+            
+                <a href="../03-router/00-router-introduction.html">
+            
+                    
+                    React Router
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../03-router/01-browser-history-mechanics.html">
+            
+                <a href="../03-router/01-browser-history-mechanics.html">
+            
+                    
+                    Browser History Mechanics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../03-router/02-modern-browser-history.html">
+            
+                <a href="../03-router/02-modern-browser-history.html">
+            
+                    
+                    Modern Browser History Mechanics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../03-router/03-react-router-intro.html">
+            
+                <a href="../03-router/03-react-router-intro.html">
+            
+                    
+                    React Router Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.4" data-path="../03-router/04-dentist-exercise.html">
+            
+                <a href="../03-router/04-dentist-exercise.html">
+            
+                    
+                    React Router - Codealong Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.5" data-path="../03-router/05-dentist-components.html">
+            
+                <a href="../03-router/05-dentist-components.html">
+            
+                    
+                    React Router - Preparing for Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.6" data-path="../03-router/06-dentist-router.html">
+            
+                <a href="../03-router/06-dentist-router.html">
+            
+                    
+                    React Router - Adding in Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.7" data-path="../03-router/07-router-exercise.html">
+            
+                <a href="../03-router/07-router-exercise.html">
+            
+                    
+                    React Router - Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../04-further-information/01-fetch.html">
+            
+                <a href="../04-further-information/01-fetch.html">
+            
+                    
+                    Introduction to APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../04-further-information/02-data-types.html">
+            
+                <a href="../04-further-information/02-data-types.html">
+            
+                    
+                    API Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../04-further-information/03-fetch.html">
+            
+                <a href="../04-further-information/03-fetch.html">
+            
+                    
+                    fetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../04-further-information/04-fetch-exercise.html">
+            
+                <a href="../04-further-information/04-fetch-exercise.html">
+            
+                    
+                    fetch exercse
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../../license.html">
+            
+                <a href="../../license.html">
+            
+                    
+                    Copyright & Terms of Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Functional Components</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="functional-components">Functional Components</h1>
+<p>Functional components give you a simpler way of declaring React components. React <strong>class</strong> components give you poperties that you don&apos;t always need, namely state, methods like <code>setState</code>, lifecycle methods like <code>componentDidMount</code> and <code>componentWillReceiveProps</code>, <code>refs</code> and more.</p>
+<p>Some components are purely presentational. They take props and render UI. As a React class, these components usually just contain a render method. Rather than create them as classes, you can write them as functions. A React Functional Component takes the <code>props</code> object as its argument, and returns JSX. Here&apos;s a very simple example. As a class, we might have:</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Name</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        Name: {this.props.firstName} {this.props.lastName}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    );
+  }
+}
+</code></pre>
+<p>But with ES6, we now have:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> Name = props =&gt; (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    Name: {props.firstName} {props.lastName}
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+);
+</code></pre>
+<blockquote>
+<p>The whole declaration of class, extends, React.component, etc - it&apos;s all been replaced. We now just have the component name, an input for the props, and what is returned. Simplicity at its finest!</p>
+</blockquote>
+<p>Functional components don&apos;t have to be &quot;simple&quot; - they can contain all kinds of logic. They&apos;re just JavaScript functions - so they can be as simple or complex as we make them. Let&apos;s make a more complicated example. What if we wanted a table of fruits?</p>
+<p><code>FruitTable</code> will render a table that looks something like this:</p>
+<p><img src="assets/fruit-table.png" alt="Rendered fruit table"></p>
+<p>This component written as a class, as we&apos;re used to, would look like this:</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FruitTable</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">borderSpacing:</span> <span class="hljs-attr">20</span>, <span class="hljs-attr">borderStyle:</span> &apos;<span class="hljs-attr">solid</span>&apos; }}&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+          {this.props.data.map((fruitList, index) =&gt; (
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{index}</span>&gt;</span>
+              {fruitList.map((fruit, i) =&gt; (
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{i}</span>&gt;</span>
+                  {fruit}
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+              ))}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+          ))}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+    )
+  }
+
+}
+</code></pre>
+<p>The thing is, using a class here doesn&apos;t give you any benefits over a Functional component. The class literally only has a render and a return, so all it really does is requires you to write a few more lines of code.</p>
+<ul>
+<li><em>A quick note on the <code>key</code>s in this example - When you render an array of items in React, you need to give each member of the array a unique <code>key</code>. React uses these keys to optimize changes to the DOM.</em></li>
+</ul>
+<pre><code class="lang-javascript">
+<span class="hljs-keyword">const</span> FruitTable = props =&gt; (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">borderSpacing:</span> <span class="hljs-attr">20</span>, <span class="hljs-attr">borderStyle:</span> &apos;<span class="hljs-attr">solid</span>&apos; }}&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+      {props.data.map((fruitList, index) =&gt; (
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{index}</span>&gt;</span>
+          {fruitList.map((fruit, i) =&gt; (
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{i}</span>&gt;</span>
+              {fruit}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          ))}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+      ))}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>
+);
+
+<span class="hljs-keyword">const</span> data = [
+  [<span class="hljs-string">&apos;apple&apos;</span>, <span class="hljs-string">&apos;banana&apos;</span>, <span class="hljs-string">&apos;cherry&apos;</span>],
+  [<span class="hljs-string">&apos;grape&apos;</span>, <span class="hljs-string">&apos;pear&apos;</span>, <span class="hljs-string">&apos;orange&apos;</span>],
+  [<span class="hljs-string">&apos;plum&apos;</span>, <span class="hljs-string">&apos;watermelon&apos;</span>, <span class="hljs-string">&apos;canteloupe&apos;</span>],
+];
+
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">FruitTable</span> <span class="hljs-attr">data</span>=<span class="hljs-string">{data}</span> /&gt;</span>;
+</span></code></pre>
+<p><a href="http://codepen.io/andrewdushane/pen/rypdpq" target="_blank">Try it yourself in this CodePen</a>.</p>
+<p>So, when should you use Functional Components, and when should you use class Components?</p>
+<p>If you don&apos;t need anything special - if you are purely just returning JSX to render - use a functional component.</p>
+<p>But:</p>
+<ul>
+<li>If you need your component to be stateful - that is, if you need the ability to use <code>setState</code> to respond to changes, use a class.</li>
+<li>If you need lifecycle methods - if you need to do something when the component mounts, or receives props, or unmounts - use a class.</li>
+<li>If you need a <code>ref</code> - that is, a reference to the DOM element rendered by the component, use a class.</li>
+</ul>
+<p>And only if you <em>don&apos;t</em> need any of those things - use a Functional Component.</p>
+<p>Functional Components are a great example of what people talk about when they say that React is &quot;declarative&quot;, or gives us a declarative API. Rather than telling the DOM <em>how</em> to render the UI we want - which nodes to change, and how - we can use JSX to &quot;declare&quot; how we want the markup to look, and React alters the DOM accordingly. A Stateless Function literally makes your UI a function of the props you pass it, which is a declarative, functional approach to creating views.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="06-ES6-Exercise.html" class="navigation navigation-prev " aria-label="Previous page: ES6 Exercise">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="08-Functional-Component-Exercise.html" class="navigation navigation-next " aria-label="Next page: Functional Components Exercise">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Functional Components","level":"1.14","depth":1,"next":{"title":"Functional Components Exercise","level":"1.14.1","depth":2,"path":"lectures/02-further-react-info/08-Functional-Component-Exercise.md","ref":"lectures/02-further-react-info/08-Functional-Component-Exercise.md","articles":[]},"previous":{"title":"ES6 Exercise","level":"1.13.5","depth":2,"path":"lectures/02-further-react-info/06-ES6-Exercise.md","ref":"lectures/02-further-react-info/06-ES6-Exercise.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lectures/02-further-react-info/07-Functional-Components.md","mtime":"2017-03-31T02:05:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-04T15:55:24.737Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

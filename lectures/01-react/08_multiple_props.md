@@ -19,6 +19,7 @@ ReactDOM.render(
 
 Now, in our component definition we have access to both values.  The second step is to change the `Hello` component class in `App.js` to use the age information!
 
+
 ```js
 class Hello extends Component {
   render () {

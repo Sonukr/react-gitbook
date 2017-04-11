@@ -1,4 +1,4 @@
-### Hello World exercise - You do!
+## Hello World exercise - You do!
 #### Code along: A Very Basic Component
 
 In this section, we'll:
@@ -12,6 +12,7 @@ Then, add the component definition below - and yes, we know there are no semicol
 
 ```js
 // bring in React and Component from React
+
 import React, {Component} from 'react'
 
 // define our Hello component
@@ -37,6 +38,7 @@ This imports React methods and the `Component` class from the React library.
 This is the component we're creating. In this example, we are creating a "Hello" component.
 
 ##### `extends Component`
+
 `Component` is the React library class we inherit from to create our component definitions. Here, we are creating a new `Component` subclass called `Hello`.  Because it "extends" or "inherits from" `Component`, our `Hello` class gets to reuse code and capabilities from `React.Component`.
 
 ##### `render()`
@@ -57,3 +59,4 @@ If you switch to your browser and navigate to http://localhost:3000, you can see
 ### Next
 
 Let's take a closer look at that header that got rendered.
+

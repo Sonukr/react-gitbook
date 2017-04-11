@@ -8,6 +8,7 @@ To show up on the page, though, that component still needs to actually be called
 
 Look at your `src/index.js` file, and contrast it with the code below.
 
+
 ```js
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -25,6 +26,7 @@ The next change is that `import App from './App';` has turned into `import Hello
 
 >  This line imports from the `src/App.js` file. Remember, the `default` part of `export default Hello` in `src/App.js` means that importing other names - like `App` - actually _already_ brings in the `Hello` class! As a best practice, though, we're going to explicitly import the `Hello` class.
 
+
 The last change is that `ReactDOM.render(
   <App />,` has turned into `ReactDOM.render(
     <Hello />,`.
@@ -35,9 +37,10 @@ The last change is that `ReactDOM.render(
 
 You should be familiar with the DOM.  You may have noticed that our `src/index.js` code mentions `ReactDOM`.  `ReactDOM` doesn't refer to the same DOM we know. Instead, it refers to a "Virtual DOM." The Virtual DOM is a key piece of how React works. So how is different?
 
-# VIRTUAL DOM VIDEO here
+<iframe src="//fast.wistia.net/embed/iframe/v5qyqsir0s?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 
 In React, the virtual DOM is a staging area for changes that will eventually be implemented.
+
 ![Virtual DOM Diagram](https://docs.google.com/drawings/d/11ugBTwDkqn6p2n5Fkps1p3Elp8ZToIRzXzvM4LJMYaU/pub?w=543&h=229)
 
   > If you're interested in learning more about the Virtual DOM, [check this video out](https://www.youtube.com/watch?v=-DX3vJiqxm4).
@@ -61,8 +64,8 @@ ReactDOM.render(
 
 When our `index.js` is processed, our virtual DOM is compared to the regular DOM, and only the 'root' element on the page updates.
 
-> Side note: What is `<Hello />` written in? JSX! Whenever you use a self-closing tag in JSX, you **MUST** end it with a `/`, like `<Hello />` in the above example. It's just one of the rules!
 
+> Side note: What is `<Hello />` written in? JSX! Whenever you use a self-closing tag in JSX, you **MUST** end it with a `/`, like `<Hello />` in the above example. It's just one of the rules!
 
 ### Hello World exercise - You do!
 #### Code along: Calling our `Hello` component explicitly

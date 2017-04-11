@@ -1,4 +1,4 @@
-### Nested Components
+# Nested Components
 
 **Question: What problems would you encounter when trying to add multiple comments to your post?**
 
@@ -37,10 +37,10 @@ Now, in `src/App.js`, we need to import our `Comment` component so it's availabl
 ```js
 import React, { Component } from 'react'
 import './App.css'
+
 // Load in Comment component
 import Comment from './Comment.js'
 ```
-
 With this setup, we can render one or more comments inside the `Post` component. Currently,
 `<p>{this.props.comments[0]}</p>` is rendering one comment in the `Post` component from `App.js`. Now, instead of this line, we'll want to render a `Comment` component (which renders a paragraph with the comments, so it will do the same thing!). Edit that line to render a comment instead of directly rendering a paragraph.  Make sure you send through the `body` prop that the `Comment` component class needs:
 
@@ -48,11 +48,11 @@ With this setup, we can render one or more comments inside the `Post` component.
 <Comment body={this.props.comments[0]} />
 ```
 
-
 Let's reflect on what just happened. We rendered a component _inside another component_. Technically, we just **nested** components. Very much like how we imported `Post` from `App.js` into `index.js` and rendered a post inside `index.js`, we've imported `Comment` from `Comment.js` into `App.js` and rendered a comment. Inside `App.js`, we're using some of the props to render a post and simply passing the `comments` prop on to be rendered with the `Comment` component class. So the flow of the props looks like this:
+
 
 ![nested components chart](./images/nested_components_chart.jpg)
 
 
-
 > **Note**: We could have put all of our code in one file, but it's a good practice to break components out into different files to help practice separation of concerns. The only downside is we have to be extra conscious of remembering to **export / import** each component to the file where it's rendered.
+

@@ -13,7 +13,7 @@ class Post extends Component {
       body: props.body
     }
   }
-
+  
   changeBody(e) {
     let newBody = prompt("What should the new body be?")
     this.setState({
@@ -45,7 +45,6 @@ In the `Post` component above, there are three methods:
 - `render()`
 
 Upon instantiation of your component, the `constructor` method is called. It calls `super`, which is the base class (`React.Component`)'s constructor. Next, the component's initial state is set. Here we define that our component's state contains a `body` attribute whose value will start as whatever `body` prop was passed to the component.
-
 
 Let's consider a data flow example.
 

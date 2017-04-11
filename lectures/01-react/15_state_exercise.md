@@ -3,6 +3,7 @@
 Let's implement state in our Blog by making `body` a mutable value.
 > Remember to switch the running application!
 
+
 1. Initialize a state using a `constructor()` method for our `Post` to set a initial state. It should create a state attribute called `body`. Set the value associated with the `body` key in the state to be the `body` prop that's passed into the component.
 2. Modify `Post`'s `render` method so that it uses the `body` from `state`, not `props`.
 3. Create a `changeBody` method inside `Post` that updates `body` based on a user's input.

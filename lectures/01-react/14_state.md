@@ -1,11 +1,12 @@
-## State
+# State
 
 At this point, we know about React properties and how they relate to our component's data.
 * The thing is, `props` represent data that will be the same every time our component is rendered. What about data in our application that may change depending on user action?
 * That's where `state` comes in.
 
-# STATE VIDEO HERE #
+Watch this video and follow along using [this codepen](https://codepen.io/susir/pen/GWONLp) to try it yourself!
 
+<iframe src="//fast.wistia.net/embed/iframe/3ldc3tnyv0?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 
 Values stored in a component's state are mutable attributes.
 * State is similar to props, but *is meant to be changed*.
@@ -22,7 +23,7 @@ Let's modify our earlier Hello World example to include a new `MoodTracker` comp
 
 First, now that we're going to have a state, we're going to have an initial value. When working with classes, a good way to make initial values is by creating a constructor: `constructor (props) {}`. Constructors say, "When you create an instance of this class, do this." Without a constructor explicitly defined by us, our components will use the default constructor inherited from the `Component` class. That's why we didn't need a constructor before - we weren't doing anything differently than the normal default for every component.
 
-The first thing we always put in a constructor is a call to `super()`, which says "You should still do the normal initialization for this class based off of inheritance."
+The first thing we always put in a constructor is a call to `super()`, which says "You should still do the default initialization for this class."
 
 After this, we can define what's new. What's new for us right now is that when the class first gets called, we want to set an initial state. We can do this by giving a value to `this.state`, the component's special state object. Inside of that object, we can define any state variables we'd like.
 
@@ -97,7 +98,8 @@ Now, we'll create the button to trigger calling this function. The button will b
 
 ```js
   render () {
-    // remmber: can only return one top-level element
+    // remember: can only return one top-level element
+
     return (
       <div>
         <h1>Hello {this.props.name}</h1>
@@ -115,12 +117,14 @@ Altogether, your `App.js` file now looks like this:
 
 ```js
 // bring in React and Component from React
+
 import React, {Component} from 'react'
 
 // define our Hello component
 class Hello extends Component {
 
   constructor (props) {
+
     // make call to parent class' (Component) constructor
     super()
     // define an initial state
@@ -139,6 +143,7 @@ class Hello extends Component {
   // what should the component render
   render () {
     // make sure to return some UI
+
     return (
       <div>
         <h1>Hello {this.props.name}</h1>
@@ -165,8 +170,7 @@ This is super important! Using React, **we only change parts of the DOM that nee
 * We do not re-render the entire component like we have been so far.
 * This is one of React's core advantages.
 
+
 #### Challenge: Count to 10
 
 After 10 clicks, the user should see the counter reset to 1.
-
-More on what [should & shouldn't go in state](https://facebook.github.io/react/docs/state-and-lifecycle.html)
