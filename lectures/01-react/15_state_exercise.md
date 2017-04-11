@@ -15,8 +15,6 @@ Let's implement state in our Blog by making `body` a mutable value.
 
 Your solution should look as follows:
 
-![Solution for Project](../../projects/project-03-state/SOLUTION_ALERT.png)
-
 ![Solution for Project](](../../projects/project-03-state/SOLUTION.png)
 
 ### Bonus I ###
