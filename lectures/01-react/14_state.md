@@ -174,3 +174,4 @@ This is super important! Using React, **we only change parts of the DOM that nee
 #### Challenge: Count to 10
 
 After 10 clicks, the user should see the counter reset to 1.
+> Check solution [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/exercise-solutions/state_wrap_10)!
