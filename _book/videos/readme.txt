@@ -1,1 +1,0 @@
-This folder will hold all the scripts to the videos students will see. The scripts will be full scripts with diagrams or screenshots as needed built in to them, to easily hand to an SME or actor to record.
