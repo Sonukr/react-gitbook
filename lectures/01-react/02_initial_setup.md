@@ -40,17 +40,18 @@ One especially cool thing that we'll see is that this tool sets up our applicati
 You can look in the directory and see the structure that `create-react-app` provides for us. It looks like this:
 
 ```sh
-├──README.md
-├──  favicon.ico
-├──  index.html
-├──  node_modules
-├──  package.json
-└──  src
-    ├──  App.css
-    ├──  App.js
-    ├──  index.css
-    ├──  index.js
-    └──  logo.svg
+├── README.md
+├── package.json
+├── public
+│   ├── favicon.ico
+│   └── index.html
+└── src
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── index.css
+    ├── index.js
+    └── logo.svg
 ```
 
 Most of the important files are in the `/src` directory. Specifically, we'll be using `App.js` and `index.js`.
