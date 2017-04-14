@@ -81,7 +81,7 @@ class FruitTable extends React.Component {
 
 Notice that in the constructor, `this.addFruit` is bound to the class - `this.addFruit = this.addFruit.bind(this);`
 
-Now, if I pass `this.addFruit` to a child component as an onChange callback, it will be bound to `FruitTable` and will update its state when it's invoked.
+Now, if we pass `this.addFruit` to a child component as an onChange callback, it will be bound to `FruitTable` and will update its state when it's invoked.
 
 Again, you _don't_ need a constructor in every React component, but if you need to initialize state by props or bind methods, the constructor is where you do it.
 
@@ -91,7 +91,7 @@ This method is called immediately before a component is rendered to the DOM. You
 
 ## `componentDidMount()` and `componentWillUnmount()`
 
-The `componentDidMount` method is called once, immediately after your component is rendered to the DOM. If you want to make an AJAX request when your component first renders, this is where to do it (_not_ in the constructor, or in `componentWillMount`). `componentWillMount` shouldn't be used for server requests because it may be invoked multiple times before render in future versions of React. [Side effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science) should be avoided in the `constructor`, and so server requests shouldn't be made there. The accepted answer on [this Stack Overflow](http://stackoverflow.com/questions/41612200/in-react-js-should-i-make-my-initial-network-request-in-componentwillmount-or-co) from a member of the React team at Facebook gives more detail. In the following example, I fetch data from the server, then set the state of the component using the response.
+The `componentDidMount` method is called once, immediately after your component is rendered to the DOM. If you want to make an AJAX request when your component first renders, this is where to do it (_not_ in the constructor, or in `componentWillMount`). `componentWillMount` shouldn't be used for server requests because it may be invoked multiple times before render in future versions of React. [Side effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science) should be avoided in the `constructor`, and so server requests shouldn't be made there. The accepted answer on [this Stack Overflow](http://stackoverflow.com/questions/41612200/in-react-js-should-i-make-my-initial-network-request-in-componentwillmount-or-co) from a member of the React team at Facebook gives more detail. In the following example, we fetch data from the server, then set the state of the component using the response.
 
 ```javascript
 componentDidMount() {
@@ -101,7 +101,7 @@ componentDidMount() {
 }
 ```
 
-Another common use for `componentDidMount` is to bind event listeners to your component. You can then remove the event listeners in `componentWillUnmount`. In this example, I bind and unbind an event listener for a drag-drop component.
+Another common use for `componentDidMount` is to bind event listeners to your component. You can then remove the event listeners in `componentWillUnmount`. In this example, we bind and unbind an event listener for a drag-drop component.
 
 ```javascript
 class FruitTable extends React.component {
@@ -133,18 +133,30 @@ class Car extends React.Component {
 
   constructor(props) {
     super(props);
+    
+    // sets initial state to either the `speed` prop, or 0 if the `speed` prop
+    // is not passed to the component
     this.state = {
       speed: props.speed || 0,
     }
+    
+    // binds this.incrementSpeed to class
+    // this way when it's used as a callback for `setTimeout`
+    // `this` refers to the `Car` class
     this.incrementSpeed = this.incrementSpeed.bind(this);
   }
 
   componentDidMount() {
+    // calls this.incrementSpeed after one second
     window.setTimeout(this.incrementSpeed, 1000);
   }
 
   incrementSpeed() {
+    // sets the `speed` state to one unit higher than it was previously
     this.setState(prevState => ({ speed: prevState.speed + 1 }));
+    
+    // recursive method
+    // increases speed by 1 again after one second
     window.setTimeout(this.incrementSpeed, 1000);
   }
 
@@ -165,15 +177,15 @@ To break down what's happening in this component:
 
 The initial state is set to either the `speed` prop, or 0 if the `speed` prop is not passed to the component.  
 
-I bind `this.incrementSpeed` to the class, so that when it's used as a callback for `setTimeout`, `this` refers to the `Car` class.
+We bind `this.incrementSpeed` to the class, so that when it's used as a callback for `setTimeout`, `this` refers to the `Car` class.
 
 ### `componentDidMount`
 
-I tell [`window.setTimeout`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) to call `this.incrememntSpeed` after one second (1000 ms).
+Use [`window.setTimeout`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) to call `this.incrementSpeed` after one second (1000 ms).
 
 ### `incrementSpeed`
 
-`this.setState(prevState => ({ speed: prevState.speed + 1 }));`: The `speed` state is set to one higher than it was previously - I add one.
+`this.setState(prevState => ({ speed: prevState.speed + 1 }));`: The `speed` state is set to one higher than it was previously - we add one.
 
 `window.setTimeout(this.incrementSpeed, 1000)`: The `incrementSpeed` method is [recursive](https://en.wikipedia.org/wiki/Recursion_(computer_science)) - it invokes itself as the timeout callback. After one second, `window.setTimeout` will call `this.incrementSpeed` again - the `speed` will go up by one, and a new timer will be set to do it again.
 

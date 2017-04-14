@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import Sauron from './eye.png';
-// import './Mordor.css';
 
 class Mordor extends Component {
   render() {

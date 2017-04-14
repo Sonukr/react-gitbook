@@ -24,8 +24,6 @@ Inside of `./src` folder, create a new React Component file called `Mordor.js`.
 
 ```jsx
 import React, { Component } from 'react';
-import Sauron from './eye.png';
-import './Mordor.css';
 
 class Mordor extends Component {
   render() {
@@ -76,8 +74,6 @@ Let's take a look at this in action. Save your changes to your Mordor component.
 
 ```jsx
 import React, { Component } from 'react';
-import Sauron from './eye.png';
-import './Mordor.css';
 
 class Mordor extends Component {
   render() {
