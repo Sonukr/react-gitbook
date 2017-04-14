@@ -129,7 +129,7 @@ class Movie extends Component {
 Our component can now be re-used for any movie using the following syntax.
 
 ```jsx
-<Movie movieSearchQuery="The Empire Strikes Back />
+<Movie movieSearchQuery="The Empire Strikes Back" />
 ```
 
 When the `props.movieSearchQuery` of _The Empire Strikes Back_ is provided to our component, `fetch()` will then use it as part of the search query.
