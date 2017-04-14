@@ -109,7 +109,7 @@ class Movie extends Component {
         console.log('Parsed JSON', json)
         base.setState({ movie: json });
       }).catch(function(ex) {
-        console.log('Parsing JSON failed', ex)
+        console.error('Parsing JSON failed', ex)
         alert('Error! ' + ex);
       });
   }
@@ -133,4 +133,3 @@ Our component can now be re-used for any movie using the following syntax.
 ```
 
 When the `props.movieSearchQuery` of _The Empire Strikes Back_ is provided to our component, `fetch()` will then use it as part of the search query.
-
