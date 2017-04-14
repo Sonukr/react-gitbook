@@ -85,11 +85,11 @@ We'll also need two additional functions to represent the following changes in s
 
 * `newItemChange`, for when we type characters into an input field and change the value of `newItem`  
  * We'll need to get the current value of the input field and set state accordingly.
- > Create this function (with a prop of 'e' like in `clearList`). Inside it, change the state of `newItem` to `e.target.value` - this will be the value the user entered into the form.
+ > Create this function (with an event parameter of 'e' like in `clearList`). Inside it, change the state of `newItem` to `e.target.value` - this will be the value the user entered into the form.
 
 * `addItem`, for when we submit the form
  * We'll need to make a copy of `toDoItemArray`, push the `newItem`, set `state` and finally clear `newItem`.
- > Create this function (with a prop of 'e'). Inside it, create a new variable initialized to the value of the array that is saved in state. Then, use `yourArray.push(<value>);` to push the new item from the state into the array. Set the `newItem` state back to an empty string, and set the `toDoItemArray` state to your new array.
+ > Create this function (with an event parameter of 'e'). Inside it, create a new variable initialized to the value of the array that is saved in state. Then, use `yourArray.push(<value>);` to push the new item from the state into the array. Set the `newItem` state back to an empty string, and set the `toDoItemArray` state to your new array.
 
 
 Lastly, we'll need to add a form to our `render` method.
