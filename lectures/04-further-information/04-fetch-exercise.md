@@ -49,6 +49,15 @@ class Movie extends Component {
 
 We can now tell our component to fetch a movie and then set it to our state. We can then render an indivual movie. We do this by adding the `fetch()` call inside of _componentDidMount()_. Calling _setState_ then triggers a re-_render_ inside of our component.
 
+**Important:** the value of the `this` keyword in JavaScript changes depends
+on what function is being executed. It has a relative value according to what
+function it's inside of. The `fetch()` call involves many callbacks with
+several different functions. In order to preserve the initial context of our
+React component we need to create a new variable `base` to keep track of the
+original value of the `this` keyword. Saving the original value of `this` to
+`base` allows us to access methods like `this.setState()` through
+`base.setState()` all throughout the different functions.
+
 ```js
 import React, {Component} from 'react';
 
@@ -59,9 +68,13 @@ class Movie extends Component {
   }
 
   componentDidMount() {
-  	// fetch a movie
-  	fetch('http://www.omdbapi.com/?t=Tron')
-  		// then parse response to json
+    // save a reference to `this` because the value of `this` will change
+    // inside the different callback functions.
+    var base = this;
+    
+    // fetch a movie
+    fetch('http://www.omdbapi.com/?t=Tron')
+      //then parse response to json
       .then(function(response) {
         return response.json()
       // then use that json
@@ -102,7 +115,8 @@ class Movie extends Component {
   }
 
   componentDidMount() {
-	fetch('http://www.omdbapi.com/?t=' + this.props.movieSearchQuery)
+    var base = this;
+	  fetch('http://www.omdbapi.com/?t=' + this.props.movieSearchQuery)
       .then(function(response) {
         return response.json()
       }).then(function(json) {
