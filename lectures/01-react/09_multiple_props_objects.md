@@ -83,4 +83,4 @@ If you check the page now, you'll see React prints the entire array, since that'
 
 Check it out!
 
-[Read more about using props in JSX, if you'd like!](https://facebook.github.io/react/docs/jsx-in-depth.html)
+*[Read more about using props in JSX, if you'd like!](https://facebook.github.io/react/docs/jsx-in-depth.html) This link is also in the Further Reading page at the end of the React module, under the Facebook documentation.*

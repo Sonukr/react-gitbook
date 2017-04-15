@@ -31,7 +31,7 @@ Wait, what's that? Try it yourself alongside this video in [this codepen](https:
 
 So, JSX allows us to write code that strongly resembles HTML. It is eventually compiled to lightweight JavaScript objects. We're returning some JSX that creates a header with 'Hello World' in it for our component to render.
 
-> React can be written without JSX. We won't be doing this, but if you want to learn more, [check out this blog post](http://jamesknelson.com/learn-raw-react-no-jsx-flux-es6-webpack/).
+> React can be written without JSX. We won't be doing this, but if you want to learn more, [check out this blog post](http://jamesknelson.com/learn-raw-react-no-jsx-flux-es6-webpack/). This link is also in the Further Reading page at the end of the React module.
 
 ### Challenge: Greet the day!
 
@@ -40,4 +40,3 @@ In your component, return multiple lines. Instead of just the "Hello World!" hea
 > Hint: Remember, the return statement in `render` can only return one DOM element. You can, however, place multiple elements within a parent `div` element.*
 
 You can check your solution [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/exercise-solutions/jsx-hello-world).
-

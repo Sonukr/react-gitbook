@@ -43,7 +43,7 @@ In React, the virtual DOM is a staging area for changes that will eventually be 
 
 ![Virtual DOM Diagram](https://docs.google.com/drawings/d/11ugBTwDkqn6p2n5Fkps1p3Elp8ZToIRzXzvM4LJMYaU/pub?w=543&h=229)
 
-  > If you're interested in learning more about the Virtual DOM, [check this video out](https://www.youtube.com/watch?v=-DX3vJiqxm4).
+  > If you're interested in learning more about the Virtual DOM, [check this video out](https://www.youtube.com/watch?v=-DX3vJiqxm4). This link is also in the Further Reading page at the end of the React module.
 
 You know every component has, at a minimum, a `render` method. The `render` method generates a Virtual DOM node to be added to the actual DOM.
 

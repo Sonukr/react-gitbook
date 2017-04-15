@@ -47,5 +47,6 @@
 * [Practice makes perfect!](lectures/04-further-information/07-self-exercise.md)
 * [Heroku](lectures/04-further-information/08-heroku.md)
 * [Second self exercise](lectures/04-further-information/09-self2.md)
+* [Further Reading](lectures/04-further-information/10-further-reading.md)
 
 * [Copyright & Terms of Service](license.md)

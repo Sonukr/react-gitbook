@@ -8,10 +8,10 @@ Watch this video and follow along using [this codepen](https://codepen.io/susir/
 
 <iframe src="//fast.wistia.net/embed/iframe/3ldc3tnyv0?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 
-Values stored in a component's state are mutable attributes.
-* State is similar to props, but *is meant to be changed*.
-* Like properties, which we access with `this.props.val`, we can access state values using `this.state.val`
-* Setting up and modifying state is not as straightforward as working with properties. Instead, it requires multiple methods. It involves explicitly declaring the mutation, and then defining methods to define how to update our state.
+Values stored in a component's `state` are mutable attributes.
+* `State` is similar to `props`, but *is meant to be changed*.
+* Like props, which we access with `this.props.val`, we can access state values using `this.state.val`
+* Setting up and modifying `state` is not as straightforward as working with props. Instead, it requires multiple methods - explicitly declaring the mutation and then defining methods to define how to update our state.
 
 Let's switch gears back to our `hello_world` project.
 
@@ -23,7 +23,36 @@ Let's modify our earlier Hello World example to include a new `MoodTracker` comp
 
 First, now that we're going to have a state, we're going to have an initial value. When working with classes, a good way to make initial values is by creating a constructor: `constructor (props) {}`. Constructors say, "When you create an instance of this class, do this." Without a constructor explicitly defined by us, our components will use the default constructor inherited from the `Component` class. That's why we didn't need a constructor before - we weren't doing anything differently than the normal default for every component.
 
+
+```js
+class Hello extends Component {
+  // what should happen when the component is first created
+  constructor (props) {
+  }
+
+  // what should the component render
+  render () {
+    //  ....
+  }
+}
+```
+
 The first thing we always put in a constructor is a call to `super()`, which says "You should still do the default initialization for this class."
+
+```js
+class Hello extends Component {
+  // what should happen when the component is first created
+  constructor (props) {
+    // make call to parent class' (Component) constructor
+    super()
+  }
+
+  // what should the component render
+  render () {
+    //  ....
+  }
+}
+```
 
 After this, we can define what's new. What's new for us right now is that when the class first gets called, we want to set an initial state. We can do this by giving a value to `this.state`, the component's special state object. Inside of that object, we can define any state variables we'd like.
 
@@ -50,16 +79,16 @@ class Hello extends Component {
 }
 ```
 
-Now, let's make sure we display that information to the user. Still in `App.js`, in your `render` method, we'll let the user know how many mood points they are at:
+Now, let's make sure we display that information to the user. Still in `App.js`, in your `render` method, we'll let the user know how many mood points they are at by adding in a line:
 
-```jsx
+```html
 // note how similar this looks to accessing props
 <p>You are this happy: {this.state.moodPoints}</p>
 ```
 
 All together, the code inside `render` for our `App.js` can now look like this:
 
-```jsx
+```html
 return (
   <div>
     <h1>Hello {this.props.name}!</h1>
@@ -175,3 +204,5 @@ This is super important! Using React, **we only change parts of the DOM that nee
 
 After 10 clicks, the user should see the counter reset to 1.
 > Check solution [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/exercise-solutions/state_wrap_10)!
+
+*If you're interested in reading more in depth about this, here is more on what [should & shouldn't go in state](https://facebook.github.io/react/docs/state-and-lifecycle.html). This link is also in the Further Reading page at the end of the React module.*

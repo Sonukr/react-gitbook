@@ -47,7 +47,7 @@ class Movie extends Component {
 }
 ```
 
-We can now tell our component to fetch a movie and then set it to our state. We can then render an indivual movie. We do this by adding the `fetch()` call inside of _componentDidMount()_. Calling _setState_ then triggers a re-_render_ inside of our component.
+We can now tell our component to fetch a movie and then set it to our state. We can then render an individual movie. We do this by adding the `fetch()` call inside of _componentDidMount()_. Calling _setState_ then triggers a re-_render_ inside of our component.
 
 **Important:** the value of the `this` keyword in JavaScript changes depends
 on what function is being executed. It has a relative value according to what
@@ -71,7 +71,7 @@ class Movie extends Component {
     // save a reference to `this` because the value of `this` will change
     // inside the different callback functions.
     var base = this;
-    
+
     // fetch a movie
     fetch('http://www.omdbapi.com/?t=Tron')
       //then parse response to json
