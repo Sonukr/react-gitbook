@@ -1,0 +1,1079 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>React Router - Adding in Router · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="07-router-exercise.html" />
+    
+    
+    <link rel="prev" href="05-dentist-components.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-react/01_introduction.html">
+            
+                <a href="../01-react/01_introduction.html">
+            
+                    
+                    Welcome to React.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../01-react/02_initial_setup.html">
+            
+                <a href="../01-react/02_initial_setup.html">
+            
+                    
+                    Initial Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../01-react/03_components.html">
+            
+                <a href="../01-react/03_components.html">
+            
+                    
+                    Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../01-react/04_component_setup.html">
+            
+                <a href="../01-react/04_component_setup.html">
+            
+                    
+                    Component Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../01-react/05_jsx.html">
+            
+                <a href="../01-react/05_jsx.html">
+            
+                    
+                    JSX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../01-react/06_virtual_dom.html">
+            
+                <a href="../01-react/06_virtual_dom.html">
+            
+                    
+                    Virtual DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../01-react/07_props.html">
+            
+                <a href="../01-react/07_props.html">
+            
+                    
+                    Props
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../01-react/08_multiple_props.html">
+            
+                <a href="../01-react/08_multiple_props.html">
+            
+                    
+                    Multiple Props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../01-react/09_multiple_props_objects.html">
+            
+                <a href="../01-react/09_multiple_props_objects.html">
+            
+                    
+                    Multiple Props - Using Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../01-react/10_props_challenge.html">
+            
+                <a href="../01-react/10_props_challenge.html">
+            
+                    
+                    Props Challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../01-react/11_nested_components.html">
+            
+                <a href="../01-react/11_nested_components.html">
+            
+                    
+                    Nested Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../01-react/12_nested_components_challenge.html">
+            
+                <a href="../01-react/12_nested_components_challenge.html">
+            
+                    
+                    Nested Components Challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../01-react/13_section_recap.html">
+            
+                <a href="../01-react/13_section_recap.html">
+            
+                    
+                    Section Recap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../01-react/14_state.html">
+            
+                <a href="../01-react/14_state.html">
+            
+                    
+                    State
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../01-react/15_state_exercise.html">
+            
+                <a href="../01-react/15_state_exercise.html">
+            
+                    
+                    State Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../01-react/16-intermission-state-lifecycle.html">
+            
+                <a href="../01-react/16-intermission-state-lifecycle.html">
+            
+                    
+                    State Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../01-react/17_todo_exercise.html">
+            
+                <a href="../01-react/17_todo_exercise.html">
+            
+                    
+                    Exercise - Todo list
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../01-react/18_todo_exercise_continued.html">
+            
+                <a href="../01-react/18_todo_exercise_continued.html">
+            
+                    
+                    Exercise - Todo list - part 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../01-react/19-recap.html">
+            
+                <a href="../01-react/19-recap.html">
+            
+                    
+                    Recap
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../01-react/20_calculator_exercise.html">
+            
+                <a href="../01-react/20_calculator_exercise.html">
+            
+                    
+                    Calculator Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../02-further-react-info/01-ES6.html">
+            
+                <a href="../02-further-react-info/01-ES6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../02-further-react-info/02-ES6-ConstLet.html">
+            
+                <a href="../02-further-react-info/02-ES6-ConstLet.html">
+            
+                    
+                    Const and Let
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../02-further-react-info/03-ES6-Arrow.html">
+            
+                <a href="../02-further-react-info/03-ES6-Arrow.html">
+            
+                    
+                    Arrow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../02-further-react-info/04-ES6-Arrow2.html">
+            
+                <a href="../02-further-react-info/04-ES6-Arrow2.html">
+            
+                    
+                    Arrows, Continued
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../02-further-react-info/05-ES6-Literals.html">
+            
+                <a href="../02-further-react-info/05-ES6-Literals.html">
+            
+                    
+                    Literals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../02-further-react-info/06-ES6-Exercise.html">
+            
+                <a href="../02-further-react-info/06-ES6-Exercise.html">
+            
+                    
+                    ES6 Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../02-further-react-info/07-Functional-Components.html">
+            
+                <a href="../02-further-react-info/07-Functional-Components.html">
+            
+                    
+                    Functional Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../02-further-react-info/08-Functional-Component-Exercise.html">
+            
+                <a href="../02-further-react-info/08-Functional-Component-Exercise.html">
+            
+                    
+                    Functional Components Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../02-further-react-info/09-Component-Lifecycle.html">
+            
+                <a href="../02-further-react-info/09-Component-Lifecycle.html">
+            
+                    
+                    Component Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../02-further-react-info/10-Unidirectional-Data-Flow.html">
+            
+                <a href="../02-further-react-info/10-Unidirectional-Data-Flow.html">
+            
+                    
+                    Unidirectional Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../02-further-react-info/11-Immutable-Data.html">
+            
+                <a href="../02-further-react-info/11-Immutable-Data.html">
+            
+                    
+                    Immutable Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="00-router-introduction.html">
+            
+                <a href="00-router-introduction.html">
+            
+                    
+                    React Router
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="01-browser-history-mechanics.html">
+            
+                <a href="01-browser-history-mechanics.html">
+            
+                    
+                    Browser History Mechanics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="02-modern-browser-history.html">
+            
+                <a href="02-modern-browser-history.html">
+            
+                    
+                    Modern Browser History Mechanics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="03-react-router-intro.html">
+            
+                <a href="03-react-router-intro.html">
+            
+                    
+                    React Router Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.4" data-path="04-dentist-exercise.html">
+            
+                <a href="04-dentist-exercise.html">
+            
+                    
+                    React Router - Codealong Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.5" data-path="05-dentist-components.html">
+            
+                <a href="05-dentist-components.html">
+            
+                    
+                    React Router - Preparing for Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.18.6" data-path="06-dentist-router.html">
+            
+                <a href="06-dentist-router.html">
+            
+                    
+                    React Router - Adding in Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.7" data-path="07-router-exercise.html">
+            
+                <a href="07-router-exercise.html">
+            
+                    
+                    React Router - Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../04-further-information/01-fetch.html">
+            
+                <a href="../04-further-information/01-fetch.html">
+            
+                    
+                    Introduction to APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../04-further-information/02-data-types.html">
+            
+                <a href="../04-further-information/02-data-types.html">
+            
+                    
+                    API Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../04-further-information/03-fetch.html">
+            
+                <a href="../04-further-information/03-fetch.html">
+            
+                    
+                    fetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../04-further-information/04-fetch-exercise.html">
+            
+                <a href="../04-further-information/04-fetch-exercise.html">
+            
+                    
+                    fetch exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="../04-further-information/05-fetch-project.html">
+            
+                <a href="../04-further-information/05-fetch-project.html">
+            
+                    
+                    fetch project
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../04-further-information/06-declarative-imperative.md">
+            
+                <span>
+            
+                    
+                    Imperative vs Declarative
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../04-further-information/07-self-exercise.html">
+            
+                <a href="../04-further-information/07-self-exercise.html">
+            
+                    
+                    Practice makes perfect!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../04-further-information/08-heroku.html">
+            
+                <a href="../04-further-information/08-heroku.html">
+            
+                    
+                    Heroku
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../04-further-information/09-self2.html">
+            
+                <a href="../04-further-information/09-self2.html">
+            
+                    
+                    Second self exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../04-further-information/10-further-reading.html">
+            
+                <a href="../04-further-information/10-further-reading.html">
+            
+                    
+                    Further Reading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../../license.html">
+            
+                <a href="../../license.html">
+            
+                    
+                    Copyright & Terms of Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >React Router - Adding in Router</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="displaying-pages-individually">Displaying Pages Individually</h1><p>Try manually deleting two of the three components so only one component is left
+on the page at a time. You should see your webpage update with just that
+component. This is effectively what <strong>React Router</strong> does. We can configure React Router
+so that it&apos;s aware of which component we want to show on the screen, and React
+Router will swap the components out so that only the correct one is shown at a time.</p><p>Now that we&apos;ve proven to ourselves that we&apos;re able to show each of the
+components on the main page, it&apos;s time to hook them up to Router.</p><h2 id="creating-routes">Creating Routes</h2><p>Here&apos;s the general syntax for creating routes. React Router uses some of its own components to define how URLs are routed
+to your components and to create links to those routes. You must have one <code>&lt;Router&gt;</code>
+component that wraps itself around multiple <code>&lt;Route&gt;</code> components. Each <code>&lt;Route&gt;</code>
+component has two pieces:</p><ul><li><code>path</code> - defining the URL path that leads to the component.
+</li>
+<li><code>component</code> - defining
+what component users will see when they navigate to the path.
+</li></ul>
+<pre><code class="lang-js">&lt;Router&gt;
+  &lt;div&gt;
+    &lt;Route exact path=&quot;/&quot; component={HomePage} /&gt;
+    &lt;Route path=&quot;/courses&quot; component={CoursesPage} /&gt;
+    &lt;Route path=&quot;/locations&quot; component={LocationsPage} /&gt;
+  &lt;/div&gt;
+&lt;/Router&gt;</code></pre>
+<p>There are three other important things to note here:</p><ul><li><p>This goes <em>in place of</em> your existing component calls of <code>&lt;Home /&gt;</code> or <code>&lt;Home&gt;&lt;/Home&gt;</code> (depending on which syntax you went for).</p></li>
+<li><p>The first route for the homepage at the root URL path <code>/</code> uses a
+special extra <code>exact</code> attribute before defining the path. The <code>exact</code> attribute
+means the component associated with the route will only be shown if users are
+at exactly that URL path. If you forget to include the <code>exact</code> keyword then
+when someone navigates to <code>/courses</code> they will actually see two components,
+because <code>/</code> is a partial match for <code>/courses</code>.</p></li>
+<li><p>Notice that all of the <code>&lt;Route&gt;</code> components are wrapped inside one <code>&lt;div&gt;</code>. Like <code>render</code>, the
+<code>&lt;Router&gt;</code> element requires that it only has one direct child element. If you don&apos;t
+wrap the routes with a <code>&lt;div&gt;</code>, the page will appear blank, and you&apos;ll have to
+open your JavaScript console to see that there&apos;s an error being logged to the
+console. Like so -</p></li></ul>
+<p><img alt="A Router may only have one child element." src="assets/router-requires-only-one-child.png"></p><p><strong>Pro tip:</strong> It&apos;s a good habit to check the console for errors whenever your
+app is not behaving as expected.</p><h2 id="import-statements">Import Statements</h2><p>In order to use the React Router components, you&apos;ll need to import them. This
+import syntax allows us to grab several specific components out of the
+<code>react-router-dom</code> library at once. So far we&apos;ve used <code>Router</code> and <code>Route</code>.</p><p>The Router component is actually called <code>BrowserRouter</code>
+inside the library package, but we&apos;ll use the <code>as</code> keyword to rename it to
+<code>Router</code> so it&apos;s easier to remember.</p><p>While we&apos;re here, we&apos;ll also import a third component, <code>Link</code>, which we&apos;ll get to in a minute.</p><pre><code>import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from &apos;react-router-dom&apos;;</code></pre>
+<h2 id="fully-routed">Fully Routed</h2><p>Here&apos;s how the imports and all the components look like together for our dentist
+website:</p><p><strong>App.js</strong></p><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;./App.css&apos;</span>;
+
+<span class="hljs-keyword">import</span> {
+  BrowserRouter <span class="hljs-keyword">as</span> Router,
+  Route,
+  Link
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-router-dom&apos;</span>;
+
+<span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Home&apos;</span>;
+<span class="hljs-keyword">import</span> Procedures <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Procedures&apos;</span>;
+<span class="hljs-keyword">import</span> Contact <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Contact&apos;</span>;
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      &lt;Router&gt;
+        &lt;div&gt;
+          &lt;Route exact path=&quot;/&quot; component={Home} /&gt;
+          &lt;Route path=&quot;/procedures&quot; component={Procedures} /&gt;
+          &lt;Route path=&quot;/contact&quot; component={Contact} /&gt;
+        &lt;/div&gt;
+      &lt;/Router&gt;
+    );
+  }
+}
+
+export default App;</code></pre>
+<h1 id="navigate-to-the-routes">Navigate to the Routes</h1><p>Now that everything is hooked up you can manually enter different URLs and
+see how your page appears. If you go to <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a>, you should
+see just the homepage. If you go to <a href="http://localhost:3000/procedures" target="_blank">http://localhost:3000/procedures</a>, you should
+see just the procedures page. If you go to <a href="http://localhost:3000/contact" target="_blank">http://localhost:3000/contact</a>,
+then you should see just the contact page.</p><blockquote><p>Check it!</p><ul><li>Make sure that React Router is routing from each URL to the proper component
+correctly.
+</li>
+<li>Double check to make sure that the home page doesn&apos;t display at the
+same time as another component. If the homepage is shown while you&apos;re at the
+path to <code>/procedures</code> or <code>/contact</code> then you probably did not write the <code>exact</code>
+keyword when you defined the <code>/</code> Home route.
+</li></ul>
+</blockquote><h2 id="debugging-common-errors">Debugging Common Errors</h2><p>Let&apos;s intentionally make an error. Delete the <code>exact</code> keyword off the Home
+route. Navigate to the <code>/procedures</code> page and the <code>/contact</code> page again and
+see how the components are displayed. You should see the content of the
+homepage and the content for one of the other pages at the same time, with
+the home page on top.</p><p>Now add the <code>exact</code> keyword back to the home route and notice that the pages
+don&apos;t double up any more.</p><p>Two common errors:
+1. If the page appears blank, open the JavaScript console to see if there are
+  errors. Chances are you have a typo somewhere or forgot to make sure the
+  <code>&lt;Router&gt;</code> only has one child element. Remember, wrap all of your <code>&lt;Route&gt;</code> components
+  in one <code>&lt;div&gt;</code>.
+2. If multiple components appear on the page at the same time there&apos;s
+  something with how you&apos;ve routed URLs. Make sure you use the <code>exact</code>
+  keyword on the root path <code>/</code> and make sure there are no duplicate URL paths
+  defined anywhere.</p><h1 id="adding-a-nav-section">Adding a Nav Section</h1><p>Great, now our site is up and running! We can manually type in URLs and see the
+different pages.</p><p>Although... users never really type URLs, do they? We should probably have links at the top of the page so we can just click on
+things. We could build this ourselves, but we don&apos;t have to! Remember that <code>Link</code> component we imported from React Router?</p><p>Just like links in HTML, we can wrap <code>&lt;Link&gt;</code> tags around whatever text that we want to display to the user to click on. The pieces of this are:</p><ul><li><code>&lt;Link&gt;</code> - creates <code>&lt;a&gt;</code> tags and automatically integrates
+modern HTML5 browser history mechanics for the Single Page Application. It
+has one attribute:
+</li>
+<li><code>to</code> - what path to navigate to when the user clicks the link
+</li></ul>
+<p>We&apos;ll add one <code>&lt;Link&gt;</code>
+  component that leads to each of our different content pages.</p><pre><code class="lang-js">&lt;Link to=&quot;/&quot;&gt;Go to Home Page&lt;/Link&gt;
+&lt;Link to=&quot;/procedures&quot;&gt;See Our Procedures&lt;/Link&gt;
+&lt;Link to=&quot;/contact&quot;&gt;Contact Us!&lt;/Link&gt;</code></pre>
+<blockquote><p>Did you notice that we don&apos;t reference components here? We simply make links for users to click that connect to URLs, and the <code>Router</code> section in the code handles the actual component changes.</p></blockquote><p>We can include those links in a <code>&lt;nav&gt;</code> element at the top of our page.
+It will stay on the page permanently, and the different components will be
+swapped between each other below it. There&apos;s actually nothing special about
+the <code>&lt;nav&gt;</code> element. It behaves exactly like a <code>&lt;div&gt;</code>. <code>&lt;nav&gt;</code> Is just a
+semantic element that gives your HTML more meaning when people read it.</p><p>So, our web app now looks like the left image - but do you see a difference between the left and the right?</p><p><img alt="Spaces must be inserted manually." src="assets/manual-spaces-in-nav.png"></p><p>There&apos;s one slightly annoying thing about React here - React strips out whitespace between elements. If we write <code>&lt;Link&gt;</code> components next to each
+other, even if they&apos;re on new lines, React strips all of the whitespace
+(spaces, returns, tabs...) between them and squishes them all together.</p><p>We
+must insert a space manually by writing <code>{&apos; &apos;}</code> in order to get spaces between
+our links.</p><p>So instead, here&apos;s how we&apos;ll write the links. Nothing has changed except that we&apos;ve added the space:</p><pre><code>&lt;Link to=&quot;/&quot;&gt;Go to Home Page&lt;/Link&gt;{&apos; &apos;}
+&lt;Link to=&quot;/procedures&quot;&gt;See Our Procedures&lt;/Link&gt;{&apos; &apos;}
+&lt;Link to=&quot;/contact&quot;&gt;Contact Us!&lt;/Link&gt;</code></pre>
+<p>And now the nav bar will have spaces like it should.</p><h1 id="final-code">Final Code</h1><p>Here&apos;s what our final <code>App.js</code> looks like:</p><pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      &lt;Router&gt;
+        &lt;div&gt;
+          &lt;nav&gt;
+            &lt;Link to=&quot;/&quot;&gt;Go to Home Page&lt;/Link&gt;{&apos; &apos;}
+            &lt;Link to=&quot;/procedures&quot;&gt;See Our Procedures&lt;/Link&gt;{&apos; &apos;}
+            &lt;Link to=&quot;/contact&quot;&gt;Contact Us!&lt;/Link&gt;
+          &lt;/nav&gt;
+          &lt;Route exact path=&quot;/&quot; component={Home} /&gt;
+          &lt;Route path=&quot;/procedures&quot; component={Procedures} /&gt;
+          &lt;Route path=&quot;/contact&quot; component={Contact} /&gt;
+        &lt;/div&gt;
+      &lt;/Router&gt;
+    );
+  }
+}
+
+export default App;</code></pre>
+<blockquote><p>Check it out! Does yours work?</p></blockquote>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="05-dentist-components.html" class="navigation navigation-prev " aria-label="Previous page: React Router - Preparing for Router">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="07-router-exercise.html" class="navigation navigation-next " aria-label="Next page: React Router - Exercise">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"React Router - Adding in Router","level":"1.18.6","depth":2,"next":{"title":"React Router - Exercise","level":"1.18.7","depth":2,"path":"lectures/03-router/07-router-exercise.md","ref":"lectures/03-router/07-router-exercise.md","articles":[]},"previous":{"title":"React Router - Preparing for Router","level":"1.18.5","depth":2,"path":"lectures/03-router/05-dentist-components.md","ref":"lectures/03-router/05-dentist-components.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lectures/03-router/06-dentist-router.md","mtime":"2017-04-16T03:47:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-04-16T03:48:01.815Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

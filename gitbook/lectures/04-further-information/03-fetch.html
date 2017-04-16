@@ -1,0 +1,983 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>fetch · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="04-fetch-exercise.html" />
+    
+    
+    <link rel="prev" href="02-data-types.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-react/01_introduction.html">
+            
+                <a href="../01-react/01_introduction.html">
+            
+                    
+                    Welcome to React.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../01-react/02_initial_setup.html">
+            
+                <a href="../01-react/02_initial_setup.html">
+            
+                    
+                    Initial Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../01-react/03_components.html">
+            
+                <a href="../01-react/03_components.html">
+            
+                    
+                    Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../01-react/04_component_setup.html">
+            
+                <a href="../01-react/04_component_setup.html">
+            
+                    
+                    Component Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../01-react/05_jsx.html">
+            
+                <a href="../01-react/05_jsx.html">
+            
+                    
+                    JSX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../01-react/06_virtual_dom.html">
+            
+                <a href="../01-react/06_virtual_dom.html">
+            
+                    
+                    Virtual DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../01-react/07_props.html">
+            
+                <a href="../01-react/07_props.html">
+            
+                    
+                    Props
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../01-react/08_multiple_props.html">
+            
+                <a href="../01-react/08_multiple_props.html">
+            
+                    
+                    Multiple Props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../01-react/09_multiple_props_objects.html">
+            
+                <a href="../01-react/09_multiple_props_objects.html">
+            
+                    
+                    Multiple Props - Using Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../01-react/10_props_challenge.html">
+            
+                <a href="../01-react/10_props_challenge.html">
+            
+                    
+                    Props Challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../01-react/11_nested_components.html">
+            
+                <a href="../01-react/11_nested_components.html">
+            
+                    
+                    Nested Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../01-react/12_nested_components_challenge.html">
+            
+                <a href="../01-react/12_nested_components_challenge.html">
+            
+                    
+                    Nested Components Challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../01-react/13_section_recap.html">
+            
+                <a href="../01-react/13_section_recap.html">
+            
+                    
+                    Section Recap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../01-react/14_state.html">
+            
+                <a href="../01-react/14_state.html">
+            
+                    
+                    State
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../01-react/15_state_exercise.html">
+            
+                <a href="../01-react/15_state_exercise.html">
+            
+                    
+                    State Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../01-react/16-intermission-state-lifecycle.html">
+            
+                <a href="../01-react/16-intermission-state-lifecycle.html">
+            
+                    
+                    State Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../01-react/17_todo_exercise.html">
+            
+                <a href="../01-react/17_todo_exercise.html">
+            
+                    
+                    Exercise - Todo list
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../01-react/18_todo_exercise_continued.html">
+            
+                <a href="../01-react/18_todo_exercise_continued.html">
+            
+                    
+                    Exercise - Todo list - part 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../01-react/19-recap.html">
+            
+                <a href="../01-react/19-recap.html">
+            
+                    
+                    Recap
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../01-react/20_calculator_exercise.html">
+            
+                <a href="../01-react/20_calculator_exercise.html">
+            
+                    
+                    Calculator Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../02-further-react-info/01-ES6.html">
+            
+                <a href="../02-further-react-info/01-ES6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../02-further-react-info/02-ES6-ConstLet.html">
+            
+                <a href="../02-further-react-info/02-ES6-ConstLet.html">
+            
+                    
+                    Const and Let
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../02-further-react-info/03-ES6-Arrow.html">
+            
+                <a href="../02-further-react-info/03-ES6-Arrow.html">
+            
+                    
+                    Arrow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../02-further-react-info/04-ES6-Arrow2.html">
+            
+                <a href="../02-further-react-info/04-ES6-Arrow2.html">
+            
+                    
+                    Arrows, Continued
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../02-further-react-info/05-ES6-Literals.html">
+            
+                <a href="../02-further-react-info/05-ES6-Literals.html">
+            
+                    
+                    Literals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../02-further-react-info/06-ES6-Exercise.html">
+            
+                <a href="../02-further-react-info/06-ES6-Exercise.html">
+            
+                    
+                    ES6 Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../02-further-react-info/07-Functional-Components.html">
+            
+                <a href="../02-further-react-info/07-Functional-Components.html">
+            
+                    
+                    Functional Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../02-further-react-info/08-Functional-Component-Exercise.html">
+            
+                <a href="../02-further-react-info/08-Functional-Component-Exercise.html">
+            
+                    
+                    Functional Components Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../02-further-react-info/09-Component-Lifecycle.html">
+            
+                <a href="../02-further-react-info/09-Component-Lifecycle.html">
+            
+                    
+                    Component Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../02-further-react-info/10-Unidirectional-Data-Flow.html">
+            
+                <a href="../02-further-react-info/10-Unidirectional-Data-Flow.html">
+            
+                    
+                    Unidirectional Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../02-further-react-info/11-Immutable-Data.html">
+            
+                <a href="../02-further-react-info/11-Immutable-Data.html">
+            
+                    
+                    Immutable Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../03-router/00-router-introduction.html">
+            
+                <a href="../03-router/00-router-introduction.html">
+            
+                    
+                    React Router
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../03-router/01-browser-history-mechanics.html">
+            
+                <a href="../03-router/01-browser-history-mechanics.html">
+            
+                    
+                    Browser History Mechanics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../03-router/02-modern-browser-history.html">
+            
+                <a href="../03-router/02-modern-browser-history.html">
+            
+                    
+                    Modern Browser History Mechanics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../03-router/03-react-router-intro.html">
+            
+                <a href="../03-router/03-react-router-intro.html">
+            
+                    
+                    React Router Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.4" data-path="../03-router/04-dentist-exercise.html">
+            
+                <a href="../03-router/04-dentist-exercise.html">
+            
+                    
+                    React Router - Codealong Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.5" data-path="../03-router/05-dentist-components.html">
+            
+                <a href="../03-router/05-dentist-components.html">
+            
+                    
+                    React Router - Preparing for Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.6" data-path="../03-router/06-dentist-router.html">
+            
+                <a href="../03-router/06-dentist-router.html">
+            
+                    
+                    React Router - Adding in Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.7" data-path="../03-router/07-router-exercise.html">
+            
+                <a href="../03-router/07-router-exercise.html">
+            
+                    
+                    React Router - Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="01-fetch.html">
+            
+                <a href="01-fetch.html">
+            
+                    
+                    Introduction to APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="02-data-types.html">
+            
+                <a href="02-data-types.html">
+            
+                    
+                    API Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.19.2" data-path="03-fetch.html">
+            
+                <a href="03-fetch.html">
+            
+                    
+                    fetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="04-fetch-exercise.html">
+            
+                <a href="04-fetch-exercise.html">
+            
+                    
+                    fetch exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="05-fetch-project.html">
+            
+                <a href="05-fetch-project.html">
+            
+                    
+                    fetch project
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="06-declarative-imperative.md">
+            
+                <span>
+            
+                    
+                    Imperative vs Declarative
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="07-self-exercise.html">
+            
+                <a href="07-self-exercise.html">
+            
+                    
+                    Practice makes perfect!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="08-heroku.html">
+            
+                <a href="08-heroku.html">
+            
+                    
+                    Heroku
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="09-self2.html">
+            
+                <a href="09-self2.html">
+            
+                    
+                    Second self exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="10-further-reading.html">
+            
+                <a href="10-further-reading.html">
+            
+                    
+                    Further Reading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../../license.html">
+            
+                <a href="../../license.html">
+            
+                    
+                    Copyright & Terms of Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >fetch</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="introducing-fetch">Introducing <code>fetch()</code></h2><p>So... we know what an API is. Now what?</p><p>How can we use an API to dynamically manipulate the DOM with the given data? We can use <code>fetch()</code>. In then past, these have been called <strong>AJAX</strong> requests. As you&apos;ll come to learn, this allows us to build single page applications that do not require refreshes.</p><p><strong>AJAX</strong>, which stands for &quot;Asynchronous Javascript and XML,&quot; is the method through which we are able to make HTTP <strong>requests</strong>. The standard requests we will be making are <code>GET</code> <code>POST</code> <code>PUT</code> <code>PATCH</code> and <code>DELETE</code>.</p><table>
+<thead>
+<tr><th>Type of Request</th>
+<th>What&apos;s It Do?</th>
+</tr></thead><tbody>
+<tr><td><code>GET</code></td>
+<td>Read (<em>&apos;give me movie names from your database&apos;</em>)</td>
+</tr><tr><td><code>POST</code></td>
+<td>Create (<em>&apos;here&apos;s a new movie for your database&apos;</em>)</td>
+</tr><tr><td><code>PATCH</code></td>
+<td>Update (<em>&apos;hey, this movie has a new title&apos;</em>))</td>
+</tr><tr><td><code>PUT</code></td>
+<td>Update (<em>&apos;hey, this movie totally changed&apos;</em>)</td>
+</tr><tr><td><code>DELETE</code></td>
+<td>Delete (<em>&apos;that movie is so bad you should just take it out of the database&apos;</em>)</td>
+</tr></tbody></table>
+
+<p>The browser packages this together using <code>fetch()</code> and sends it off to a server. The server then listens to your request and provides a <strong>response</strong>. It looks something like this:</p><p><img alt="Request/Response" src="assets/request-response.png"></p><p>When you browse to your favorite websites, your browser is making a request and the server provides a response. <code>fetch()</code> allows us to perform the same type of requests over a network. Imagine fetching weather information and rendering it on your website. Perhaps you want to create a real-life Pokedex? You can use <code>fetch()</code> to build these applications.</p><h4 id="taking-a-look-at-fetch-in-action">Taking a look at fetch in action</h4><p>That was a lot! Let&apos;s take a look at <code>fetch()</code> in action. Imagine we want to <code>fetch()</code> a randomly generated poem from Shakespeare. Good thing that there is an API for that, right? This API provides us with the ability get a poem using the following URL:</p><pre><code>http://ShakeItSpeare.com/api/poem</code></pre>
+<p>We&apos;re then provided a response that looks like the following:</p><pre><code class="lang-json">{
+    poem: &quot;This Is Just To Say
+    I have eaten the plums that were in the icebox
+    and which you were probably saving for breakfast
+    Forgive me, they were delicious&quot;,
+    author: &quot;William Carlos Williams&quot;,
+    markov: 2,
+    lines: 7
+}</code></pre>
+<p>Okay, so that isn&apos;t a poem that the API would provide (Shakespeare is quite long for an example!), but it is an example of the JSON that you will get from that endpoint.</p><p>We can fetch this JSON easily using Javascript. Let&apos;s open <a href="jsbin.com">JSBin</a>. Make sure to show the Javascript and Console tabs.</p><p>Put this in, then hit &apos;Run&apos; in the top right corner.</p><p><em>ES6 Syntax</em></p><pre><code class="lang-js"><span class="hljs-keyword">let</span> poemApi = <span class="hljs-string">&apos;http://ShakeItSpeare.com/api/poem&apos;</span>;
+fetch(poemApi)
+  .then((response) =&gt; {
+    <span class="hljs-keyword">return</span> response.json()
+  }).then((json) =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;JSON from Shakeitspeare.com&apos;</span>, json)
+  }).catch((ex) =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;An error occured while parsing!&apos;</span>, ex)
+  });</code></pre>
+<p>Let&apos;s break this API call down into a few steps.</p><ul><li><p><code>let poemApi = &apos;http://ShakeItSpeare.com/api/poem&apos;</code>:
+First, we define our API URL to fetch from</p></li>
+<li><p><code>fetch(poemApi)</code>: We call fetch on that API URL.</p></li>
+<li><p><code>.then((response) =&gt; {
+  return response.json()</code>: We take the response when the server provides it. We return the <code>response.json()</code></p></li>
+<li><p><code>.then((json) =&gt; {
+  console.log(&apos;JSON from Shakeitspeare.com&apos;, json)</code>: We take that <code>json</code> and <code>console.log</code> it.</p></li>
+<li><p><code>catch((ex)</code>: If an error occurs, we catch it and log it.</p></li></ul>
+<p>That&apos;s as simple as fetch is. While there are other ways to handle the response (such as <code>html</code> or <code>blob</code>), this approach makes writing requests to APIs and other network calls in Javascript easy.</p><blockquote><p><em>Production Warning!</em> It is important to note that while this is an ES6 standard, <a href="http://caniuse.com/#search=fetch" target="_blank">some browsers such as Internet Explorer</a> do not support it; yet Edge does. You may need a polyfill for live projects. If you need a polyfill for a production project, <a href="https://github.com/github/fetch" target="_blank">Github&apos;s polyfill is very popular</a>.</p></blockquote>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02-data-types.html" class="navigation navigation-prev " aria-label="Previous page: API Response">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="04-fetch-exercise.html" class="navigation navigation-next " aria-label="Next page: fetch exercise">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"fetch","level":"1.19.2","depth":2,"next":{"title":"fetch exercise","level":"1.19.3","depth":2,"path":"lectures/04-further-information/04-fetch-exercise.md","ref":"lectures/04-further-information/04-fetch-exercise.md","articles":[]},"previous":{"title":"API Response","level":"1.19.1","depth":2,"path":"lectures/04-further-information/02-data-types.md","ref":"lectures/04-further-information/02-data-types.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lectures/04-further-information/03-fetch.md","mtime":"2017-04-16T03:47:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-04-16T03:48:01.815Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
