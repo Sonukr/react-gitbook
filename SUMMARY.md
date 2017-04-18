@@ -27,6 +27,7 @@
 	* [ES6 Exercise](lectures/02-further-react-info/06-ES6-Exercise.md)
 * [Functional Components](lectures/02-further-react-info/07-Functional-Components.md)
 	* [Functional Components Exercise](lectures/02-further-react-info/08-Functional-Component-Exercise.md)
+	* [Functional Components Solution](lectures/02-further-react-info/08-Functional-Component-Solution.md)
 * [Component Lifecycle](lectures/02-further-react-info/09-Component-Lifecycle.md)
 * [Unidirectional Flow](lectures/02-further-react-info/10-Unidirectional-Data-Flow.md)
 * [Immutable Data](lectures/02-further-react-info/11-Immutable-Data.md)

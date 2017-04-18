@@ -88,12 +88,13 @@ you see the changes automatically appear in your browser.
 
 
   <details>
-    <summary>**Pro tip:**</summary>
-
-    It's a good idea to make simple, verifiable changes like this when
-    you're first starting to make changes to a project. It's like a sanity check.
-    Make sure you can do simple things first. Don't start with complex things; many things can go wrong when you make complex changes. Prove to yourself the small changes work, and you'll save yourself headaches debugging large
-    complex changes.
+    <summary><strong>Pro tip:</strong>summary>
+    <br />
+    <p>It's a good idea to make simple, verifiable changes like this when
+    you're first starting to make changes to a project. It's like a sanity check.</p>
+    
+    <p>Make sure you can do simple things first. Don't start with complex things; many things can go wrong when you make complex changes. Prove to yourself the small changes work, and you'll save yourself headaches debugging large
+    complex changes.</p>
   </details>
 
 # Create Custom Homepage
@@ -106,7 +107,7 @@ of. Remember that React components have a `render(){ ... }` function that
 defines what the component will look like when it is rendered on the webpage.
 
 <details>
-  <summary>**Repetition for good practice reminder:**</summary>
+  <summary><strong>Repetition for good practice reminder:</strong>summary>
 
   The render function alway has to return *at most* one top-level element. It's
   common to wrap everything in your component in a `<div>` to make sure you

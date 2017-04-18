@@ -3,19 +3,17 @@
 
 It is time for you to build a very simple component that posts a movie title and poster after searching for it. We'll do this using the [OMDB API](http://www.omdbapi.com/). For practice, create a new react application. Before doing so, challenge yourself to a mini quiz.
 <details>
-
   <summary><strong>Q: Which React.Component method should API calls be made from?</strong></summary>
-
-  > `componentDidMount()`. Per the [React documentation](https://facebook.github.io/react/docs/react-component.html#componentdidmount), _If you need to load data from a remote endpoint, this is a good place to instantiate the network request._
-
+  <br />
+  <p>
+    <code>componentDidMount()</code>. Per the <a href="https://facebook.github.io/react/docs/react-component.html#componentdidmount">React documentation</a>, <em>If you need to load data from a remote endpoint, this is a good place to instantiate the network request.</em>
+  </p>
 </details>
 
 <details>
-
-  <summary><strong>Q: What does it mean to make `GET` request?</strong></summary>
-
-  > We are asking the server to send us data to read. To `GET` means to "read."
-
+  <summary><strong>Q: What does it mean to make <code>GET</code> request?</strong></summary>
+  <br />
+  <p>We are asking the server to send us data to read. To <code>GET</code> means to "read."</p>
 </details>
 
 

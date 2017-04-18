@@ -174,15 +174,17 @@ Should that `post` variable be a `let` or a `const`?
 
 <details>
  <summary>Did you think about it? Do you have an idea? Then the answer is...</summary>
-  `const`. We want to show one post which will be displayed
-  constantly. The one post should never change.
+  <p><code>const</code> We want to show one post which will be displayed
+  constantly. The one post should never change.</p>
 
-  Now, the comments might change. People should be able to add or remove their
-  own comments. Remember that `const` only refers to what the variable `post`
-  references. We're still allowed to modify the values inside of the object.
+  <p>Now, the comments might change. People should be able to add or remove
+  their own comments. Remember that <code>const</code> only refers to what the
+  variable <code>post</code> references. We're still allowed to modify the
+  values inside of the object.</p>
 
-  Using `const` will guarantee that the `post` object is never swapped out
-  for an entirely other blog post object. Using `const` will still allow us
-  to modify the values of the `title`, `authors`, `body` and `comments` inside
-  the constant object.
+  <p>Using <code>const</code> will guarantee that the <code>post</code> object
+  is never swapped out for an entirely other blog post object. Using
+  <code>const</code> will still allow us to modify the values of the
+  <code>title</code> <code>authors</code> <code>body</code> and
+  <code>comments</code> inside the constant object.</p>
 </details>

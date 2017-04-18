@@ -19,10 +19,10 @@ API stands for "Application Program Interface" and technically applies to all of
 
 <details>
   <summary><strong>Q: Why do we care?</strong></summary>
-  *Why recreate data when we don't have to? Think about past projects or ideas that would be easier if you could pull in data already gathered elsewhere.*
+  <br/>
+  <p>Why recreate data when we don't have to? Think about past projects or ideas that would be easier if you could pull in data already gathered elsewhere.</p>
 
-  *APIs can provide us with data that would we would otherwise not be able to create ourselves.*
-
+  <p>APIs can provide us with data that would we would otherwise not be able to create ourselves.</p>
 </details>
 
 As we move into building single page applications, now is the perfect time to start understanding how to obtain data on the client side and then render it on the browser.
