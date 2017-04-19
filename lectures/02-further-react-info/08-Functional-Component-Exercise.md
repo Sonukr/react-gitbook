@@ -13,7 +13,7 @@ First, rewrite `ListItem.js` to be a functional component.
 ```javascript
 const ListItem = props => (
   <div>
-    <li>{this.props.doThis}</li>
+    <li>{props.doThis}</li>
   </div>
 );
 ```
