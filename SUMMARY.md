@@ -1,4 +1,4 @@
-# Summary
+* [Introduction](README.md)
 * [**1.** Welcome to React.js](lectures/01-react/01_introduction.md)
 * [**2.** Initial Setup](lectures/01-react/02_initial_setup.md)
 * [Components](lectures/01-react/03_components.md)
