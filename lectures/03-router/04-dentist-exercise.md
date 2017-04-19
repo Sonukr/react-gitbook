@@ -31,34 +31,6 @@ Full Repo: <https://github.com/geluso/react-router-simple-dentist-site>
 
 Live Site: <https://react-router-dentist.herokuapp.com/>
 
-# Installing React Router
-Let's set up a new React project and install **React Router**.
-> Remember to stop the React project you currently have running!
-
-Since React Router is a third-party library we'll need to use to download React Router and save it as
-a dependency in our project.
-
-In your Terminal, enter:
-```sh
-$ npm install --save react-router-dom
-```
-
-* `npm install` is the command used to install libraries to our project.
-* The `--save` flag tells `npm install` to save the thing we're downloading to
-  our `package.json` file as a dependency. Saving the library as a dependency
-  makes it easy for us to copy our project to another machine and just run
-  `npm install` to install all of the dependencies for our project.
-* `react-router-dom` is the official name of **React Router**
-
-So, in summary, we're telling `npm install` to find the library package called
-`react-router-dom`, install the package, and save the name of our package to our
-file that keeps track of all the packages for our project.
-
-If you don't use the `--save` flag then `npm install` will still find the
-package and download it. It just won't save the package to your `package.json`
-file so you can easily install all your saved dependencies later on if you move
-to another machine.
-
 ## In Your Terminal
 
 Now let's make the dentist project. In your terminal, type:
@@ -96,6 +68,35 @@ you see the changes automatically appear in your browser.
     <p>Make sure you can do simple things first. Don't start with complex things; many things can go wrong when you make complex changes. Prove to yourself the small changes work, and you'll save yourself headaches debugging large
     complex changes.</p>
   </details>
+
+
+# Installing React Router
+Let's set up a new React project and install **React Router**.
+> Remember to stop the React project you currently have running!
+
+Since React Router is a third-party library we'll need to use to download React Router and save it as
+a dependency in our project.
+
+In your Terminal, enter:
+```sh
+$ npm install --save react-router-dom
+```
+
+* `npm install` is the command used to install libraries to our project.
+* The `--save` flag tells `npm install` to save the thing we're downloading to
+  our `package.json` file as a dependency. Saving the library as a dependency
+  makes it easy for us to copy our project to another machine and just run
+  `npm install` to install all of the dependencies for our project.
+* `react-router-dom` is the official name of **React Router**
+
+So, in summary, we're telling `npm install` to find the library package called
+`react-router-dom`, install the package, and save the name of our package to our
+file that keeps track of all the packages for our project.
+
+If you don't use the `--save` flag then `npm install` will still find the
+package and download it. It just won't save the package to your `package.json`
+file so you can easily install all your saved dependencies later on if you move
+to another machine.
 
 # Create Custom Homepage
 Let's get rid of the standard "Welcome to React" page and replace it with our
