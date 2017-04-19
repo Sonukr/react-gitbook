@@ -31,7 +31,7 @@ The last change is that `ReactDOM.render(
   <App />,` has turned into `ReactDOM.render(
     <Hello />,`.
 
-> This changes the `ReactDOM.render` call to explicitly say "Render whatever the component `Hello` returns."
+> This changes the `ReactDOM.render()` call to explicitly say "Render whatever the component `Hello` returns."
 
 ### Virtual DOM Intro
 
@@ -49,7 +49,7 @@ You know every component has, at a minimum, a `render` method. The `render` meth
 
 The contents of this node are what we define in the method's return statement, using JSX.
 
-The `ReactDOM.render` function takes two arguments:
+The `ReactDOM.render()` function takes two arguments:
 
 ```js
 ReactDOM.render(
@@ -70,6 +70,6 @@ When our `index.js` is processed, our virtual DOM is compared to the regular DOM
 ### Hello World exercise - You do!
 #### Code along: Calling our `Hello` component explicitly
 
-Update your `index.js` file to have the three changes listed above: deleting the CSS import and changing both the component name that's imported and the component name that's used inside `ReactDOM.render`.
+Update your `index.js` file to have the three changes listed above: deleting the CSS import and changing both the component name that's imported and the component name that's used inside `ReactDOM.render()`.
 
 > Check it out! You should be able to browse to http://localhost:3000 and see that nothing has changed.
