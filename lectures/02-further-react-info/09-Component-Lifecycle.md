@@ -14,6 +14,7 @@ These methods are called at specific points in the rendering process. You can us
 Some common uses of lifecycle methods are making asynchronous requests, binding event listeners, and optimizing for performance.
 
 ## Component lifecycle methods:
+[Check out the documentation on components!](https://facebook.github.io/react/docs/react-component.html)
 
   - `constructor()`
   - `componentWillMount()`
