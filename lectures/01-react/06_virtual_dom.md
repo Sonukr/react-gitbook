@@ -65,7 +65,10 @@ ReactDOM.render(
 When our `index.js` is processed, our virtual DOM is compared to the regular DOM, and only the 'root' element on the page updates.
 
 
-> Side note: What is `<Hello />` written in? JSX! Whenever you use a self-closing tag in JSX, you **MUST** end it with a `/`, like `<Hello />` in the above example. It's just one of the rules!
+> Side note: What is `<Hello />` written in? JSX! Whenever you use a
+self-closing tag in JSX, you **MUST** end it with a `/`, like `<Hello />` in the
+above example. If you don't write it as a self-closing tag then JSX will be
+looking for a closing tag somewhere and never find it!
 
 ### Hello World exercise - You do!
 #### Code along: Calling our `Hello` component explicitly
