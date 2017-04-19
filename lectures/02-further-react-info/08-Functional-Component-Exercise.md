@@ -8,7 +8,7 @@ Let's do one together. Open your todo list project.
 
 Look at your `ListItem.js`. All it does is return JSX. This is prime functional component material.
 
-First, rewrite ListItem.js to be a functional component.
+First, rewrite `ListItem.js` to be a functional component.
 
 ```javascript
 const ListItem = props => (

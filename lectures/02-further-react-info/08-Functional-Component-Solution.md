@@ -3,7 +3,7 @@
 Not only can the `ListItem` be converted into a functional component. The
 entire `ToDoList` can be it's own functional component as well.
   
-Make a new file called **ToDoList.js** and have it look very much like the
+Make a new file called `ToDoList.js` and have it look very much like the
 `const ListItem` functional component above. It should have the following
 properties:
 
