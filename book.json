@@ -6,5 +6,10 @@
   "language": "en",
   "styles": {
     "website": "styles/website.css"
+  },
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    }
   }
 }
