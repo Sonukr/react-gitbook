@@ -95,7 +95,7 @@ Once you're done, open the `./src/App.js`. We're going to render Mordor! We can 
 ```jsx
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import Mordor from './Mordor.js'
+import Mordor from './Mordor.js';
 import './App.css';
 
 class App extends Component {
@@ -122,7 +122,7 @@ Now, let's wrap things up by modifying the properties of your Mordor component..
 ```jsx
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import Mordor from './Mordor.js'
+import Mordor from './Mordor.js';
 import './App.css';
 
 class App extends Component {

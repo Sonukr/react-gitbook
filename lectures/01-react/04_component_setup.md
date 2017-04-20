@@ -13,7 +13,7 @@ Then, add the component definition below - and yes, we know there are no semicol
 ```js
 // bring in React and Component from React
 
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 
 // define our Hello component
 class Hello extends Component {
@@ -59,4 +59,3 @@ If you switch to your browser and navigate to http://localhost:3000, you can see
 ### Next
 
 Let's take a closer look at that header that got rendered.
-

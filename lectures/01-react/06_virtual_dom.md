@@ -10,9 +10,9 @@ Look at your `src/index.js` file, and contrast it with the code below.
 
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Hello from './App.js'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Hello from './App.js';
 
 ReactDOM.render(
   <Hello />,

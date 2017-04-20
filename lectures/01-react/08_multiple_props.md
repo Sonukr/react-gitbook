@@ -7,9 +7,9 @@ First, add another prop to the component call: `<Hello name={"Nick"} />,` change
 Update your `index.js` file to reflect this:
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Hello from './App.js'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Hello from './App.js';
 
 ReactDOM.render(
   <Hello name={"Nick"} age={24} />,

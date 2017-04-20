@@ -36,9 +36,9 @@ In `src/index.js`, we'll change the line that renders the `Hello` component to i
 Your `index.js` should now look like this:
 
 ```js
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Hello from './App.js'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Hello from './App.js';
 
 ReactDOM.render(
   <Hello name={"Nick"} />,
@@ -46,7 +46,7 @@ ReactDOM.render(
 )
 ```
 
-If you check your application now, nothing has changed.  We're passing the `name` prop into the component, but the component isn't _using_ it yet. 
+If you check your application now, nothing has changed.  We're passing the `name` prop into the component, but the component isn't _using_ it yet.
 
 In our component definition, we will change the `<h1>Hello World!</h1>` to `<h1>Hello {this.props.name}!</h1>`. The portion `{this.props.name}` deserves a closer look:
 

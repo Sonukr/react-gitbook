@@ -15,7 +15,7 @@ To solve it, we can "nest" `Comment` components within a `Post` component.
 Starting from the blog post code, let's create a new file for a `Comment` component, `src/Comment.js`:
 
 ```jsx
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 
 class Comment extends Component {
   render () {
@@ -35,11 +35,11 @@ This looks pretty standard - we've defined our component class, which inherits f
 Now, in `src/App.js`, we need to import our `Comment` component so it's available to the `Post` component class. Change the top of `App.js` to include the new class:
 
 ```js
-import React, { Component } from 'react'
-import './App.css'
+import React, { Component } from 'react';
+import './App.css';
 
 // Load in Comment component
-import Comment from './Comment.js'
+import Comment from './Comment.js';
 ```
 With this setup, we can render one or more comments inside the `Post` component. Currently,
 `<p>{this.props.comments[0]}</p>` is rendering one comment in the `Post` component from `App.js`. Now, instead of this line, we'll want to render a `Comment` component (which renders a paragraph with the comments, so it will do the same thing!). Edit that line to render a comment instead of directly rendering a paragraph.  Make sure you send through the `body` prop that the `Comment` component class needs:
@@ -55,4 +55,3 @@ Let's reflect on what just happened. We rendered a component _inside another com
 
 
 > **Note**: We could have put all of our code in one file, but it's a good practice to break components out into different files to help practice separation of concerns. The only downside is we have to be extra conscious of remembering to **export / import** each component to the file where it's rendered.
-
