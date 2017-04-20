@@ -51,6 +51,7 @@ Put this in, then hit 'Run' in the top right corner.
 
 _ES6 Syntax_
 
+[Try it!](http://jsbin.com/xabavor/1/edit?js,console)
 ```js
 let poemApi = 'http://ShakeItSpeare.com/api/poem';
 fetch(poemApi)
