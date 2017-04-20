@@ -1,7 +1,5 @@
 {
-  "title": "React.js",
-  "language": "en",
-  "styles": {
-    "website": "styles/website.css"
+  "structure": {
+    "readme": "intro.md"
   }
 }
