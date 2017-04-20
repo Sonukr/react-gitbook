@@ -30,7 +30,7 @@ Task:
 
 > *Hint*: You'll need multiple .js files
 
-> *Food for thought*: Do you have react-router installed for this project?
+> *Food for thought*: Do you have react-router-dom installed for this project?
 
 > *Hint*: You can instantiate a component with `props` inside of a `<Route>` element. An example is below:
 
@@ -47,6 +47,6 @@ Task:
 
 ## Solution
 
-Your solution should look as follows:
+Your solution should look something like as follows:
 
-![Solution for Project](SOLUTION.png)
+![Solution for Project](assets/react-router-blog-solution.png)
