@@ -5,6 +5,9 @@ Now we have a todo list! But.. it isn't changeable, and we can't just _think abo
 Remember, in a React component, `state` is just another object, like `props`. The only difference is that `state` can be changed (remember, though, to always change it through the method `setState`). The exception is setting the initial state, which is only done once when initializing a React component with its constructor. In order to pass items to the `ToDoList` component and make them mutable, we'll need to set the state of our `MyList`. Let's continue refactoring our `MyList` component to change the `todoItems` array through state.
 
 ## Clearing the items
+We're going to add a button to the list that allows users to clear away
+everything in it. First let's make sure the list is all set up to display
+items properly already:
 
 * At the top of the `MyList` component, create a constructor that sets an initial state for an attribute called `toDoItemArray`. It should be equal to the initial list that's passed in.
 * Don't forget to change the `map` call!
@@ -14,8 +17,31 @@ Now, we'll look into making this list changeable. Remember, updating state will 
 
 
 First, in `MyList`, we define the function that will be called by the button:
+
+### Sure-fire Coding
+There's lots of things that can go wrong when we try to hook up
+new functionality to our app. Our button might be set up wrong, it might not
+call the correct function, the function may have an error in it.
+
+Let's add a `console.log()` statement on the first line in our `clearList`
+function. This is an excellent debugging practice. Adding `console.log()` proves
+to us that the function is actually executing. This proves to us that there's
+nothing wrong with how we hooked up the button and helps narrow our focus in
+case something else went wrong.
+
+Let's say you click the button and the list isn't cleared.
+* If you didn't see `"Clearing list!"` in the console then you know something is
+  wrong with the way you hooked up the button. Investigate that.
+* If you did see `"Clearing List!"` in the console and the list still didn't
+  clear then you know you need to investigate your code inside the function
+  after the click.
+  
+Adding simple sanity checks like this to your code will make you a productive
+programmer.
+
 ```js
 clearList (e) {
+  console.log("Clearing list!");
   this.setState({
     toDoItemArray: []
   })
