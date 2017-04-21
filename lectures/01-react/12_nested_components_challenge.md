@@ -33,4 +33,4 @@ Your solution should look as follows:
 ![Solution for Project](../../projects/project-02-nested-components/SOLUTION.png)
 
 
-And the solution code is [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/projects/project-02-nested-components).
+And the solution code is [here](../../projects/project-02-nested-components).

@@ -144,13 +144,4 @@ class App extends Component {
 export default App;
 ```
 
-#### Check Yourself: Virtual DOM
-
-Take a moment to consider the following scenario: it is the year 2007 and you are hard at work on a website. ECMAScript5 is hot and new, and you're working hard to create user interface components using _vanilla JavaScript_. How would you create components like React's using vanilla JavaScript for organization? Here are a few differences to consider:
-
-- The use of `prototype` for inheritance instead of the ES6 model of `Class`.
-- DOM manipulation using `createElement`, `getElement...`, and other vanilla JavaScript DOM API methods versus our ReactDOM.render with JSX on the virtual DOM.
-- Building constructor objects that contain an `element` (or `el`) that is rendered using a `render` method.
-- How would you handle updating properties going into the component? How would this affect your constructor?
-
-As you consider this scenario, think about the ease that the Virtual DOM provides you by directly handling the creation and updating of DOM elements on the page. React creates special elements on the Virtual DOM and then elements are rendered for you with ease so you don't have to create individual React elements to build each React component.
+(Here's the final solution!)[../../exercise-solutions/mordor]

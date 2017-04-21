@@ -33,4 +33,4 @@ Your solution should look as follows:
 ![Solution for Project](](../../projects/project-03-state/BONUS_SOLUTION.png)
 
 # Check yourself!
-Solution code, including for the bonus of using `onChange`, is [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/projects/project-03-state).
+Solution code, including for the bonus of using `onChange`, is [here](../../projects/project-03-state).

@@ -80,7 +80,7 @@ At this point, our app looks like this:
 
 ## Side note - let's quickly format it a little more nicely!
 
-Since we'll be looking at this for a while, let's make it less of an eyesore. Feel free to change the `index.css` file to include anything you'd like; on mine, I've centered the text and given it a light green background. You can grab  mine [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/exercise-solutions/to-do-list/src/index.css).
+Since we'll be looking at this for a while, let's make it less of an eyesore. Feel free to change the `index.css` file to include anything you'd like; on mine, I've centered the text and given it a light green background. You can grab  mine [here](../../exercise-solutions/to-do-list/src/index.css).
 
 ## Second, props.
 

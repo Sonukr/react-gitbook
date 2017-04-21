@@ -35,7 +35,7 @@ Let's say you click the button and the list isn't cleared.
 * If you did see `"Clearing List!"` in the console and the list still didn't
   clear then you know you need to investigate your code inside the function
   after the click.
-  
+
 Adding simple sanity checks like this to your code will make you a productive
 programmer.
 
@@ -137,4 +137,4 @@ Notes:
 
  > Check it out! Have you done it?
 
- > The final solution code for this todo list is [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/exercise-solutions/to-do-list).
+ > The final solution code for this todo list is [here](../../exercise-solutions/to-do-list).

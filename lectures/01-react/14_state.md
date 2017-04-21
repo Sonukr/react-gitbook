@@ -6,7 +6,7 @@ At this point, we know about React properties and how they relate to our compone
 
 Watch this video and follow along using [this codepen](https://codepen.io/susir/pen/GWONLp) to try it yourself!
 
-<iframe src="//fast.wistia.net/embed/iframe/3ldc3tnyv0?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
+<iframe src="http://fast.wistia.net/embed/iframe/3ldc3tnyv0?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 
 Values stored in a component's `state` are mutable attributes.
 * `State` is similar to `props`, but *is meant to be changed*.
@@ -203,6 +203,6 @@ This is super important! Using React, **we only change parts of the DOM that nee
 #### Challenge: Count to 10
 
 After 10 clicks, the user should see the counter reset to 1.
-> Check solution [here](https://git.generalassemb.ly/education-product/module-fe-framework-react/tree/master/exercise-solutions/state_wrap_10)!
+> Check solution [here](../../exercise-solutions/state_wrap_10)!
 
 *If you're interested in reading more in depth about this, here is more on what [should & shouldn't go in state](https://facebook.github.io/react/docs/state-and-lifecycle.html). This link is also in the Further Reading page at the end of the React module.*

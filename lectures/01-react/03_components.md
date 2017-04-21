@@ -5,7 +5,7 @@ The basic unit you'll be working with in ReactJS is a **component**. Components 
 
 For an intro to components, watch this video:
 
-<iframe src="//fast.wistia.net/embed/iframe/h64z7lp1ir?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
+<iframe src="http://fast.wistia.net/embed/iframe/h64z7lp1ir?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 
 If you're used to writing out all of one page's view in one HTML file, using components is a very different way of approaching web development.
 

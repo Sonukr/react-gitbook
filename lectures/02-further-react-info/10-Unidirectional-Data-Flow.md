@@ -2,7 +2,7 @@
 
 Let's start with a video:
 
-<iframe src="//fast.wistia.net/embed/iframe/v2uenqkgwk?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
+<iframe src="http://fast.wistia.net/embed/iframe/v2uenqkgwk?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
 
 
 So, in React applications, data usually flows from the top down. Why do we care? How does this apply?
