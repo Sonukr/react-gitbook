@@ -1,5 +1,5 @@
 // bring in React and Component instance from React
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 
 // define our Hello component
 class Hello extends Component {
