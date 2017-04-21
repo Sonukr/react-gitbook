@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Comment from './Comment.js'
+import Comment from './Comment.js';
 
 class Post extends Component {
   render() {

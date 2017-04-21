@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Comment from './Comment.js'
-import Author from './Author.js'
+import Comment from './Comment.js';
+import Author from './Author.js';
 
 class Post extends Component {
 
