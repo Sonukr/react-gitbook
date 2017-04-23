@@ -1,1 +1,0 @@
-This folder will hold all the assets (pictures, etc) students will see to go with the written lecture content. 
