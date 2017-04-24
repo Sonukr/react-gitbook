@@ -6,7 +6,7 @@ Don't worry - while there is a lot to see at first, React is a pretty straightfo
 #### Best Practices
 
 - Each component should be in a file unto itself. Don't put multiple components into one Javascript file.
-- Do not automatically render elements on the DOM. You may find examples of `ReactDOM.render()` but you should avoid this at all cost; this was an older technique in past versions of React.
+- Do not automatically render elements on the DOM *inside* its own component class definition. If you look through your files, you'll see in your component classes, you define a `render()` method for that component, which is great. That class then is called by `ReactDOM.render()` in **a different place, outside that class definition** (likely index.js). In some tutorials or older code, you may find examples of `ReactDOM.render()` inside a component, but you should avoid this at all cost; this was an older technique in past versions of React.
 - Remember that `state` represents the _state_ of your user interface component.
 - State can trigger changes in `props` or `props` can come from parent components.
 - Don't ever let yourself think that State and Props are the same thing. They aren't.

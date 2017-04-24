@@ -24,8 +24,6 @@ Choose any existing website you'd like and recreate the functionality as best as
 
 ##### Just a note on best practices:
 
-- Each component should be in a file unto itself. Don't put multiple components into one Javascript file.
-- Do not automatically render elements on the DOM. You may find examples of `ReactDOM.render()` but you should avoid this at all cost; this was an older technique in past versions of React.
 - Remember that `state` represents the _state_ of your user interface component.
 - State can trigger changes in `props` or `props` can come from parent components.
 - Stick to functional programming techniques if at all possible. By that we mean, use built-in methods if available such as `.forEach()` and `.map()`

@@ -82,7 +82,7 @@ under that, like `/locations/london` and `/locations/singapore`.
 | /education/user-experience-design-immersive     | UX course details                            |
 | /locations                                      | Shows all global GA locations                |
 | /locations/london                               | Shows London-specific location information   |
-| /locations/singapore                            | Shows London-specific location information   |
+| /locations/singapore                            | Shows Singapore-specific location information|
 
 You can see that URLs *route* users to content. When someone types in a URL
 they are ultimately shown content associated with that URL.

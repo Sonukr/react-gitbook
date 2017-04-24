@@ -14,17 +14,14 @@ This blog is great so far! Now, our stegosaurus is actually collaborating more o
 
 Besides Stealthy Stegosaurus, the other two authors are Tiny Trex and Ivory Iguanadon.
 
-<blockquote>
-Note: If you'd like, you can use JavaScript's array `map` method in `Post`'s `render` method to avoid having to hard-code all your `Author`s. Read more about it [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) and [here](http://cryto.net/~joepie91/blog/2015/05/04/functional-programming-in-javascript-map-filter-reduce/).
-</blockquote>
 
-<blockquote>
-HINT 1: If you're using `map`, you should only have to return one `<MyPost />` inside of `map`.
-</blockquote>
+> Note: If you'd like, you can use JavaScript's array `map` method in `Post`'s `render` method to avoid having to hard-code all your `Author`s. Read more about it [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) and [here](http://cryto.net/~joepie91/blog/2015/05/04/functional-programming-in-javascript-map-filter-reduce/).
 
-<blockquote>
-HINT 2: Remember that whenever you write Javascript expressions inside of JSX, you need to surround them with single brackets (`{}`).
-</blockquote>
+  * HINT 1: If you're using `map`, you should only have to return one `<MyPost />` inside of `map`.
+
+
+> HINT 2: Remember that whenever you write Javascript expressions inside of JSX, you need to surround them with single brackets (`{}`).
+Refer to the `Comment` section on the previous page...
 
 ## Solution
 

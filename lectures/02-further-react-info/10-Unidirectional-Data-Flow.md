@@ -62,7 +62,7 @@ const FruitFilter = props => (
 
 `FruitFilter` renders a single input. Its value and onChange callbacks will both be set by the container component.
 
-### Conatiner component
+### Container component
 
 My container will be a class with a few methods I'll use to initialize and update the state of the two child components.
 In the constructor, I'll initialize the state:
@@ -124,7 +124,7 @@ class FruitContainer extends Component {
       // intialize the filter value to an empty string
       filterValue: '',
     };
-    // bind the context of our filterChange event handler
+    // JavaScript cleanup: bind the context of our filterChange event handler (to have `this` to the context and handler we want)
     this.handleFilterChange = this.handleFilterChange.bind(this);
   }
 

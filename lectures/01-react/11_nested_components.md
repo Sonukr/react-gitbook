@@ -54,4 +54,37 @@ Let's reflect on what just happened. We rendered a component _inside another com
 ![nested components chart](./images/nested_components_chart.jpg)
 
 
-> **Note**: We could have put all of our code in one file, but it's a good practice to break components out into different files to help practice separation of concerns. The only downside is we have to be extra conscious of remembering to **export / import** each component to the file where it's rendered.
+### To get a little more advanced...
+
+That's nested components! What we're about to look into is just the idea of calling an object during the `render` `return` method - and that object can have component calls in it.
+
+> What we did:
+
+`<Comment body={this.props.comments[0]} />` passed just the first object in the `comments` array
+
+> What we can do:
+
+We can also simply pass a variable as a parameter. For example, we could pass the whole `comments` array with `<Comment body={comments} />`. We can also just write a JavaScript expression if we put it inside brackets. For example, if I had an object inside my `App.js`, each row of the object could individually call the `Comment` component:
+
+```js
+let allComments = [
+      <Comment body={this.props.comments[0]}/>,
+      <Comment body={this.props.comments[1]}/>,
+      <Comment body={this.props.comments[2]}/>
+    ];
+```
+I could call then call this object inside my `return` JSX with `{allComments}`, which would then call all three of those <`Comment />` statements:
+
+```html
+<div>
+  <h1>{this.props.title}</h1>
+  <p>by {this.props.author}</p>
+  <div>
+    <p>{this.props.body}</p>
+  </div>
+  <h3>Comments:</h3>
+  {comments}
+</div>
+```
+
+ * *Note: We could have put all of our code in one file, but it's a good practice to break components out into different files to help practice separation of concerns. The only downside is we have to be extra conscious of remembering to **export / import** each component to the file where it's rendered.*
