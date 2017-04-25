@@ -1,0 +1,41 @@
+Links to exercise solution or project solution:
+01-react/05_jsx.md
+01-react/10_props_challenge.md
+01-react/12_nested_components_challenge.md
+13_section_recap
+01-react/14_state.md
+01-react/15_state_exercise.md (there are two!)
+17_todo_exercise
+01-react/18_todo_exercise_continued.md
+01-react/20_calculator_exercise.md ---- works!
+06-ES6-Exercise.md
+02-further-react-info/08-Functional-Component-Exercise.md
+02-further-react-info/07-router-exercise.md
+02-further-react-info/05-fetch-project.md
+08-heroku
+
+
+
+Objectives:
+
+01-fetch
+00-router-introduction
+03-react-router-intro
+13_section_recap
+08-heroku.md
+
+
+Codepens for videos:
+05_jsx
+07_props
+14_state
+
+Codepens for codealongs:
+02-ES6-ConstLet.md x 3
+03-ES6-Arrow x 1
+04-ES6-Arrow2 x 1
+05-ES6-Literals x 1
+06-ES6-Exercise x 2 -- exercise and solution
+07-Functional-Components
+09-Component-Lifecycle
+10-Unidirectional-Data-Flow

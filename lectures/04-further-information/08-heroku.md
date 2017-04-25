@@ -2,7 +2,7 @@
 
 > Before moving forward, it is _strongly_ suggested that you have a working knowledge of Git. Read the [Git basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) guide or [try Git](https://try.github.io/levels/1/challenges/1) if you have **no experience** with Git before moving forward.
 
-## Objectives
+## Objectives of this section
 
 * Discover what Heroku is, why it is useful, and register an account
 * Install the Heroku Command Line Interface & use it (a Platform as a Service) to deploy a React application

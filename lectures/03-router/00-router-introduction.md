@@ -7,7 +7,7 @@ leaving a webpage. We'll see how the rise of Single Page Applications broke
 old, traditional browser history mechanics and led to the introduction of new
 ways for web sites to control what **back** and **forward** really mean.
 
-## Objectives
+## Objectives of this section
 * Understand old browser history mechanics
 * Introduce URL routing
 * Introduce Single Page Applications (SPAs)

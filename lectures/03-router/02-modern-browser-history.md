@@ -50,7 +50,7 @@ Gmail and Gmail brings back the content the user was last looking at.
 
 
 # Recap
-Here's a summary of what we've learned today:
+Here's a summary of what we've learned so far for routing:
 
 ### Single Page Applications and Browser History Mechanics
 * Single Page Applications are websites that serve only one web page, then

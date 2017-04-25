@@ -37,4 +37,4 @@ Like usual, use `create-react-app` to make a new project.
 
 - Make the calculator work with any of the 4 basic arithmetic operations (+, -, \*, /). How will this change your `state` and your JSX?
 
-The solution is [here](../../exercise-solutions/calculator).
+<a href="calculator-solutions.html" target="_blank" >Solution files here!</a>

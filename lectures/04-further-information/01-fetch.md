@@ -1,6 +1,6 @@
 # Introduction to fetch()
 
-## Learning Objectives
+## Learning Objectives for this section
 
 - Describe what an API is and why we might use one.
 - Explain the common role of JSON on the web.
