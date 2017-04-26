@@ -13,7 +13,7 @@ class Post extends Component {
       body: props.body
     }
   }
-  
+
   changeBody(e) {
     let newBody = prompt("What should the new body be?")
     this.setState({

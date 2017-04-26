@@ -30,4 +30,6 @@ Your solution should look as follows:
 ![Solution for Project](../../projects/project-02-nested-components/SOLUTION.png)
 
 
-And the solution code is [here](../../projects/project-02-nested-components).
+> Once you have a solution:
+
+You can check a sample <a href="solution-nested.html" target="_blank" >solution here!</a>

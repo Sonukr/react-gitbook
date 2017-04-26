@@ -2,8 +2,10 @@
 
 Let's start with a video:
 
-<iframe src="http://fast.wistia.net/embed/iframe/v2uenqkgwk?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
-
+<video width="640" height="480" controls="controls" type="video/mp4">
+<source src="https://embed-ssl.wistia.com/deliveries/cd5d58d2bc562a606ab045c5c056ada1680eea13.bin">
+Your browser does not support the video tag.
+</video>
 
 So, in React applications, data usually flows from the top down. Why do we care? How does this apply?
 

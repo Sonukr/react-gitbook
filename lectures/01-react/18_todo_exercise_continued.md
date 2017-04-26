@@ -135,6 +135,8 @@ Notes:
  * We can use `onChange` on the `input` field to trigger an event when the text in the box is changed.  
  * Any function called when an event occurs (like functions that happen `onClick`, `onSubmit`, or `onChange`) can accept an argument that is the event. We pass this in as `e` to `newItemChange` and `addItem`.
 
- > Check it out! Have you done it?
+## Check yourself!
 
- > The final solution code for this todo list is [here](../../exercise-solutions/to-do-list).
+> Once you have a solution:
+
+You can check a sample <a href="solution-todo.html" target="_blank" >solution here</a>.

@@ -122,7 +122,7 @@ Then, point the React UI app to a specific backend API using the CLI:
 heroku config:set API_URL="https://api.example.com"
 ```
 
-## Excersice
+## Exercise
 
 Deploy your most recent project live to Heroku. Do so by:
 

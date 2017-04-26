@@ -8,14 +8,17 @@
 
 Welcome! This lesson assumes you have some JavaScript knowledge and awareness of the DOM tree.
 
-One note: Because this is a pilot, we are working out how long sections take to translate this to in class timings. Every few sections, there will be a survey on how long you've spent on the previous sections and whether the sections were useful. Please fill them out! And with that, let's learn!
+**One note:** Because this is a pilot, we are working out how long sections take to translate this to in class timings. Every few sections, there will be a survey on how long you've spent on the previous sections and whether the sections were useful. Please fill them out!
+
+And with that, let's learn!
 
 ## What is ReactJS?
 
 For an intro to React, watch this video:
-
-<iframe src="http://fast.wistia.net/embed/iframe/lr8idjxtx8?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
-
+<video width="640" height="480" controls="controls" type="video/mp4">
+<source src="https://embed-ssl.wistia.com/deliveries/0d6ef119de938d8d6201637ec608f4120a4c8f62.bin">
+Your browser does not support the video tag.
+</video>
 
 The React framework was built to solve one problem: building large applications with data that changes over time.
 

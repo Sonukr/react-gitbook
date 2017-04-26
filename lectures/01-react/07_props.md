@@ -15,7 +15,10 @@ The question is, how do we add a name to our `Hello` component without hardcodin
 
 Watch this video and follow along using [this codepen](https://codepen.io/susir/pen/vxWypq) to try it yourself!
 
-<iframe src="http://fast.wistia.net/embed/iframe/gchiu63slo?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
+<video width="640" height="480" controls="controls" type="video/mp4">
+<source src="https://embed-ssl.wistia.com/deliveries/fce4a186f0003cee9490955bf5925fe2d17b8acc.bin">
+Your browser does not support the video tag.
+</video>
 
 
 ### Hello World exercise - You do!

@@ -26,5 +26,6 @@ Here's what the solution might look like:
 
 ![Solution for Project](../../projects/project-01-jsx/SOLUTION.png)
 
-You can see sample solution code [here](../../projects/project-01-jsx/solution-code).
-If you'd like to run the solution code, use `npm install` and then `npm start` from inside the `solution-code` directory.
+> Once you have a solution:
+
+You can check a sample <a href="solution-props.html" target="_blank" >solution here!</a>

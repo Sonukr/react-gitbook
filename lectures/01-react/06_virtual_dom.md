@@ -37,7 +37,10 @@ The last change is that `ReactDOM.render(
 
 You should be familiar with the DOM.  You may have noticed that our `src/index.js` code mentions `ReactDOM`.  `ReactDOM` doesn't refer to the same DOM we know. Instead, it refers to a "Virtual DOM." The Virtual DOM is a key piece of how React works. So how is different?
 
-<iframe src="http://fast.wistia.net/embed/iframe/v5qyqsir0s?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
+<video width="640" height="480" controls="controls" type="video/mp4">
+<source src="https://embed-ssl.wistia.com/deliveries/160cbbd9576b762075104180a89a0095723a36bc.bin">
+Your browser does not support the video tag.
+</video>
 
 In React, the virtual DOM is a staging area for changes that will eventually be implemented.
 

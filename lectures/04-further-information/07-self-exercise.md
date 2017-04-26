@@ -9,10 +9,10 @@ Choose any existing website you'd like and recreate the functionality as best as
 
 #### A few guidelines:
 * Don't worry about styling! Just the functionality.
-* Make sure it has at least four components.
+* Make sure it utilizes both nested components and state
 * Make sure you use Router
-* Use ES6 syntax
-* We don't have a database set up - if you need data, feel free to hardcode only a little (just enough to get the idea) or use `fetch` to call an API.
+* Use ES6 syntax; don't forget about functional components!
+* We don't have a database set up - if you need data, feel free to hardcode only a little (just enough to get the idea) or use `fetch` to call an API
 
 #### Some ideas:
 - https://www.airbnb.com/
@@ -29,3 +29,9 @@ Choose any existing website you'd like and recreate the functionality as best as
 - Stick to functional programming techniques if at all possible. By that we mean, use built-in methods if available such as `.forEach()` and `.map()`
 - If you are rendering a list of child components (such as a _ul_ -> _li_ list), each individual child component needs a unique `id` for React to work with it. This is so React can identify each element uniquely if needed
 - Don't ever let yourself think that State and Props are the same thing. They aren't!
+
+
+## Solution:
+There's no solution code! This is your project. When you've been working for three hours *or* when you have a solidly functioning web application that you're proud of, submit it here. 
+* It'll get checked by our subject matter experts - no grade for you; just to see how well we're teaching the material.
+* It's anonymous (as said, no grade for you!) However, if you'd like, you can enter your email address and our subject matter experts will get back to you in a few days with feedback.

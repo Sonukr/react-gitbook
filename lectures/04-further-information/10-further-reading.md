@@ -25,7 +25,9 @@ The links below are optional, but great resources for you to continue learning R
   *  A model-view-controller JS framework (remember, React is just the 'view'!)
 * [React Redux](https://github.com/reactjs/redux)
   *  An extremely common a state container for React
-
+* [React Docs - Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
+* [A Cartoon Guide To Flux by Lin Clark](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207#.m53psmlww)
+* [Redux State Management Library](http://redux.js.org/)
 
 ---
 

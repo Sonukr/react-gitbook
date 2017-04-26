@@ -51,4 +51,8 @@ Your solution should look something like as follows:
 
 ![Solution for Project](assets/react-router-blog-solution.png)
 
-Here's the actual link to the solution:
+## Check yourself!
+
+> Once you have a solution:
+
+You can check a sample <a href="solution-router.html" target="_blank" >solution here</a>.

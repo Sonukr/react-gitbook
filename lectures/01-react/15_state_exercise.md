@@ -33,4 +33,7 @@ Your solution should look as follows:
 ![Solution for Project](](../../projects/project-03-state/BONUS_SOLUTION.png)
 
 # Check yourself!
-Solution code, including for the bonus of using `onChange`, is [here](../../projects/project-03-state).
+
+> Once you have a solution:
+
+You can check a sample <a href="solution-state_exercise.html" target="_blank" >solution here</a>. This includes the bonus of using `onChange`.

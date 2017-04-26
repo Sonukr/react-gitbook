@@ -11,6 +11,7 @@
 * [Nested Components](lectures/01-react/11_nested_components.md)
  * [Nested Components Challenge](lectures/01-react/12_nested_components_challenge.md)
 * [Section Recap](lectures/01-react/13_section_recap.md)
+  * [Recap Exercise](lectures/01-react/13.5_mordor_codealong.md)
 * [State](lectures/01-react/14_state.md)
 	* [State Exercise](lectures/01-react/15_state_exercise.md)
 	* [State Lifecycle](lectures/01-react/16-intermission-state-lifecycle.md)

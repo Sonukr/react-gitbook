@@ -18,8 +18,6 @@ const ListItem = props => (
 );
 ```
 
-You can view that [here](../../exercise-solutions/functional-component-exercise)
+What else in your projects can you change?
 
-Check it - does it still work? What else in your projects can you change?
-
-Check the solution on the next page, here: [Functional Components Solution](./08-Functional-Component-Solution.md)
+Check for more information on the next page!

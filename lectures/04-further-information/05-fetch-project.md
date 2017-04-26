@@ -20,6 +20,7 @@ Your solution should look similar to the following:
 
 ![SOLUTION.png](SOLUTION.png)
 
+
 ## Part 2: Build a Weather App
 
 You'd like to show people what you can do, so to really impress them you're going to display the weather on your About page.
@@ -47,6 +48,9 @@ NOTE: Because the OpenWeather API is not an open API, every request must end wit
 Read about the [fetch API on MDN](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch) for further reading.
 
 
-# Solution:
 
-> Check your work here!
+## Check yourself!
+
+> Once you have a solution:
+
+You can check a sample <a href="solution-fetch.html" target="_blank" >solution here</a>.

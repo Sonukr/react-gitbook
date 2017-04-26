@@ -26,8 +26,10 @@ Let's talk about the value that the `render` method returns. It looks an awful l
 
 Wait, what's that? Try it yourself alongside this video in [this codepen](https://codepen.io/susir/pen/wJPoBw).
 
-<iframe src="http://fast.wistia.net/embed/iframe/dcps4dqziy?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
-
+<video width="640" height="480" controls="controls" type="video/mp4">
+<source src="https://embed-ssl.wistia.com/deliveries/bd819d206167f59a88640ae5ae1ed8e65abe1fcb.bin">
+Your browser does not support the video tag.
+</video>
 
 So, JSX allows us to write code that strongly resembles HTML. It is eventually compiled to lightweight JavaScript objects. We're returning some JSX that creates a header with 'Hello World' in it for our component to render.
 
@@ -39,4 +41,7 @@ In your component, return multiple lines. Instead of just the "Hello World!" hea
 
 > Hint: Remember, the return statement in `render` can only return one DOM element. You can, however, place multiple elements within a parent `div` element.*
 
-You can check your solution [here](../../exercise-solutions/jsx-hello-world).
+
+> Once you have a solution:
+
+You can check your <a href="solution-jsx.html" target="_blank" >solution here!</a>

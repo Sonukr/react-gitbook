@@ -23,5 +23,7 @@ Don't worry - while there is a lot to see at first, React is a pretty straightfo
 
 #### Last thoughts before the project... a video.
 
-
-<iframe src="http://fast.wistia.net/embed/iframe/2qrtla3y8a?seo=false" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe>
+<video width="640" height="480" controls="controls" type="video/mp4">
+<source src="https://embed-ssl.wistia.com/deliveries/bfae96f54dbe068256aa5f0e5fc44696c7179f57.bin">
+Your browser does not support the video tag.
+</video>

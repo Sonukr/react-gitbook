@@ -1,4 +1,4 @@
-# Introduction to fetch()
+# Introduction to APIs
 
 ## Learning Objectives for this section
 
