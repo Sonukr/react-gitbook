@@ -1,0 +1,1145 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Exercise - Todo list · React.js</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="18_todo_exercise_continued.html" />
+    
+    
+    <link rel="prev" href="16-intermission-state-lifecycle.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_introduction.html">
+            
+                <a href="01_introduction.html">
+            
+                    
+                    Welcome to React.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02_initial_setup.html">
+            
+                <a href="02_initial_setup.html">
+            
+                    
+                    Initial Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03_components.html">
+            
+                <a href="03_components.html">
+            
+                    
+                    Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="04_component_setup.html">
+            
+                <a href="04_component_setup.html">
+            
+                    
+                    Component Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="05_jsx.html">
+            
+                <a href="05_jsx.html">
+            
+                    
+                    JSX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="06_virtual_dom.html">
+            
+                <a href="06_virtual_dom.html">
+            
+                    
+                    Virtual DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="07_props.html">
+            
+                <a href="07_props.html">
+            
+                    
+                    Props
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="08_multiple_props.html">
+            
+                <a href="08_multiple_props.html">
+            
+                    
+                    Multiple Props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="09_multiple_props_objects.html">
+            
+                <a href="09_multiple_props_objects.html">
+            
+                    
+                    Multiple Props - Using Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="10_props_challenge.html">
+            
+                <a href="10_props_challenge.html">
+            
+                    
+                    Props Challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="11_nested_components.html">
+            
+                <a href="11_nested_components.html">
+            
+                    
+                    Nested Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="12_nested_components_challenge.html">
+            
+                <a href="12_nested_components_challenge.html">
+            
+                    
+                    Nested Components Challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="13_section_recap.html">
+            
+                <a href="13_section_recap.html">
+            
+                    
+                    Section Recap
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="13.5_mordor_codealong.html">
+            
+                <a href="13.5_mordor_codealong.html">
+            
+                    
+                    Recap Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="14_state.html">
+            
+                <a href="14_state.html">
+            
+                    
+                    State
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="15_state_exercise.html">
+            
+                <a href="15_state_exercise.html">
+            
+                    
+                    State Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="16-intermission-state-lifecycle.html">
+            
+                <a href="16-intermission-state-lifecycle.html">
+            
+                    
+                    State Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="17_todo_exercise.html">
+            
+                <a href="17_todo_exercise.html">
+            
+                    
+                    Exercise - Todo list
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="18_todo_exercise_continued.html">
+            
+                <a href="18_todo_exercise_continued.html">
+            
+                    
+                    Exercise - Todo list - part 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="19-recap.html">
+            
+                <a href="19-recap.html">
+            
+                    
+                    Recap
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="20_calculator_exercise.html">
+            
+                <a href="20_calculator_exercise.html">
+            
+                    
+                    Calculator Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../02-further-react-info/01-ES6.html">
+            
+                <a href="../02-further-react-info/01-ES6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../02-further-react-info/02-ES6-ConstLet.html">
+            
+                <a href="../02-further-react-info/02-ES6-ConstLet.html">
+            
+                    
+                    Const and Let
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../02-further-react-info/03-ES6-Arrow.html">
+            
+                <a href="../02-further-react-info/03-ES6-Arrow.html">
+            
+                    
+                    Arrow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../02-further-react-info/04-ES6-Arrow2.html">
+            
+                <a href="../02-further-react-info/04-ES6-Arrow2.html">
+            
+                    
+                    Arrows, Continued
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="../02-further-react-info/05-ES6-Literals.html">
+            
+                <a href="../02-further-react-info/05-ES6-Literals.html">
+            
+                    
+                    Literals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="../02-further-react-info/06-ES6-Exercise.html">
+            
+                <a href="../02-further-react-info/06-ES6-Exercise.html">
+            
+                    
+                    ES6 Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../02-further-react-info/07-Functional-Components.html">
+            
+                <a href="../02-further-react-info/07-Functional-Components.html">
+            
+                    
+                    Functional Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../02-further-react-info/08-Functional-Component-Exercise.html">
+            
+                <a href="../02-further-react-info/08-Functional-Component-Exercise.html">
+            
+                    
+                    Functional Components Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../02-further-react-info/08-Functional-Component-Solution.html">
+            
+                <a href="../02-further-react-info/08-Functional-Component-Solution.html">
+            
+                    
+                    Functional Components Solution
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../02-further-react-info/09-Component-Lifecycle.html">
+            
+                <a href="../02-further-react-info/09-Component-Lifecycle.html">
+            
+                    
+                    Component Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../02-further-react-info/10-Unidirectional-Data-Flow.html">
+            
+                <a href="../02-further-react-info/10-Unidirectional-Data-Flow.html">
+            
+                    
+                    Unidirectional Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../02-further-react-info/11-Immutable-Data.html">
+            
+                <a href="../02-further-react-info/11-Immutable-Data.html">
+            
+                    
+                    Immutable Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../03-router/00-router-introduction.html">
+            
+                <a href="../03-router/00-router-introduction.html">
+            
+                    
+                    React Router
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../03-router/01-browser-history-mechanics.html">
+            
+                <a href="../03-router/01-browser-history-mechanics.html">
+            
+                    
+                    Browser History Mechanics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../03-router/02-modern-browser-history.html">
+            
+                <a href="../03-router/02-modern-browser-history.html">
+            
+                    
+                    Modern Browser History Mechanics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../03-router/03-react-router-intro.html">
+            
+                <a href="../03-router/03-react-router-intro.html">
+            
+                    
+                    React Router Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.4" data-path="../03-router/04-dentist-exercise.html">
+            
+                <a href="../03-router/04-dentist-exercise.html">
+            
+                    
+                    React Router - Codealong Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.5" data-path="../03-router/05-dentist-components.html">
+            
+                <a href="../03-router/05-dentist-components.html">
+            
+                    
+                    React Router - Preparing for Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.6" data-path="../03-router/06-dentist-router.html">
+            
+                <a href="../03-router/06-dentist-router.html">
+            
+                    
+                    React Router - Adding in Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.7" data-path="../03-router/07-router-exercise.html">
+            
+                <a href="../03-router/07-router-exercise.html">
+            
+                    
+                    React Router - Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../04-further-information/01-fetch.html">
+            
+                <a href="../04-further-information/01-fetch.html">
+            
+                    
+                    Introduction to APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../04-further-information/02-data-types.html">
+            
+                <a href="../04-further-information/02-data-types.html">
+            
+                    
+                    API Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../04-further-information/03-fetch.html">
+            
+                <a href="../04-further-information/03-fetch.html">
+            
+                    
+                    fetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../04-further-information/04-fetch-exercise.html">
+            
+                <a href="../04-further-information/04-fetch-exercise.html">
+            
+                    
+                    fetch exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="../04-further-information/05-fetch-project.html">
+            
+                <a href="../04-further-information/05-fetch-project.html">
+            
+                    
+                    fetch project
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../04-further-information/06-declarative-imperative.html">
+            
+                <a href="../04-further-information/06-declarative-imperative.html">
+            
+                    
+                    Imperative vs Declarative
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../04-further-information/07-self-exercise.html">
+            
+                <a href="../04-further-information/07-self-exercise.html">
+            
+                    
+                    Practice makes perfect!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../04-further-information/08-heroku.html">
+            
+                <a href="../04-further-information/08-heroku.html">
+            
+                    
+                    Heroku
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../04-further-information/09-self2.html">
+            
+                <a href="../04-further-information/09-self2.html">
+            
+                    
+                    Second self exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../04-further-information/10-further-reading.html">
+            
+                <a href="../04-further-information/10-further-reading.html">
+            
+                    
+                    Further Reading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../../license.html">
+            
+                <a href="../../license.html">
+            
+                    
+                    Copyright & Terms of Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Exercise - Todo list</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="exercise-todo-list">Exercise! Todo list.</h1>
+<p>So, we&apos;ve gone through all of the basics of React. To really hammer it home with practice, let&apos;s walk through complete creation of an app. This will be a to-do list, keeping track of everything we need to do for the day (after we finish this!). It&apos;s a lot, so we&apos;re going to want it to be editable.</p>
+<p>This is what our list will look like when we&apos;re finished:</p>
+<p><img src="images/todo-list-finished.png" alt="finished-list"></p>
+<p>Let&apos;s get started!</p>
+<ul>
+<li>Because this is a new exercise, be sure to close the running application in Terminal first.</li>
+</ul>
+<p>Change directories to the main directory you&apos;re storing your projects in. Inside it, run your command:</p>
+<pre><code class="lang-sh">$ create-react-app todo-list
+</code></pre>
+<p>The tool created a new directory for our app, so let&apos;s move into it...</p>
+<pre><code class="lang-sh">$ <span class="hljs-built_in">cd</span> todo-list
+</code></pre>
+<p>Use <code>npm start</code> to start a server that will serve your new React application!</p>
+<pre><code class="lang-sh">$ npm start
+</code></pre>
+<ul>
+<li><p>Check it out! If you browse to <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>, you should have a fresh react app.</p>
+</li>
+<li><p>Make sure that as you go, you frequently check the site to ensure your changes are all reflecting accurately!</p>
+</li>
+</ul>
+<h2 id="first-the-basic-list">First, the basic list.</h2>
+<p>Let&apos;s change the name of the component in <code>App.js</code> to something more meaningful, like <code>MyList</code>. Then, we&apos;ll change the contents of the HTML to have a header and the start of a list.</p>
+<p>This looks like:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;./App.css&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyList</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span> Things I should stop procrastinating:<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    );
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> MyList;
+</code></pre>
+<blockquote>
+<p>Remember to change the name of the component where it&apos;s rendered in index.js!</p>
+</blockquote>
+<p>Now, our webpage displays an empty list.</p>
+<p>We&apos;ve learned that we should make new files for each component and that different functionalities should be split into different components.</p>
+<p>Let&apos;s make a component for <code>ListItem</code>s. This component can simply render  <code>&lt;li&gt;Make the list!&lt;/li&gt;</code> so that we are starting with something in this list.</p>
+<ul>
+<li><p>Remember to use an <code>export</code> statement at the end of the new file to make the code in this file available elsewhere in our application.</p>
+</li>
+<li><p>Don&apos;t forget to import your <code>ListItem</code> component into <code>App.js</code>.  Then, include the component in what <code>MyList</code> renders with <code>&lt;ListItem /&gt;</code> under the existing header (in place of the existing list item)!</p>
+</li>
+</ul>
+<p>At this point, our app looks like this:</p>
+<p><img src="images/todo-list-1.png" alt="list-preview"></p>
+<h2 id="side-note---lets-quickly-format-it-a-little-more-nicely">Side note - let&apos;s quickly format it a little more nicely!</h2>
+<p>Since we&apos;ll be looking at this for a while, let&apos;s make it less of an eyesore. Feel free to change the <code>index.css</code> file to include anything you&apos;d like; on mine, I&apos;ve centered the text and given it a light green background. You can grab  mine <a href="solution-todo-css.md">here</a>.</p>
+<h2 id="second-props">Second, props.</h2>
+<p>This is a great start - we&apos;ve already nested components (<code>ListItem</code> inside of <code>MyList</code>). Now, let&apos;s add some props to make this useful and check that current list item off!</p>
+<p>Let&apos;s first just pass a prop into <code>ListItem</code> from <code>MyList</code>. We&apos;ll call the prop something simple, like <code>doThis</code>. I&apos;m pretty hungry; I&apos;ll pass in a value of &quot;buy ice cream.&quot;</p>
+<p>Then, in <code>ListItem</code>, we&apos;ll add a list item that uses the <code>doThis</code> prop instead of the existing hard-coded text.</p>
+<p>Now, we have in <code>App.js</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;./App.css&apos;</span>;
+<span class="hljs-keyword">import</span> ListItem <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./ListItem&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyList</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Things I should stop procrastinating:<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">ListItem</span> <span class="hljs-attr">doThis</span>=<span class="hljs-string">&quot;Buy ice cream&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    );
+  }
+}
+
+export default MyList;
+</span></code></pre>
+<p>... and in <code>ListItem.js</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;./App.css&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>{this.props.doThis}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    );
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> ListItem;
+</code></pre>
+<p>Our app now looks like this:
+<img src="images/todo-list-2.png" alt="list-preview"></p>
+<h2 id="third-render-different-items-in-an-array">Third, render different items in an array.</h2>
+<p>If we want to make this a truly extensible list, we could create an array of items, pass them into props through the <code>ListItem</code> component, and then render each item. Let&apos;s do that now.</p>
+<p>Borrowing from a bonus exercise earlier, the easiest way to do this is by using the <code>map</code> function. A map is like a <code>for</code> loop. With <code>map</code>, you make a new variable and iterate through each item in an array with it. It looks like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> &lt;new_Variable_Name&gt; = &lt;the_Array_We_Are_Mapping&gt;.map( (local_Variable_Name_to_Loop, index) =&gt; (
+  &lt;what_To_Do_With_Each_Item_in_Loop&gt;
+))
+</code></pre>
+<p>Here&apos;s a simple example that makes a new array by adding an <code>!</code> to each element of an array.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> phrases = [<span class="hljs-string">&apos;ice cream&apos;</span>, <span class="hljs-string">&apos;dinosaurs&apos;</span>, <span class="hljs-string">&apos;hobbits&apos;</span>]
+<span class="hljs-keyword">let</span> excitedPhrases = phrases.map( (phrase, index) =&gt; {
+  <span class="hljs-keyword">return</span> newPhrase = phrase + <span class="hljs-string">&apos;!&apos;</span>
+})
+<span class="hljs-comment">// excitedPhrases is [&quot;ice cream!&quot;, &quot;dinosaurs!&quot;, &quot;hobbits!&quot;]</span>
+</code></pre>
+<h5 id="plan">Plan</h5>
+<ul>
+<li>In the <code>MyList</code> component, have an array of items for the list, uncreatively called <code>theList</code>.</li>
+<li>Create a variable to refer to the new array output by the <code>map</code> method, uncreatively but helpfully called <code>todoItems</code>.</li>
+<li>Use <code>map</code> to iterate through the <code>todoItems</code> array, one <code>item</code> (this could be any name you&apos;d like) at a time, and use each one to create a <code>ListItem</code> component in the <code>todoItems</code> list.</li>
+<li>We can later refer to this list by just calling the variable in JSX (like any other variable).  For example, we could say  <code>{todoItems}</code>.</li>
+</ul>
+<h5 id="implementing-the-plan">Implementing the Plan</h5>
+<p>Here is the <code>map</code> function call that will do this for us, which we&apos;ll put in the <code>MyList</code> component.:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> todoItems = <span class="hljs-keyword">this</span>.props.theList.map( (item, index) =&gt; (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ListItem</span> <span class="hljs-attr">doThis</span>=<span class="hljs-string">{item}</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{index}</span> /&gt;</span>
+))
+</span></code></pre>
+<p>Let&apos;s also actually create that array! In <code>index.js</code>, create an array variable called <code>toDos</code>. Fill it with what you need to do for the day.</p>
+<p>My final <code>MyList</code> component class looks like this:</p>
+<pre><code class="lang-jsx">
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyList</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+
+  render() {
+
+    <span class="hljs-keyword">let</span> todoItems = <span class="hljs-keyword">this</span>.props.theList.map( (item, index) =&gt; (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ListItem</span> <span class="hljs-attr">doThis</span>=<span class="hljs-string">{item}</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{index}</span> /&gt;</span>
+    ))
+
+    return (
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Things I should stop procrastinating:<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+          {todoItems}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    );
+  }
+}
+</span></code></pre>
+<p>And the <code>index.js</code> file:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> MyList <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./App&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;./index.css&apos;</span>;
+
+<span class="hljs-keyword">var</span> toDos = [<span class="hljs-string">&quot;Buy ice cream&quot;</span>, <span class="hljs-string">&quot;Eat ice cream&quot;</span>, <span class="hljs-string">&quot;Go to the gym&quot;</span>]
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">MyList</span> <span class="hljs-attr">theList</span>=<span class="hljs-string">{toDos}</span> /&gt;</span>,
+  document.getElementById(&apos;root&apos;)
+);
+</span></code></pre>
+<p>And the <code>ListItem.js</code>, which hasn&apos;t changed:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;./App.css&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>{this.props.doThis}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    );
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> ListItem;
+</code></pre>
+<p>Now what we have is:
+<img src="images/todo-list-3.png" alt="list-preview"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="16-intermission-state-lifecycle.html" class="navigation navigation-prev " aria-label="Previous page: State Lifecycle">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="18_todo_exercise_continued.html" class="navigation navigation-next " aria-label="Next page: Exercise - Todo list - part 2">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Exercise - Todo list","level":"1.11","depth":1,"next":{"title":"Exercise - Todo list - part 2","level":"1.11.1","depth":2,"path":"lectures/01-react/18_todo_exercise_continued.md","ref":"lectures/01-react/18_todo_exercise_continued.md","articles":[]},"previous":{"title":"State Lifecycle","level":"1.10.2","depth":2,"path":"lectures/01-react/16-intermission-state-lifecycle.md","ref":"lectures/01-react/16-intermission-state-lifecycle.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js","language":"en","gitbook":"*"},"file":{"path":"lectures/01-react/17_todo_exercise.md","mtime":"2017-04-26T21:28:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-27T18:50:49.026Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

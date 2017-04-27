@@ -1,0 +1,1095 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Const and Let · React.js</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="03-ES6-Arrow.html" />
+    
+    
+    <link rel="prev" href="01-ES6.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-react/01_introduction.html">
+            
+                <a href="../01-react/01_introduction.html">
+            
+                    
+                    Welcome to React.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../01-react/02_initial_setup.html">
+            
+                <a href="../01-react/02_initial_setup.html">
+            
+                    
+                    Initial Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../01-react/03_components.html">
+            
+                <a href="../01-react/03_components.html">
+            
+                    
+                    Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../01-react/04_component_setup.html">
+            
+                <a href="../01-react/04_component_setup.html">
+            
+                    
+                    Component Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../01-react/05_jsx.html">
+            
+                <a href="../01-react/05_jsx.html">
+            
+                    
+                    JSX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../01-react/06_virtual_dom.html">
+            
+                <a href="../01-react/06_virtual_dom.html">
+            
+                    
+                    Virtual DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../01-react/07_props.html">
+            
+                <a href="../01-react/07_props.html">
+            
+                    
+                    Props
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../01-react/08_multiple_props.html">
+            
+                <a href="../01-react/08_multiple_props.html">
+            
+                    
+                    Multiple Props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../01-react/09_multiple_props_objects.html">
+            
+                <a href="../01-react/09_multiple_props_objects.html">
+            
+                    
+                    Multiple Props - Using Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../01-react/10_props_challenge.html">
+            
+                <a href="../01-react/10_props_challenge.html">
+            
+                    
+                    Props Challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../01-react/11_nested_components.html">
+            
+                <a href="../01-react/11_nested_components.html">
+            
+                    
+                    Nested Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../01-react/12_nested_components_challenge.html">
+            
+                <a href="../01-react/12_nested_components_challenge.html">
+            
+                    
+                    Nested Components Challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../01-react/13_section_recap.html">
+            
+                <a href="../01-react/13_section_recap.html">
+            
+                    
+                    Section Recap
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../01-react/13.5_mordor_codealong.html">
+            
+                <a href="../01-react/13.5_mordor_codealong.html">
+            
+                    
+                    Recap Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../01-react/14_state.html">
+            
+                <a href="../01-react/14_state.html">
+            
+                    
+                    State
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../01-react/15_state_exercise.html">
+            
+                <a href="../01-react/15_state_exercise.html">
+            
+                    
+                    State Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../01-react/16-intermission-state-lifecycle.html">
+            
+                <a href="../01-react/16-intermission-state-lifecycle.html">
+            
+                    
+                    State Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../01-react/17_todo_exercise.html">
+            
+                <a href="../01-react/17_todo_exercise.html">
+            
+                    
+                    Exercise - Todo list
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../01-react/18_todo_exercise_continued.html">
+            
+                <a href="../01-react/18_todo_exercise_continued.html">
+            
+                    
+                    Exercise - Todo list - part 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../01-react/19-recap.html">
+            
+                <a href="../01-react/19-recap.html">
+            
+                    
+                    Recap
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../01-react/20_calculator_exercise.html">
+            
+                <a href="../01-react/20_calculator_exercise.html">
+            
+                    
+                    Calculator Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="01-ES6.html">
+            
+                <a href="01-ES6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.13.1" data-path="02-ES6-ConstLet.html">
+            
+                <a href="02-ES6-ConstLet.html">
+            
+                    
+                    Const and Let
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="03-ES6-Arrow.html">
+            
+                <a href="03-ES6-Arrow.html">
+            
+                    
+                    Arrow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="04-ES6-Arrow2.html">
+            
+                <a href="04-ES6-Arrow2.html">
+            
+                    
+                    Arrows, Continued
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="05-ES6-Literals.html">
+            
+                <a href="05-ES6-Literals.html">
+            
+                    
+                    Literals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="06-ES6-Exercise.html">
+            
+                <a href="06-ES6-Exercise.html">
+            
+                    
+                    ES6 Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="07-Functional-Components.html">
+            
+                <a href="07-Functional-Components.html">
+            
+                    
+                    Functional Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="08-Functional-Component-Exercise.html">
+            
+                <a href="08-Functional-Component-Exercise.html">
+            
+                    
+                    Functional Components Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="08-Functional-Component-Solution.html">
+            
+                <a href="08-Functional-Component-Solution.html">
+            
+                    
+                    Functional Components Solution
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="09-Component-Lifecycle.html">
+            
+                <a href="09-Component-Lifecycle.html">
+            
+                    
+                    Component Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="10-Unidirectional-Data-Flow.html">
+            
+                <a href="10-Unidirectional-Data-Flow.html">
+            
+                    
+                    Unidirectional Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="11-Immutable-Data.html">
+            
+                <a href="11-Immutable-Data.html">
+            
+                    
+                    Immutable Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../03-router/00-router-introduction.html">
+            
+                <a href="../03-router/00-router-introduction.html">
+            
+                    
+                    React Router
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../03-router/01-browser-history-mechanics.html">
+            
+                <a href="../03-router/01-browser-history-mechanics.html">
+            
+                    
+                    Browser History Mechanics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../03-router/02-modern-browser-history.html">
+            
+                <a href="../03-router/02-modern-browser-history.html">
+            
+                    
+                    Modern Browser History Mechanics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../03-router/03-react-router-intro.html">
+            
+                <a href="../03-router/03-react-router-intro.html">
+            
+                    
+                    React Router Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.4" data-path="../03-router/04-dentist-exercise.html">
+            
+                <a href="../03-router/04-dentist-exercise.html">
+            
+                    
+                    React Router - Codealong Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.5" data-path="../03-router/05-dentist-components.html">
+            
+                <a href="../03-router/05-dentist-components.html">
+            
+                    
+                    React Router - Preparing for Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.6" data-path="../03-router/06-dentist-router.html">
+            
+                <a href="../03-router/06-dentist-router.html">
+            
+                    
+                    React Router - Adding in Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.7" data-path="../03-router/07-router-exercise.html">
+            
+                <a href="../03-router/07-router-exercise.html">
+            
+                    
+                    React Router - Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../04-further-information/01-fetch.html">
+            
+                <a href="../04-further-information/01-fetch.html">
+            
+                    
+                    Introduction to APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../04-further-information/02-data-types.html">
+            
+                <a href="../04-further-information/02-data-types.html">
+            
+                    
+                    API Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../04-further-information/03-fetch.html">
+            
+                <a href="../04-further-information/03-fetch.html">
+            
+                    
+                    fetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../04-further-information/04-fetch-exercise.html">
+            
+                <a href="../04-further-information/04-fetch-exercise.html">
+            
+                    
+                    fetch exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="../04-further-information/05-fetch-project.html">
+            
+                <a href="../04-further-information/05-fetch-project.html">
+            
+                    
+                    fetch project
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../04-further-information/06-declarative-imperative.html">
+            
+                <a href="../04-further-information/06-declarative-imperative.html">
+            
+                    
+                    Imperative vs Declarative
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../04-further-information/07-self-exercise.html">
+            
+                <a href="../04-further-information/07-self-exercise.html">
+            
+                    
+                    Practice makes perfect!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../04-further-information/08-heroku.html">
+            
+                <a href="../04-further-information/08-heroku.html">
+            
+                    
+                    Heroku
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../04-further-information/09-self2.html">
+            
+                <a href="../04-further-information/09-self2.html">
+            
+                    
+                    Second self exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../04-further-information/10-further-reading.html">
+            
+                <a href="../04-further-information/10-further-reading.html">
+            
+                    
+                    Further Reading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../../license.html">
+            
+                <a href="../../license.html">
+            
+                    
+                    Copyright & Terms of Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Const and Let</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="const-and-let"><code>const</code> and <code>let</code></h2>
+<p><code>const</code> and <code>let</code> are new keywords for declaring variables. Where before you would have declared</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
+</code></pre>
+<p>You can now declare</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> x = <span class="hljs-number">1</span>;
+</code></pre>
+<p>or</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> x = <span class="hljs-number">1</span>;
+</code></pre>
+<h3 id="const">Const</h3>
+<p><code>const</code> is short for &quot;constant&quot;. It very easily means, &quot;declaring a variable that will be constant.&quot; So, a <code>const</code> can&apos;t be reassigned. if I assign a <code>const</code> to a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive" target="_blank">primitive</a> type (a string, number, or boolean, for example), I can&apos;t change its value at all.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> hi = <span class="hljs-string">&apos;hello&apos;</span>;
+hi = <span class="hljs-string">&apos;goodbye&apos;</span>;
+</code></pre>
+<p>The code above <strong>will throw an error</strong>, because I attempted to change the reference to a const.</p>
+<blockquote>
+<p><a href="https://codepen.io/andrewdushane/pen/jBYzbm" target="_blank">This CodePen</a> illustrates this. Click the little red exclamation point to see the error.</p>
+</blockquote>
+<p>If possible, try to use <code>const</code> whenever you can to maintain predictability.</p>
+<h5 id="but">But!</h5>
+<p>Just to make it a little trickier, this does <em>not</em>, however, mean that a <code>const</code> is immutable. JavaScript assigns by reference. This means that a variable can&apos;t be reassigned entirely, but we <em>can</em> change a property of an object or add an item to an array. If I assign an object literal as a <code>const</code> variable like this:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> anObject = {
+  hi: <span class="hljs-string">&apos;hello&apos;</span>,
+  animal: <span class="hljs-string">`muffin`</span>
+};
+</code></pre>
+<p>I can then change a key in it, mutating its value:</p>
+<pre><code class="lang-javascript">anObject.animal = <span class="hljs-string">&apos;puppy&apos;</span>;
+</code></pre>
+<p>The new value of <code>anObject</code> is now:</p>
+<pre><code class="lang-javascript">{
+  hi: <span class="hljs-string">&apos;hello&apos;</span>,
+  animal: <span class="hljs-string">&apos;puppy&apos;</span>
+}
+</code></pre>
+<p>This is valid, because <code>anObject</code>&apos;s reference doesn&apos;t change. I just can&apos;t wipe the whole variable.</p>
+<h3 id="let">Let</h3>
+<p>So, that&apos;s <code>const</code>. The other replacement for <code>var</code> is <code>let</code>.</p>
+<p><code>let</code> has the same normal assignment rules as <code>var</code>. The value and reference of a <code>let</code> variable can change, so this will run with no errors:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> hi = <span class="hljs-string">&apos;hello&apos;</span>;
+hi = <span class="hljs-string">&apos;goodbye&apos;</span>;
+</code></pre>
+<p>Open the console (at the bottom of the window) in <a href="https://codepen.io/andrewdushane/pen/mWpxVy" target="_blank">This CodePen</a> and you&apos;ll see that the JavaScript runs, and &quot;goodbye&quot; is logged to the console <em>(to view the console, click the &apos;console&apos; tab at the bottom)</em>.</p>
+<p>When declaring variables using ES6 syntax, if you need to declare a variable whose value will <em>not</em> change, declare it as a <code>const</code>. If the variable&apos;s value <em>will</em> or <em>might</em> change, declare it as a <code>let</code>.</p>
+<p><code>let</code>, like <code>var</code>, can be reassigned as much as you like. Why use <code>let</code> at all, then, when you could just use <code>var</code>?</p>
+<h5 id="let-is-actually-about-scoping"><code>Let</code> is actually about scoping</h5>
+<p>Variables in JavaScript are &apos;scoped&apos; - or the same within - either globally or within an entire function. Since <code>var</code> in javascript is scoped to the nearest parent function, it can be pretty unpredictable, right?</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">varTest</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
+  <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+    <span class="hljs-keyword">var</span> x = <span class="hljs-number">2</span>;  <span class="hljs-comment">// same variable!</span>
+    <span class="hljs-built_in">console</span>.log(x);  <span class="hljs-comment">// Prints 2</span>
+  }
+  <span class="hljs-built_in">console</span>.log(x);  <span class="hljs-comment">// This is going to print 2!</span>
+}
+</code></pre>
+<p>Despite declaring <code>var x</code> in two different places, it&apos;s the same variable, leading to some unwanted and unexpected behavior. Scoping is something that always needs to be tracked in JavaScript for precisely reasons like this.</p>
+<p>ES6 introduced <code>let</code> to fix this scoping issue. Using <code>let</code> is more predictable and straightforward. <code>let</code> is a block scoped variable, so its value is scoped to the nearest curly braces {} rather than the whole function. Thus, within a loop, <code>let</code> will create a new instance for each iteration - instead of changing the original variable.</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">letTest</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">let</span> x = <span class="hljs-number">1</span>;
+  <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+    <span class="hljs-keyword">let</span> x = <span class="hljs-number">2</span>;  <span class="hljs-comment">// curly braces = different variable</span>
+    <span class="hljs-built_in">console</span>.log(x);  <span class="hljs-comment">// 2</span>
+  }
+  <span class="hljs-built_in">console</span>.log(x);  <span class="hljs-comment">// 1</span>
+}
+</code></pre>
+<p>You can see this in action in <a href="https://codepen.io/andrewdushane/pen/oZpqxO" target="_blank">This CodePen</a> - open the console to see the difference.</p>
+<p>Here&apos;s another example. Using regular <code>var</code>, this always prints 5.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> array = [];
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>; i&lt;<span class="hljs-number">5</span>; i++) {
+    array.push({onclick: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;array: &apos;</span>, i); }});
+}
+
+array[<span class="hljs-number">0</span>].onclick(); <span class="hljs-comment">// array: 5</span>
+array[<span class="hljs-number">1</span>].onclick(); <span class="hljs-comment">// array: 5</span>
+</code></pre>
+<p>However, if we use <code>let</code>, we can give each variable in that for loop its own scope.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> array = [];
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">5</span>;i++) {
+    array.push({onclick: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;array: &apos;</span>, i); }});
+}
+
+array[<span class="hljs-number">0</span>].onclick(); <span class="hljs-comment">// array: 0</span>
+array[<span class="hljs-number">1</span>].onclick(); <span class="hljs-comment">// array: 1</span>
+</code></pre>
+<p>With more predictable scope, <code>let</code> variables are easier to keep track of visually than <code>var</code>s, and less likely to introduce bugs to your code.</p>
+<h3 id="thought-exercise">Thought Exercise:</h3>
+<p>Here&apos;s a tricky one. Look at your blog project - the index.js file. You have:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> post = {
+  title: <span class="hljs-string">&quot;Dinosaurs are awesome&quot;</span>,
+  authors: [
+    <span class="hljs-string">&quot;Stealthy Stegosaurus&quot;</span>,
+    <span class="hljs-string">&quot;Tiny trex&quot;</span>,
+    <span class="hljs-string">&quot;Iguanadon Ivory&quot;</span>
+  ],
+  body: <span class="hljs-string">&quot;Check out this body property!&quot;</span>,
+  comments: [
+    <span class="hljs-string">&quot;First!&quot;</span>,
+    <span class="hljs-string">&quot;Great post!&quot;</span>,
+    <span class="hljs-string">&quot;Hire him!&quot;</span>
+]
+}
+
+ReactDOM.render(
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Post</span>
+    <span class="hljs-attr">title</span>=<span class="hljs-string">{post.title}</span>
+    <span class="hljs-attr">allAuthors</span>=<span class="hljs-string">{post.authors}</span>
+    <span class="hljs-attr">body</span>=<span class="hljs-string">{post.body}</span>
+    <span class="hljs-attr">comments</span>=<span class="hljs-string">{post.comments}</span>
+  /&gt;</span>,
+  document.getElementById(&apos;root&apos;)
+);
+</span></code></pre>
+<p>Should that <code>post</code> variable be a <code>let</code> or a <code>const</code>?</p>
+<details>
+ <summary>Did you think about it? Do you have an idea? Then the answer is...</summary>
+  <p><code>const</code> We want to show one post which will be displayed
+  constantly. The one post should never change.</p>
+
+  <p>Now, the comments might change. People should be able to add or remove
+  their own comments. Remember that <code>const</code> only refers to what the
+  variable <code>post</code> references. We&apos;re still allowed to modify the
+  values inside of the object.</p>
+
+  <p>Using <code>const</code> will guarantee that the <code>post</code> object
+  is never swapped out for an entirely other blog post object. Using
+  <code>const</code> will still allow us to modify the values of the
+  <code>title</code> <code>authors</code> <code>body</code> and
+  <code>comments</code> inside the constant object.</p>
+</details>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="01-ES6.html" class="navigation navigation-prev " aria-label="Previous page: ES6">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="03-ES6-Arrow.html" class="navigation navigation-next " aria-label="Next page: Arrow">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Const and Let","level":"1.13.1","depth":2,"next":{"title":"Arrow","level":"1.13.2","depth":2,"path":"lectures/02-further-react-info/03-ES6-Arrow.md","ref":"lectures/02-further-react-info/03-ES6-Arrow.md","articles":[]},"previous":{"title":"ES6","level":"1.13","depth":1,"path":"lectures/02-further-react-info/01-ES6.md","ref":"lectures/02-further-react-info/01-ES6.md","articles":[{"title":"Const and Let","level":"1.13.1","depth":2,"path":"lectures/02-further-react-info/02-ES6-ConstLet.md","ref":"lectures/02-further-react-info/02-ES6-ConstLet.md","articles":[]},{"title":"Arrow","level":"1.13.2","depth":2,"path":"lectures/02-further-react-info/03-ES6-Arrow.md","ref":"lectures/02-further-react-info/03-ES6-Arrow.md","articles":[]},{"title":"Arrows, Continued","level":"1.13.3","depth":2,"path":"lectures/02-further-react-info/04-ES6-Arrow2.md","ref":"lectures/02-further-react-info/04-ES6-Arrow2.md","articles":[]},{"title":"Literals","level":"1.13.4","depth":2,"path":"lectures/02-further-react-info/05-ES6-Literals.md","ref":"lectures/02-further-react-info/05-ES6-Literals.md","articles":[]},{"title":"ES6 Exercise","level":"1.13.5","depth":2,"path":"lectures/02-further-react-info/06-ES6-Exercise.md","ref":"lectures/02-further-react-info/06-ES6-Exercise.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js","language":"en","gitbook":"*"},"file":{"path":"lectures/02-further-react-info/02-ES6-ConstLet.md","mtime":"2017-04-21T20:41:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-27T18:50:49.026Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
