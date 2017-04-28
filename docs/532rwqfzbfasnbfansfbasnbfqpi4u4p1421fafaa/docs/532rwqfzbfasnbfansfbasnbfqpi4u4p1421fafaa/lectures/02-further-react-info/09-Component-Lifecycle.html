@@ -1,0 +1,1115 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Component Lifecycle · React.js</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="10-Unidirectional-Data-Flow.html" />
+    
+    
+    <link rel="prev" href="08-Functional-Component-Solution.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-react/01_introduction.html">
+            
+                <a href="../01-react/01_introduction.html">
+            
+                    
+                    Welcome to React.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../01-react/02_initial_setup.html">
+            
+                <a href="../01-react/02_initial_setup.html">
+            
+                    
+                    Initial Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../01-react/03_components.html">
+            
+                <a href="../01-react/03_components.html">
+            
+                    
+                    Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../01-react/04_component_setup.html">
+            
+                <a href="../01-react/04_component_setup.html">
+            
+                    
+                    Component Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../01-react/05_jsx.html">
+            
+                <a href="../01-react/05_jsx.html">
+            
+                    
+                    JSX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../01-react/06_virtual_dom.html">
+            
+                <a href="../01-react/06_virtual_dom.html">
+            
+                    
+                    Virtual DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../01-react/07_props.html">
+            
+                <a href="../01-react/07_props.html">
+            
+                    
+                    Props
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../01-react/08_multiple_props.html">
+            
+                <a href="../01-react/08_multiple_props.html">
+            
+                    
+                    Multiple Props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../01-react/09_multiple_props_objects.html">
+            
+                <a href="../01-react/09_multiple_props_objects.html">
+            
+                    
+                    Multiple Props - Using Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../01-react/10_props_challenge.html">
+            
+                <a href="../01-react/10_props_challenge.html">
+            
+                    
+                    Props Challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../01-react/11_nested_components.html">
+            
+                <a href="../01-react/11_nested_components.html">
+            
+                    
+                    Nested Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../01-react/12_nested_components_challenge.html">
+            
+                <a href="../01-react/12_nested_components_challenge.html">
+            
+                    
+                    Nested Components Challenge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../01-react/13_section_recap.html">
+            
+                <a href="../01-react/13_section_recap.html">
+            
+                    
+                    Section Recap
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../01-react/13.5_mordor_codealong.html">
+            
+                <a href="../01-react/13.5_mordor_codealong.html">
+            
+                    
+                    Recap Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../01-react/14_state.html">
+            
+                <a href="../01-react/14_state.html">
+            
+                    
+                    State
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../01-react/15_state_exercise.html">
+            
+                <a href="../01-react/15_state_exercise.html">
+            
+                    
+                    State Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../01-react/16-intermission-state-lifecycle.html">
+            
+                <a href="../01-react/16-intermission-state-lifecycle.html">
+            
+                    
+                    State Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../01-react/17_todo_exercise.html">
+            
+                <a href="../01-react/17_todo_exercise.html">
+            
+                    
+                    Exercise - Todo list
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../01-react/18_todo_exercise_continued.html">
+            
+                <a href="../01-react/18_todo_exercise_continued.html">
+            
+                    
+                    Exercise - Todo list - part 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../01-react/19-recap.html">
+            
+                <a href="../01-react/19-recap.html">
+            
+                    
+                    Recap
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../01-react/20_calculator_exercise.html">
+            
+                <a href="../01-react/20_calculator_exercise.html">
+            
+                    
+                    Calculator Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="01-ES6.html">
+            
+                <a href="01-ES6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="02-ES6-ConstLet.html">
+            
+                <a href="02-ES6-ConstLet.html">
+            
+                    
+                    Const and Let
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="03-ES6-Arrow.html">
+            
+                <a href="03-ES6-Arrow.html">
+            
+                    
+                    Arrow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="04-ES6-Arrow2.html">
+            
+                <a href="04-ES6-Arrow2.html">
+            
+                    
+                    Arrows, Continued
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.4" data-path="05-ES6-Literals.html">
+            
+                <a href="05-ES6-Literals.html">
+            
+                    
+                    Literals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.5" data-path="06-ES6-Exercise.html">
+            
+                <a href="06-ES6-Exercise.html">
+            
+                    
+                    ES6 Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="07-Functional-Components.html">
+            
+                <a href="07-Functional-Components.html">
+            
+                    
+                    Functional Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="08-Functional-Component-Exercise.html">
+            
+                <a href="08-Functional-Component-Exercise.html">
+            
+                    
+                    Functional Components Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="08-Functional-Component-Solution.html">
+            
+                <a href="08-Functional-Component-Solution.html">
+            
+                    
+                    Functional Components Solution
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="09-Component-Lifecycle.html">
+            
+                <a href="09-Component-Lifecycle.html">
+            
+                    
+                    Component Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="10-Unidirectional-Data-Flow.html">
+            
+                <a href="10-Unidirectional-Data-Flow.html">
+            
+                    
+                    Unidirectional Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="11-Immutable-Data.html">
+            
+                <a href="11-Immutable-Data.html">
+            
+                    
+                    Immutable Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../03-router/00-router-introduction.html">
+            
+                <a href="../03-router/00-router-introduction.html">
+            
+                    
+                    React Router
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../03-router/01-browser-history-mechanics.html">
+            
+                <a href="../03-router/01-browser-history-mechanics.html">
+            
+                    
+                    Browser History Mechanics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../03-router/02-modern-browser-history.html">
+            
+                <a href="../03-router/02-modern-browser-history.html">
+            
+                    
+                    Modern Browser History Mechanics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../03-router/03-react-router-intro.html">
+            
+                <a href="../03-router/03-react-router-intro.html">
+            
+                    
+                    React Router Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.4" data-path="../03-router/04-dentist-exercise.html">
+            
+                <a href="../03-router/04-dentist-exercise.html">
+            
+                    
+                    React Router - Codealong Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.5" data-path="../03-router/05-dentist-components.html">
+            
+                <a href="../03-router/05-dentist-components.html">
+            
+                    
+                    React Router - Preparing for Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.6" data-path="../03-router/06-dentist-router.html">
+            
+                <a href="../03-router/06-dentist-router.html">
+            
+                    
+                    React Router - Adding in Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.7" data-path="../03-router/07-router-exercise.html">
+            
+                <a href="../03-router/07-router-exercise.html">
+            
+                    
+                    React Router - Exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../04-further-information/01-fetch.html">
+            
+                <a href="../04-further-information/01-fetch.html">
+            
+                    
+                    Introduction to APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../04-further-information/02-data-types.html">
+            
+                <a href="../04-further-information/02-data-types.html">
+            
+                    
+                    API Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../04-further-information/03-fetch.html">
+            
+                <a href="../04-further-information/03-fetch.html">
+            
+                    
+                    fetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../04-further-information/04-fetch-exercise.html">
+            
+                <a href="../04-further-information/04-fetch-exercise.html">
+            
+                    
+                    fetch exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="../04-further-information/05-fetch-project.html">
+            
+                <a href="../04-further-information/05-fetch-project.html">
+            
+                    
+                    fetch project
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../04-further-information/06-declarative-imperative.html">
+            
+                <a href="../04-further-information/06-declarative-imperative.html">
+            
+                    
+                    Imperative vs Declarative
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../04-further-information/07-self-exercise.html">
+            
+                <a href="../04-further-information/07-self-exercise.html">
+            
+                    
+                    Practice makes perfect!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../04-further-information/08-heroku.html">
+            
+                <a href="../04-further-information/08-heroku.html">
+            
+                    
+                    Heroku
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../04-further-information/09-self2.html">
+            
+                <a href="../04-further-information/09-self2.html">
+            
+                    
+                    Second self exercise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../04-further-information/10-further-reading.html">
+            
+                <a href="../04-further-information/10-further-reading.html">
+            
+                    
+                    Further Reading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../../license.html">
+            
+                <a href="../../license.html">
+            
+                    
+                    Copyright & Terms of Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Component Lifecycle</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="react-component-lifecycle">React Component Lifecycle</h1>
+<p>Okay - you&apos;ve aced it so far. Let&apos;s get technical!</p>
+<p>React class components provide several lifecycle methods that you can use to control your application based on the state of the UI.</p>
+<p>These methods happen automatically - but you can call them to modify them.</p>
+<p>These methods are called at specific points in the rendering process. You can use these methods to perform actions based on what&apos;s happening on the DOM.</p>
+<ul>
+<li><code>componentDidMount</code>, for example, is called immediately <em>after</em> a component is rendered to the DOM.</li>
+<li><code>componentWillUnmount</code> is called immediately <em>before</em> a component is removed from the DOM.</li>
+</ul>
+<p>Some common uses of lifecycle methods are making asynchronous requests, binding event listeners, and optimizing for performance.</p>
+<h2 id="component-lifecycle-methods">Component lifecycle methods:</h2>
+<p><a href="https://facebook.github.io/react/docs/react-component.html" target="_blank">Check out the documentation on components!</a></p>
+<ul>
+<li><code>constructor()</code></li>
+<li><code>componentWillMount()</code></li>
+<li><code>componentDidMount()</code></li>
+<li><code>componentWillUnmount()</code></li>
+<li><code>componentWillReceiveProps()</code></li>
+<li><code>render()</code></li>
+<li><code>shouldComponentUpdate()</code></li>
+<li><code>componentWillUpdate()</code></li>
+<li><code>componentDidUpdate()</code></li>
+</ul>
+<p>Let&apos;s go through them. Again, you don&apos;t need to write these - only if you want to change something in them.</p>
+<p>Here they are in a diagram - <img src="assets/React_Component_Lifecycle.png" alt="Lifecycles"> Open this image in a new window next to this one, and follow along as we go through the methods.</p>
+<h2 id="constructor"><code>constructor()</code></h2>
+<p>This is something we&apos;ve already seen when we were learning <code>state</code>. Like any JavaScript class, the <code>constructor</code> method is called when a component is instantiated (when it&apos;s first rendered).<br>In a class constructor, you must call <code>super</code> before you do anything else. So a React component constructor in its most basic form looks like this:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">constructor</span>(props) {
+  <span class="hljs-keyword">super</span>(props);
+}
+</code></pre>
+<p>You don&apos;t need to define a constructor if that&apos;s all it does, though. This happens automatically when your component is invoked. A common use of the constructor is to initialize state using the props passed to the component - as we have been doing!</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">constructor</span>(props) {
+  <span class="hljs-keyword">super</span>(props);
+  <span class="hljs-keyword">this</span>.state = {
+    fruits: props.fruits,
+  };
+}
+</code></pre>
+<blockquote>
+<p>This constructor sets the initial <code>fruits</code> state of the component to the <code>fruits</code> prop passed to the component. Then, using <code>setState</code>, your user can add fruits, delete them, or whatever else your component allows.</p>
+</blockquote>
+<p>Another common use of the constructor method is to bind class methods.</p>
+<p>When a method is &quot;bound&quot; to a component, it means that when the method is invoked, <code>this</code> will refer to the component, and not to the context that invoked the method. So, if you pass a component&apos;s method to a child component from a parent component, you can be sure that <code>this.setState</code> will set the state of the parent component if the method is bound to it.</p>
+<p>In JavaScript classes, methods aren&apos;t bound by default. So, if you pass a component&apos;s method to a child component without binding it, it can lose its context, and not behave the way you intended. Here&apos;s an example:</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FruitTable</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+
+  <span class="hljs-keyword">constructor</span>(props) {
+    <span class="hljs-keyword">super</span>(props);
+    <span class="hljs-keyword">this</span>.state = {
+      fruits: props.fruits,
+    };
+    <span class="hljs-keyword">this</span>.addFruit = <span class="hljs-keyword">this</span>.addFruit.bind(<span class="hljs-keyword">this</span>);
+  }
+
+  addFruit(fruit) {
+    <span class="hljs-keyword">this</span>.setState(prevState =&gt; ({
+      fruits: prevState.fruits.concat(fruit),
+    }));
+  }
+
+}
+</code></pre>
+<p>Notice that in the constructor, <code>this.addFruit</code> is bound to the class - <code>this.addFruit = this.addFruit.bind(this);</code></p>
+<p>Now, if we pass <code>this.addFruit</code> to a child component as an onChange callback, it will be bound to <code>FruitTable</code> and will update its state when it&apos;s invoked.</p>
+<p>Again, you <em>don&apos;t</em> need a constructor in every React component, but if you need to initialize state by props or bind methods, the constructor is where you do it.</p>
+<h2 id="componentwillmount"><code>componentWillMount()</code></h2>
+<p>This method is called immediately before a component is rendered to the DOM. You generally won&apos;t need to use this method. Advanced use-cases like server-rendering are usually the only ones in which <code>componentWillMount</code> is needed.</p>
+<h2 id="componentdidmount-and-componentwillunmount"><code>componentDidMount()</code> and <code>componentWillUnmount()</code></h2>
+<p>The <code>componentDidMount</code> method is called once, immediately after your component is rendered to the DOM. If you want to make an AJAX request when your component first renders, this is where to do it (<em>not</em> in the constructor, or in <code>componentWillMount</code>). <code>componentWillMount</code> shouldn&apos;t be used for server requests because it may be invoked multiple times before render in future versions of React. <a href="https://en.wikipedia.org/wiki/Side_effect_(computer_science" target="_blank">Side effects</a> should be avoided in the <code>constructor</code>, and so server requests shouldn&apos;t be made there. The accepted answer on <a href="http://stackoverflow.com/questions/41612200/in-react-js-should-i-make-my-initial-network-request-in-componentwillmount-or-co" target="_blank">this Stack Overflow</a> from a member of the React team at Facebook gives more detail. In the following example, we fetch data from the server, then set the state of the component using the response.</p>
+<pre><code class="lang-javascript">componentDidMount() {
+  fetch(<span class="hljs-string">`http://api.com/<span class="hljs-subst">${this.props.id}</span>`</span>)
+    .then(response =&gt; response.json())
+    .then(data =&gt; <span class="hljs-keyword">this</span>.setState(prevState =&gt; ({ data })));
+}
+</code></pre>
+<p>Another common use for <code>componentDidMount</code> is to bind event listeners to your component. You can then remove the event listeners in <code>componentWillUnmount</code>. In this example, we bind and unbind an event listener for a drag-drop component.</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FruitTable</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">component</span> </span>{
+
+  componentDidMount() {
+    <span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">&apos;dragover&apos;</span>, <span class="hljs-keyword">this</span>.handleDragStart);
+  }
+
+  componentWillUnmount() {
+    <span class="hljs-built_in">document</span>.removeEventListener(<span class="hljs-string">&apos;dragover&apos;</span>, <span class="hljs-keyword">this</span>.handleDragStart);
+  }
+
+  handleDragStart(e) {
+    e.preventDefault();
+    <span class="hljs-keyword">this</span>.setState(prevState =&gt; ({
+      dragging: <span class="hljs-literal">true</span>
+    }));
+  }
+
+}
+</code></pre>
+<h2 id="render"><code>render()</code></h2>
+<p>This is the one method that every React class component <strong>must</strong> have. In render, you return JSX using the compoment&apos;s props and state. You should never set state in render - render should only react to changes in state or props, not create those changes. The following component renders a single prop and a single state key - a car model and a speed. Once this component is mounted, its <code>speed</code> state will go up by 1 every second. You can <a href="https://codepen.io/andrewdushane/pen/aJEJjm" target="_blank">try it out yourself on CodePen</a>.</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+
+  <span class="hljs-keyword">constructor</span>(props) {
+    <span class="hljs-keyword">super</span>(props);
+
+    <span class="hljs-comment">// sets initial state to either the `speed` prop, or 0 if the `speed` prop</span>
+    <span class="hljs-comment">// is not passed to the component</span>
+    <span class="hljs-keyword">this</span>.state = {
+      speed: props.speed || <span class="hljs-number">0</span>,
+    }
+
+    <span class="hljs-comment">// binds this.incrementSpeed to class</span>
+    <span class="hljs-comment">// this way when it&apos;s used as a callback for `setTimeout`</span>
+    <span class="hljs-comment">// `this` refers to the `Car` class</span>
+    <span class="hljs-keyword">this</span>.incrementSpeed = <span class="hljs-keyword">this</span>.incrementSpeed.bind(<span class="hljs-keyword">this</span>);
+  }
+
+  componentDidMount() {
+    <span class="hljs-comment">// calls this.incrementSpeed after one second</span>
+    <span class="hljs-built_in">window</span>.setTimeout(<span class="hljs-keyword">this</span>.incrementSpeed, <span class="hljs-number">1000</span>);
+  }
+
+  incrementSpeed() {
+    <span class="hljs-comment">// sets the `speed` state to one unit higher than it was previously</span>
+    <span class="hljs-keyword">this</span>.setState(prevState =&gt; ({ speed: prevState.speed + <span class="hljs-number">1</span> }));
+
+    <span class="hljs-comment">// recursive method</span>
+    <span class="hljs-comment">// increases speed by 1 again after one second</span>
+    <span class="hljs-built_in">window</span>.setTimeout(<span class="hljs-keyword">this</span>.incrementSpeed, <span class="hljs-number">1000</span>);
+  }
+
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        This {this.props.model} is going {this.state.speed} miles per hour!
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    );
+  }
+
+}
+</code></pre>
+<p>To break down what&apos;s happening in this component:</p>
+<h3 id="constructor"><code>constructor</code></h3>
+<p>The initial state is set to either the <code>speed</code> prop, or 0 if the <code>speed</code> prop is not passed to the component.  </p>
+<p>We bind <code>this.incrementSpeed</code> to the class, so that when it&apos;s used as a callback for <code>setTimeout</code>, <code>this</code> refers to the <code>Car</code> class.</p>
+<h3 id="componentdidmount"><code>componentDidMount</code></h3>
+<p>Use <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout" target="_blank"><code>window.setTimeout</code></a> to call <code>this.incrementSpeed</code> after one second (1000 ms).</p>
+<h3 id="incrementspeed"><code>incrementSpeed</code></h3>
+<p><code>this.setState(prevState =&gt; ({ speed: prevState.speed + 1 }));</code>: The <code>speed</code> state is set to one higher than it was previously - we add one.</p>
+<p><code>window.setTimeout(this.incrementSpeed, 1000)</code>: The <code>incrementSpeed</code> method is <a href="https://en.wikipedia.org/wiki/Recursion_(computer_science" target="_blank">recursive</a>) - it invokes itself as the timeout callback. After one second, <code>window.setTimeout</code> will call <code>this.incrementSpeed</code> again - the <code>speed</code> will go up by one, and a new timer will be set to do it again.</p>
+<h2 id="componentwillreceivepropsnewprops"><code>componentWillReceiveProps(newProps)</code></h2>
+<p>This method is called any time your component receives new props. It is <em>not</em> called with the initial props when your component initially mounts. If you need to change the state of your component based on changes in the props, this is where you do it. In a simple app, you generally won&apos;t need <code>componentWillReceiveProps</code>.</p>
+<h2 id="shouldcomponentupdate-componentwillupdate-componentdidupdate"><code>shouldComponentUpdate</code>, <code>componentWillUpdate</code>, <code>componentDidUpdate</code></h2>
+<p>These methods are called when a component&apos;s props or state change, and are generally used for performance optimizations. React is quite fast by itself, and you usually don&apos;t need to concern yourself with these methods outside of a large app with many dynamic components.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="08-Functional-Component-Solution.html" class="navigation navigation-prev " aria-label="Previous page: Functional Components Solution">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="10-Unidirectional-Data-Flow.html" class="navigation navigation-next " aria-label="Next page: Unidirectional Flow">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Component Lifecycle","level":"1.15","depth":1,"next":{"title":"Unidirectional Flow","level":"1.16","depth":1,"path":"lectures/02-further-react-info/10-Unidirectional-Data-Flow.md","ref":"lectures/02-further-react-info/10-Unidirectional-Data-Flow.md","articles":[]},"previous":{"title":"Functional Components Solution","level":"1.14.2","depth":2,"path":"lectures/02-further-react-info/08-Functional-Component-Solution.md","ref":"lectures/02-further-react-info/08-Functional-Component-Solution.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js","language":"en","gitbook":"*"},"file":{"path":"lectures/02-further-react-info/09-Component-Lifecycle.md","mtime":"2017-04-21T20:41:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-27T18:50:49.026Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

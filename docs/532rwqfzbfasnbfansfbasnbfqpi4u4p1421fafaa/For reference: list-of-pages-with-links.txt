@@ -1,0 +1,192 @@
+SURVEYS ON PAGES (with code):
+
+13.9_survey (--> NOTE! Goes after 10_props_challenge!!!!)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=Intro+-%3E+Props+Challenge&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+13.91_survey (Goes after Mordor recap exercise)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=Nested+components+-%3E+Mordor+recap+exercise&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+16.1_survey (Goes after intermission state lifecycle)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=State+overview,+exercise,+and+lifecycle&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+18.1_survey (goes after todo exercise)
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=Todo+List+Exercise&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+20.1 survey (goes after calculator exercise)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=Overall+recap+%2B+Calculator+exercise&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+13_survey (goes at end of 02-further-react-info after section summary)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=ES6,+Functional+Components,+Unidirectional+Flow,+Immutable+Data&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+3.5_survey (goes after React router intro)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=Router+introduction+-%3E+React+Router+Introduction&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+
+
+
+06.5_survey (goes after dentist exercise)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=React+Router+dentist+codealong&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+07.5_survey (after router project)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=React+Router+Exercise&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+04.5_survey (after fetch exercise)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=APIs+-%3E+Fetch+Exercise&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+05.5_survey (after fetch project)
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=Fetch+Project&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+08.5_survey (after heroku)
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=Heroku+lesson+and+project&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+
+--------------
+
+
+
+
+THESE ARE THE FILES WITH VIDEOS (and code):
+01_introduction
+
+<video width="640" height="480" controls="controls" type="video/mp4">
+<source src="https://embed-ssl.wistia.com/deliveries/0d6ef119de938d8d6201637ec608f4120a4c8f62.bin">
+Your browser does not support the video tag.
+</video>
+
+
+03_components
+
+<video width="640" height="480" controls="controls" type="video/mp4">
+<source src="https://embed-ssl.wistia.com/deliveries/deacce68a678980e44d3abf6629e438194e31394.bin">
+Your browser does not support the video tag.
+</video>
+
+
+05_jsx
+
+<video width="640" height="480" controls="controls" type="video/mp4">
+<source src="https://embed-ssl.wistia.com/deliveries/bd819d206167f59a88640ae5ae1ed8e65abe1fcb.bin">
+Your browser does not support the video tag.
+</video>
+
+
+06_virtual_dom
+
+<video width="640" height="480" controls="controls" type="video/mp4">
+<source src="https://embed-ssl.wistia.com/deliveries/160cbbd9576b762075104180a89a0095723a36bc.bin">
+Your browser does not support the video tag.
+</video>
+
+
+07_props
+
+<video width="640" height="480" controls="controls" type="video/mp4">
+<source src="https://embed-ssl.wistia.com/deliveries/fce4a186f0003cee9490955bf5925fe2d17b8acc.bin">
+Your browser does not support the video tag.
+</video>
+
+
+14_state
+
+<video width="640" height="480" controls="controls" type="video/mp4">
+<source src="https://embed-ssl.wistia.com/deliveries/b448050a6e1b94345cbef6534ae8510eb771abdd.bin">
+Your browser does not support the video tag.
+</video>
+
+
+19-recap
+
+<video width="640" height="480" controls="controls" type="video/mp4">
+<source src="https://embed-ssl.wistia.com/deliveries/bfae96f54dbe068256aa5f0e5fc44696c7179f57.bin">
+Your browser does not support the video tag.
+</video>
+
+
+10-unidirectional-data-flow
+
+<video width="640" height="480" controls="controls" type="video/mp4">
+<source src="https://embed-ssl.wistia.com/deliveries/cd5d58d2bc562a606ab045c5c056ada1680eea13.bin">
+Your browser does not support the video tag.
+</video>
+
+
+03-react-router-intro
+
+<video width="640" height="480" controls="controls" type="video/mp4">
+<source src="https://embed-ssl.wistia.com/deliveries/86ed960457d30d4247b0f536884db45773925ba6.bin">
+Your browser does not support the video tag.
+</video>
+
+
+--------------
+
+
+THESE HAVE LINKS TO A SOLUTIONS FILE.
+01-react/05_jsx.md --- solution-jsx.html
+01-react/10_props_challenge.md -- solution-props.html
+01-react/12_nested_components_challenge.md -- solution-nested.html
+01-react/13.5_mordor_codealong --- solution-mordor.html
+01-react/14_state.md -- solution-state.html
+01-react/15_state_exercise.md (there are two!) ---- both on solution-state_exercise.htm
+
+01-react/17_todo_exercise --- solution-todo-css.html
+01-react/18_todo_exercise_continued.md --- solution-todo.html
+01-react/20_calculator_exercise.md ---- solution-calc.html
+02-further-react-info/07-router-exercise.md ---- solution-router.html
+02-further-react-info/05-fetch-project.md ---- solution-fetch.html
+
+--------------
+
+
+THESE HAVE OBJECTIVES:
+
+01-fetch
+00-router-introduction
+03-react-router-intro
+13_section_recap
+08-heroku.md
+
+
+--------------
+
+
+
+THESE HAVE VIDEO CODEPENS:
+05_jsx
+07_props
+14_state
+
+
+--------------
+
+
+
+THESE HAVE CODEALONG CODEPENS:
+02-ES6-ConstLet.md x 3
+03-ES6-Arrow x 1
+04-ES6-Arrow2 x 1
+05-ES6-Literals x 1
+06-ES6-Exercise x 2 -- exercise and solution
+07-Functional-Components
+09-Component-Lifecycle
+10-Unidirectional-Data-Flow

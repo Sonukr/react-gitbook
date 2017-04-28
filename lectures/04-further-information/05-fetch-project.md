@@ -18,7 +18,7 @@ Still using Fetch and OMDB, recreate the Netflix carousel with your 10 favorite 
 
 Your solution should look similar to the following:
 
-![SOLUTION.png](SOLUTION.png)
+![SOLUTION.png](../../projects/project-05-fetch/SOLUTION.png)
 
 
 ## Part 2: Build a Weather App
