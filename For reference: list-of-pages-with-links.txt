@@ -1,7 +1,62 @@
 SURVEYS ON PAGES (with code):
 
-To build an iFrame survey:
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+13.9_survey (--> NOTE! Goes after 10_props_challenge!!!!)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=Intro+-%3E+Props+Challenge&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+13.91_survey (Goes after Mordor recap exercise)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=Nested+components+-%3E+Mordor+recap+exercise&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+16.1_survey (Goes after intermission state lifecycle)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=State+overview,+exercise,+and+lifecycle&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+18.1_survey (goes after todo exercise)
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=Todo+List+Exercise&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+20.1 survey (goes after calculator exercise)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=Overall+recap+%2B+Calculator+exercise&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+13_survey (goes at end of 02-further-react-info after section summary)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=ES6,+Functional+Components,+Unidirectional+Flow,+Immutable+Data&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+3.5_survey (goes after React router intro)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=Router+introduction+-%3E+React+Router+Introduction&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+
+
+
+06.5_survey (goes after dentist exercise)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=React+Router+dentist+codealong&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+07.5_survey (after router project)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=React+Router+Exercise&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+04.5_survey (after fetch exercise)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=APIs+-%3E+Fetch+Exercise&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+05.5_survey (after fetch project)
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=Fetch+Project&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+08.5_survey (after heroku)
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe99R6EPoGB8XHCh4KxkodAcAjkIcKWO3hD5gTpc3j2j48JwA/viewform?usp=pp_url&entry.458125279=Heroku+lesson+and+project&entry.1739026210&embedded=true" width=800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 
 

@@ -8,8 +8,6 @@
 
 Welcome! This lesson assumes you have some JavaScript knowledge and awareness of the DOM tree.
 
-**One note:** Because this is a pilot, we are working out how long sections take to translate this to in class timings. Every few sections, there will be a survey on how long you've spent on the previous sections and whether the sections were useful. Please fill them out!
-
 And with that, let's learn!
 
 ## What is ReactJS?

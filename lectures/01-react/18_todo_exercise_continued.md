@@ -18,30 +18,8 @@ Now, we'll look into making this list changeable. Remember, updating state will 
 
 First, in `MyList`, we define the function that will be called by the button:
 
-### Sure-fire Coding
-There's lots of things that can go wrong when we try to hook up
-new functionality to our app. Our button might be set up wrong, it might not
-call the correct function, the function may have an error in it.
-
-Let's add a `console.log()` statement on the first line in our `clearList`
-function. This is an excellent debugging practice. Adding `console.log()` proves
-to us that the function is actually executing. This proves to us that there's
-nothing wrong with how we hooked up the button and helps narrow our focus in
-case something else went wrong.
-
-Let's say you click the button and the list isn't cleared.
-* If you didn't see `"Clearing list!"` in the console then you know something is
-  wrong with the way you hooked up the button. Investigate that.
-* If you did see `"Clearing List!"` in the console and the list still didn't
-  clear then you know you need to investigate your code inside the function
-  after the click.
-
-Adding simple sanity checks like this to your code will make you a productive
-programmer.
-
 ```js
 clearList (e) {
-  console.log("Clearing list!");
   this.setState({
     toDoItemArray: []
   })
@@ -99,6 +77,37 @@ Now when we click on the button, the following will occur:
 * The render function for `MyApp` will be called and re-render the component.
 * We'll feel good about ourselves for going to the gym, even if we ate ice cream first.
 
+
+ ### Sure-fire Coding
+ There's lots of things that can go wrong when we try to hook up
+ new functionality to our app. Our button might be set up wrong, it might not
+ call the correct function, the function may have an error in it.
+
+ Let's add a `console.log()` statement on the first line in our `clearList`
+ function. This is an excellent debugging practice. Adding `console.log()` proves
+ to us that the function is actually executing. This proves to us that there's
+ nothing wrong with how we hooked up the button and helps narrow our focus in
+ case something else went wrong.
+
+ Let's say you click the button and the list isn't cleared.
+ * If you didn't see `"Clearing list!"` in the console then you know something is
+   wrong with the way you hooked up the button. Investigate that.
+ * If you did see `"Clearing List!"` in the console and the list still didn't
+   clear then you know you need to investigate your code inside the function
+   after the click.
+
+ Adding simple sanity checks like this to your code will make you a productive
+ programmer.
+
+ ```js
+ clearList (e) {
+   console.log("Clearing list!");
+   this.setState({
+     toDoItemArray: []
+   })
+ }
+ ```
+
 ## Adding items
 
 Let's add one more thing to our app: an input field for more items. In order to do so, we'll need a variable to represent the new item we'll be entering.
@@ -134,6 +143,7 @@ Lastly, we'll need to add a form to our `render` method.
 Notes:
  * We can use `onChange` on the `input` field to trigger an event when the text in the box is changed.  
  * Any function called when an event occurs (like functions that happen `onClick`, `onSubmit`, or `onChange`) can accept an argument that is the event. We pass this in as `e` to `newItemChange` and `addItem`.
+
 
 ## Check yourself!
 
