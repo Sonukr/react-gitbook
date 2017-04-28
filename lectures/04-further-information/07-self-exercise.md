@@ -2,7 +2,17 @@
 
 What's that mean? Well, we've given you a lot of tools for React, and you've had codealongs and guided projects. But you aren't going to be in a class forever, so now you're going to try some things out yourself!
 
-This is an open ended exercise. There is no set solution that we can give you, though of course we are here to help.
+
+## Very Important Note!
+
+This is an open ended exercise. There is no set solution that we can give you, though of course we are here to help. This is your project! However:
+
+> **When you've been working for three hours, please submit your project as a .zip file [here](https://script.google.com/macros/s/AKfycbzGU5Ae4zZ_T8gQb-uV02HJRz0F2UqyCcDkHgq2d0piGauZwc0/exec)**.
+
+* It's anonymous - there's no grade here! This is so we can see how well we're teaching the material.
+* However, if you'd like, you can enter your email address, and our React gurus will get back to you in a few days with feedback.
+* Feel free to keep working on this after you submit it - but **please submit it at the 3 hour mark!**
+
 
 ## Your task is:
 Choose any existing website you'd like and recreate the functionality as best as you can (using React, of course).
@@ -31,7 +41,4 @@ Choose any existing website you'd like and recreate the functionality as best as
 - Don't ever let yourself think that State and Props are the same thing. They aren't!
 
 
-## Solution:
-There's no solution code! This is your project. When you've been working for three hours *or* when you have a solidly functioning web application that you're proud of, submit it here. 
-* It'll get checked by our subject matter experts - no grade for you; just to see how well we're teaching the material.
-* It's anonymous (as said, no grade for you!) However, if you'd like, you can enter your email address and our subject matter experts will get back to you in a few days with feedback.
+Good luck!
