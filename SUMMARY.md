@@ -57,6 +57,7 @@
 	* [fetch project](lectures/04-further-information/05-fetch-project.md)
 * [Section Survey](lectures/04-further-information/05.5_survey.md)
 * [Imperative vs Declarative](lectures/04-further-information/06-declarative-imperative.md)
+* [ReactJS Quiz!](lectures/04-further-information/07.5-quiz.md)
 * [Practice makes perfect!](lectures/04-further-information/07-self-exercise.md)
 * [Heroku](lectures/04-further-information/08-heroku.md)
 * [Section Survey](lectures/04-further-information/08.5_survey.md)

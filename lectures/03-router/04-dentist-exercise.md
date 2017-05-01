@@ -60,11 +60,11 @@ you see the changes automatically appear in your browser.
 
 
   <details>
-    <summary><strong>Pro tip:</strong>summary>
+    <summary><strong>Pro tip:</strong><summary>
     <br />
     <p>It's a good idea to make simple, verifiable changes like this when
     you're first starting to make changes to a project. It's like a sanity check.</p>
-    
+
     <p>Make sure you can do simple things first. Don't start with complex things; many things can go wrong when you make complex changes. Prove to yourself the small changes work, and you'll save yourself headaches debugging large
     complex changes.</p>
   </details>

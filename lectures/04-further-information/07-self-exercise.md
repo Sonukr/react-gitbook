@@ -20,7 +20,7 @@ Choose any existing website you'd like and recreate the functionality as best as
 #### A few guidelines:
 * Don't worry about styling! Just the functionality.
 * Make sure it utilizes both nested components and state
-* Make sure you use Router
+* Make sure you use Router and include a nav bar
 * Use ES6 syntax; don't forget about functional components!
 * We don't have a database set up - if you need data, feel free to hardcode only a little (just enough to get the idea) or use `fetch` to call an API
 

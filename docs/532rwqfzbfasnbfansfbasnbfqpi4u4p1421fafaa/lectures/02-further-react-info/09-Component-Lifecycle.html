@@ -945,7 +945,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.33" data-path="../04-further-information/07-self-exercise.html">
+        <li class="chapter " data-level="1.33" data-path="../04-further-information/07.5-quiz.html">
+            
+                <a href="../04-further-information/07.5-quiz.html">
+            
+                    
+                    ReactJS Quiz!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="../04-further-information/07-self-exercise.html">
             
                 <a href="../04-further-information/07-self-exercise.html">
             
@@ -958,7 +971,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.34" data-path="../04-further-information/08-heroku.html">
+        <li class="chapter " data-level="1.35" data-path="../04-further-information/08-heroku.html">
             
                 <a href="../04-further-information/08-heroku.html">
             
@@ -971,7 +984,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.35" data-path="../04-further-information/08.5_survey.html">
+        <li class="chapter " data-level="1.36" data-path="../04-further-information/08.5_survey.html">
             
                 <a href="../04-further-information/08.5_survey.html">
             
@@ -984,7 +997,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.36" data-path="../04-further-information/09-self2.html">
+        <li class="chapter " data-level="1.37" data-path="../04-further-information/09-self2.html">
             
                 <a href="../04-further-information/09-self2.html">
             
@@ -997,7 +1010,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.37" data-path="../04-further-information/10-further-reading.html">
+        <li class="chapter " data-level="1.38" data-path="../04-further-information/10-further-reading.html">
             
                 <a href="../04-further-information/10-further-reading.html">
             
@@ -1010,7 +1023,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.38" data-path="../../license.html">
+        <li class="chapter " data-level="1.39" data-path="../../license.html">
             
                 <a href="../../license.html">
             
@@ -1078,20 +1091,39 @@
 <li><code>componentWillUnmount</code> is called immediately <em>before</em> a component is removed from the DOM.</li>
 </ul>
 <p>Some common uses of lifecycle methods are making asynchronous requests, binding event listeners, and optimizing for performance.</p>
-<h2 id="component-lifecycle-methods">Component lifecycle methods:</h2>
-<p><a href="https://facebook.github.io/react/docs/react-component.html" target="_blank">Check out the documentation on components!</a></p>
+<h2 id="at-a-very-high-level">At a very high level</h2>
+<p>React components&apos; lifecycle events fall into three broader categories:</p>
 <ul>
-<li><code>constructor()</code></li>
+<li><strong>Initializing / Mounting</strong> e.g. What happens when the component is created? Was an initial state set? Methods:<ul>
+<li><code>constructor()</code><ul>
+<li>This is sometimes referred to as a combination of <code>getInitialState()</code> and <code>getDefaultProps()</code></li>
+</ul>
+</li>
 <li><code>componentWillMount()</code></li>
 <li><code>componentDidMount()</code></li>
-<li><code>componentWillUnmount()</code></li>
-<li><code>componentWillReceiveProps()</code></li>
 <li><code>render()</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Updating</strong> e.g. Did an event happen that changed the state? Methods:<ul>
+<li><code>componentWillReceiveProps()</code></li>
 <li><code>shouldComponentUpdate()</code></li>
 <li><code>componentWillUpdate()</code></li>
 <li><code>componentDidUpdate()</code></li>
+<li><code>render()</code></li>
 </ul>
-<p>Let&apos;s go through them. Again, you don&apos;t need to write these - only if you want to change something in them.</p>
+</li>
+</ul>
+<ul>
+<li><strong>Destruction / Unmounting</strong> e.g. What needs to happen when we&apos;re done with the component? Method:<ul>
+<li><code>componentWillUnmount()</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="lets-examine">Let&apos;s examine!</h2>
+<p>Let&apos;s go through them. Again, you don&apos;t need to write these methods - they happen automatically, just like constructors did before we explicitly wrote one. You only have to worry about these if you want to change something in them - but if you do, it&apos;s important to understand them!</p>
+<p><a href="https://facebook.github.io/react/docs/react-component.html" target="_blank">Check out the documentation on components!</a></p>
 <p>Here they are in a diagram - <img src="assets/React_Component_Lifecycle.png" alt="Lifecycles"> Open this image in a new window next to this one, and follow along as we go through the methods.</p>
 <h2 id="constructor"><code>constructor()</code></h2>
 <p>This is something we&apos;ve already seen when we were learning <code>state</code>. Like any JavaScript class, the <code>constructor</code> method is called when a component is instantiated (when it&apos;s first rendered).<br>In a class constructor, you must call <code>super</code> before you do anything else. So a React component constructor in its most basic form looks like this:</p>
@@ -1263,7 +1295,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Component Lifecycle","level":"1.20","depth":1,"next":{"title":"Unidirectional Flow","level":"1.21","depth":1,"path":"lectures/02-further-react-info/10-Unidirectional-Data-Flow.md","ref":"lectures/02-further-react-info/10-Unidirectional-Data-Flow.md","articles":[]},"previous":{"title":"Functional Components Solution","level":"1.19.2","depth":2,"path":"lectures/02-further-react-info/08-Functional-Component-Solution.md","ref":"lectures/02-further-react-info/08-Functional-Component-Solution.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js","language":"en","gitbook":"*"},"file":{"path":"lectures/02-further-react-info/09-Component-Lifecycle.md","mtime":"2017-04-21T20:41:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-28T21:25:28.856Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Component Lifecycle","level":"1.20","depth":1,"next":{"title":"Unidirectional Flow","level":"1.21","depth":1,"path":"lectures/02-further-react-info/10-Unidirectional-Data-Flow.md","ref":"lectures/02-further-react-info/10-Unidirectional-Data-Flow.md","articles":[]},"previous":{"title":"Functional Components Solution","level":"1.19.2","depth":2,"path":"lectures/02-further-react-info/08-Functional-Component-Solution.md","ref":"lectures/02-further-react-info/08-Functional-Component-Solution.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js","language":"en","gitbook":"*"},"file":{"path":"lectures/02-further-react-info/09-Component-Lifecycle.md","mtime":"2017-05-01T14:55:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-01T15:32:11.093Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

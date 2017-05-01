@@ -13,20 +13,36 @@ These methods are called at specific points in the rendering process. You can us
 
 Some common uses of lifecycle methods are making asynchronous requests, binding event listeners, and optimizing for performance.
 
-## Component lifecycle methods:
-[Check out the documentation on components!](https://facebook.github.io/react/docs/react-component.html)
+## At a very high level
 
+React components' lifecycle events fall into three broader categories:
+
+
+* **Initializing / Mounting** e.g. What happens when the component is created? Was an initial state set? Methods:
   - `constructor()`
+    - This is sometimes referred to as a combination of `getInitialState()` and `getDefaultProps()`
   - `componentWillMount()`
   - `componentDidMount()`
-  - `componentWillUnmount()`
-  - `componentWillReceiveProps()`
   - `render()`
+
+
+* **Updating** e.g. Did an event happen that changed the state? Methods:
+  - `componentWillReceiveProps()`
   - `shouldComponentUpdate()`
   - `componentWillUpdate()`
   - `componentDidUpdate()`
+  - `render()`
 
-Let's go through them. Again, you don't need to write these - only if you want to change something in them.
+
+* **Destruction / Unmounting** e.g. What needs to happen when we're done with the component? Method:
+  - `componentWillUnmount()`
+
+
+## Let's examine!
+Let's go through them. Again, you don't need to write these methods - they happen automatically, just like constructors did before we explicitly wrote one. You only have to worry about these if you want to change something in them - but if you do, it's important to understand them!
+
+[Check out the documentation on components!](https://facebook.github.io/react/docs/react-component.html)
+
 
 Here they are in a diagram - ![Lifecycles](./assets/React_Component_Lifecycle.png) Open this image in a new window next to this one, and follow along as we go through the methods.
 
@@ -134,13 +150,13 @@ class Car extends React.Component {
 
   constructor(props) {
     super(props);
-    
+
     // sets initial state to either the `speed` prop, or 0 if the `speed` prop
     // is not passed to the component
     this.state = {
       speed: props.speed || 0,
     }
-    
+
     // binds this.incrementSpeed to class
     // this way when it's used as a callback for `setTimeout`
     // `this` refers to the `Car` class
@@ -155,7 +171,7 @@ class Car extends React.Component {
   incrementSpeed() {
     // sets the `speed` state to one unit higher than it was previously
     this.setState(prevState => ({ speed: prevState.speed + 1 }));
-    
+
     // recursive method
     // increases speed by 1 again after one second
     window.setTimeout(this.incrementSpeed, 1000);
