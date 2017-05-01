@@ -102,6 +102,8 @@ class Movie extends Component {
 
 
 Finally, let's get a movie - any movie - and render it.
+* Also here - an `if` statement was added under `render`. This simply checks to be sure that `fetch()` has completed before `render()` tries to return the movie - otherwise it returns "Loading...".
+* An initial state has also been added in the constructor so the `if` statement does not fail if the `fetch()` hasn't created the state yet.
 
 ```js
 import React, {Component} from 'react';
@@ -110,6 +112,9 @@ class Movie extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      movie: null
+    }
   }
 
   componentDidMount() {
@@ -129,11 +134,20 @@ class Movie extends Component {
   render() {
   	 let title = this.state.movie.Title;
   	 let director = this.state.movie.Director;
-    return (
-    	<article>
-    		I really like {title} by {director}!
-    	</article>
-    );
+
+     if (this.state.movie) {
+       return (
+          <article>
+            I really like {title} by {director}!
+          </article>
+        );
+      }
+
+      return (
+        <div>
+          Loading...
+        </div>
+      );
   }
 }
 ```
