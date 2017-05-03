@@ -17,13 +17,11 @@ What if you want a Google map embedded in your web app to show people where they
 
 API stands for "Application Program Interface" and technically applies to all of software design. The DOM and jQuery are actually examples of APIs! Since the explosion of information technology, however, the term now commonly refers to web URLs that can be accessed for raw data.
 
-<details>
-  <summary><strong>Q: Why do we care?</strong></summary>
-  <br/>
-  <p>Why recreate data when we don't have to? Think about past projects or ideas that would be easier if you could pull in data already gathered elsewhere.</p>
+> Q: Why do we care?
 
-  <p>APIs can provide us with data that would we would otherwise not be able to create ourselves.</p>
-</details>
+Why recreate data when we don't have to? Think about past projects or ideas that would be easier if you could pull in data already gathered elsewhere.
+
+APIs can provide us with data that would we would otherwise not be able to create ourselves.
 
 As we move into building single page applications, now is the perfect time to start understanding how to obtain data on the client side and then render it on the browser.
 
