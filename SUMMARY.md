@@ -36,7 +36,7 @@
 * [Component Lifecycle](lectures/02-further-react-info/09-Component-Lifecycle.md)
 * [Unidirectional Flow](lectures/02-further-react-info/10-Unidirectional-Data-Flow.md)
 * [Immutable Data](lectures/02-further-react-info/11-Immutable-Data.md)
-* [Section summary](lectures/02-further-react-info/12-Section-Summary.md)
+* [Section Summary](lectures/02-further-react-info/12-Section-Summary.md)
 * [Section Survey](lectures/02-further-react-info/13_survey.md)
 * [React Router](lectures/03-router/00-router-introduction.md)
 	* [Browser History Mechanics](lectures/03-router/01-browser-history-mechanics.md)

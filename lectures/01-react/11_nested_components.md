@@ -83,7 +83,7 @@ I could call then call this object inside my `return` JSX with `{allComments}`, 
     <p>{this.props.body}</p>
   </div>
   <h3>Comments:</h3>
-  {comments}
+  {allComments}
 </div>
 ```
 

@@ -120,7 +120,7 @@ First, we will create a method to increase the mood.  Under the `Hello` construc
 increaseMood(e) {
   this.setState({
     moodPoints: this.state.moodPoints + 1
-  })
+  });
 }
 ```
 
@@ -162,7 +162,7 @@ class Hello extends Component {
     // define an initial state
     this.state = {
       moodPoints: 1 // initialize this.state.counter to be 0
-    }
+    };
   }
 
   // increase moodPoints by 1 in this.state

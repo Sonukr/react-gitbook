@@ -647,7 +647,7 @@
                 <a href="../02-further-react-info/12-Section-Summary.html">
             
                     
-                    Section summary
+                    Section Summary
             
                 </a>
             
@@ -1092,7 +1092,7 @@
 ReactDOM.render(
   <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Hello</span> <span class="hljs-attr">name</span>=<span class="hljs-string">{&quot;Nick&quot;}</span> <span class="hljs-attr">age</span>=<span class="hljs-string">{24}</span> /&gt;</span>,
   document.getElementById(&apos;root&apos;)
-)
+);
 </span></code></pre>
 <p>Now, in our component definition we have access to both values.  The second step is to change the <code>Hello</code> component class in <code>App.js</code> to use the age information!</p>
 <pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Hello</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
@@ -1102,7 +1102,7 @@ ReactDOM.render(
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello {this.props.name}!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>You are {this.props.age} years old.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
-    )
+    );
   }
 }
 </code></pre>
@@ -1152,7 +1152,7 @@ ReactDOM.render(
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Multiple Props","level":"1.7.1","depth":2,"next":{"title":"Multiple Props - Using Objects","level":"1.7.2","depth":2,"path":"lectures/01-react/09_multiple_props_objects.md","ref":"lectures/01-react/09_multiple_props_objects.md","articles":[]},"previous":{"title":"Props","level":"1.7","depth":1,"path":"lectures/01-react/07_props.md","ref":"lectures/01-react//07_props.md","articles":[{"title":"Multiple Props","level":"1.7.1","depth":2,"path":"lectures/01-react/08_multiple_props.md","ref":"lectures/01-react/08_multiple_props.md","articles":[]},{"title":"Multiple Props - Using Objects","level":"1.7.2","depth":2,"path":"lectures/01-react/09_multiple_props_objects.md","ref":"lectures/01-react/09_multiple_props_objects.md","articles":[]},{"title":"Props Challenge","level":"1.7.3","depth":2,"path":"lectures/01-react/10_props_challenge.md","ref":"lectures/01-react/10_props_challenge.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js","language":"en","gitbook":"*"},"file":{"path":"lectures/01-react/08_multiple_props.md","mtime":"2017-04-21T20:41:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-01T15:32:11.093Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Multiple Props","level":"1.7.1","depth":2,"next":{"title":"Multiple Props - Using Objects","level":"1.7.2","depth":2,"path":"lectures/01-react/09_multiple_props_objects.md","ref":"lectures/01-react/09_multiple_props_objects.md","articles":[]},"previous":{"title":"Props","level":"1.7","depth":1,"path":"lectures/01-react/07_props.md","ref":"lectures/01-react//07_props.md","articles":[{"title":"Multiple Props","level":"1.7.1","depth":2,"path":"lectures/01-react/08_multiple_props.md","ref":"lectures/01-react/08_multiple_props.md","articles":[]},{"title":"Multiple Props - Using Objects","level":"1.7.2","depth":2,"path":"lectures/01-react/09_multiple_props_objects.md","ref":"lectures/01-react/09_multiple_props_objects.md","articles":[]},{"title":"Props Challenge","level":"1.7.3","depth":2,"path":"lectures/01-react/10_props_challenge.md","ref":"lectures/01-react/10_props_challenge.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js","language":"en","gitbook":"*"},"file":{"path":"lectures/01-react/08_multiple_props.md","mtime":"2017-05-09T20:45:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-09T21:01:15.611Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

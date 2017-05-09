@@ -20,7 +20,7 @@ ReactDOM.render(
     age={person.personAge}
   />,
   document.getElementById('root')
-)
+);
 ```
 
 We don't have to change anything in `App.js`, because it's still receiving exactly the same values for exactly the same two props - `name` and `age`. We're just sending it those values in a slightly different way.
@@ -58,7 +58,7 @@ ReactDOM.render(
     animals={person.favorites}
   />,
   document.getElementById('root')
-)
+);
 ```
 
 If you check your application now, nothing has changed. Remember, a component class will just ignore any props it receives that it doesn't use. But, we want to use the favorites! So, second, update your `Hello` class `render` method in `App.js`:

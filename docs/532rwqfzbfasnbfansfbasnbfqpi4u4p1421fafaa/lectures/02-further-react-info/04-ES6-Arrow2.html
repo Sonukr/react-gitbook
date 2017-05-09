@@ -647,7 +647,7 @@
                 <a href="12-Section-Summary.html">
             
                     
-                    Section summary
+                    Section Summary
             
                 </a>
             
@@ -1129,8 +1129,7 @@
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">eatBreakfast</span>(<span class="hljs-params">pancakes</span>) </span>{
   <span class="hljs-keyword">var</span> that = <span class="hljs-keyword">this</span>;
   that.food = <span class="hljs-string">&apos;Knife please?&apos;</span>;
-  Waiter
-  .bringCutlery(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">silverware</span>) </span>{
+  Waiter.bringCutlery(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">silverware</span>) </span>{
     that.food = silverware;
   });
 }
@@ -1140,8 +1139,7 @@
 <p>The equivalent arrow function:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> eatBreakfast = pancakes =&gt; {
   <span class="hljs-keyword">this</span>.food = <span class="hljs-string">&apos;Knife please?&apos;</span>;
-  Waiter
-  .bringCutlery((silverware) =&gt; <span class="hljs-keyword">this</span>.food = silverware);
+  Waiter.bringCutlery((silverware) =&gt; <span class="hljs-keyword">this</span>.food = silverware);
 }
 </code></pre>
 <blockquote>
@@ -1190,7 +1188,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Arrows, Continued","level":"1.18.3","depth":2,"next":{"title":"Literals","level":"1.18.4","depth":2,"path":"lectures/02-further-react-info/05-ES6-Literals.md","ref":"lectures/02-further-react-info/05-ES6-Literals.md","articles":[]},"previous":{"title":"Arrow","level":"1.18.2","depth":2,"path":"lectures/02-further-react-info/03-ES6-Arrow.md","ref":"lectures/02-further-react-info/03-ES6-Arrow.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js","language":"en","gitbook":"*"},"file":{"path":"lectures/02-further-react-info/04-ES6-Arrow2.md","mtime":"2017-04-21T20:41:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-01T15:32:11.093Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Arrows, Continued","level":"1.18.3","depth":2,"next":{"title":"Literals","level":"1.18.4","depth":2,"path":"lectures/02-further-react-info/05-ES6-Literals.md","ref":"lectures/02-further-react-info/05-ES6-Literals.md","articles":[]},"previous":{"title":"Arrow","level":"1.18.2","depth":2,"path":"lectures/02-further-react-info/03-ES6-Arrow.md","ref":"lectures/02-further-react-info/03-ES6-Arrow.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js","language":"en","gitbook":"*"},"file":{"path":"lectures/02-further-react-info/04-ES6-Arrow2.md","mtime":"2017-05-09T20:54:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-09T21:01:15.611Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

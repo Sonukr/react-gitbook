@@ -74,8 +74,7 @@ In non-arrow functions, every function defines its own `this`. There are tons of
 function eatBreakfast(pancakes) {
   var that = this;
   that.food = 'Knife please?';
-  Waiter
-  .bringCutlery(function (silverware) {
+  Waiter.bringCutlery(function (silverware) {
     that.food = silverware;
   });
 }
@@ -90,8 +89,7 @@ The equivalent arrow function:
 ```javascript
 const eatBreakfast = pancakes => {
   this.food = 'Knife please?';
-  Waiter
-  .bringCutlery((silverware) => this.food = silverware);
+  Waiter.bringCutlery((silverware) => this.food = silverware);
 }
 ```
 > Check it out - the arrow function can be anywhere you declare a function!

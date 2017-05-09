@@ -14,7 +14,7 @@ import Hello from './App.js';
 ReactDOM.render(
   <Hello name={"Nick"} age={24} />,
   document.getElementById('root')
-)
+);
 ```
 
 Now, in our component definition we have access to both values.  The second step is to change the `Hello` component class in `App.js` to use the age information!
@@ -28,7 +28,7 @@ class Hello extends Component {
         <h1>Hello {this.props.name}!</h1>
         <p>You are {this.props.age} years old.</p>
       </div>
-    )
+    );
   }
 }
 ```

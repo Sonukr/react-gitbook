@@ -647,7 +647,7 @@
                 <a href="../02-further-react-info/12-Section-Summary.html">
             
                     
-                    Section summary
+                    Section Summary
             
                 </a>
             
@@ -1098,7 +1098,7 @@ items properly already:</p>
 <pre><code class="lang-js">clearList (e) {
   <span class="hljs-keyword">this</span>.setState({
     toDoItemArray: []
-  })
+  });
 }
 </code></pre>
 <p>Now, we need to display a button to the user. Under the list tags in <code>MyList</code>&apos;s <code>render</code> method, we&apos;ll add JSX for a button definition.</p>
@@ -1117,14 +1117,14 @@ items properly already:</p>
   clearList (e) {
     <span class="hljs-keyword">this</span>.setState({
       toDoItemArray: []
-    })
+    });
   }
 
   render() {
 
     <span class="hljs-keyword">let</span> todoItems = <span class="hljs-keyword">this</span>.state.toDoItemArray.map( (item, index) =&gt; (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ListItem</span> <span class="hljs-attr">doThis</span>=<span class="hljs-string">{item}</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{index}</span> /&gt;</span>
-    ))
+    ));
 
     return (
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
@@ -1171,7 +1171,7 @@ programmer.</p>
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Clearing list!&quot;</span>);
 <span class="hljs-keyword">this</span>.setState({
   toDoItemArray: []
-})
+});
 }
 </code></pre>
 </li>
@@ -1266,7 +1266,7 @@ programmer.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Exercise - Todo list - part 2","level":"1.14.1","depth":2,"next":{"title":"Section Survey","level":"1.15","depth":1,"path":"lectures/01-react/18.1_survey.md","ref":"lectures/01-react/18.1_survey.md","articles":[]},"previous":{"title":"Exercise - Todo list","level":"1.14","depth":1,"path":"lectures/01-react/17_todo_exercise.md","ref":"lectures/01-react/17_todo_exercise.md","articles":[{"title":"Exercise - Todo list - part 2","level":"1.14.1","depth":2,"path":"lectures/01-react/18_todo_exercise_continued.md","ref":"lectures/01-react/18_todo_exercise_continued.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js","language":"en","gitbook":"*"},"file":{"path":"lectures/01-react/18_todo_exercise_continued.md","mtime":"2017-04-28T17:29:23.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-01T15:32:11.093Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Exercise - Todo list - part 2","level":"1.14.1","depth":2,"next":{"title":"Section Survey","level":"1.15","depth":1,"path":"lectures/01-react/18.1_survey.md","ref":"lectures/01-react/18.1_survey.md","articles":[]},"previous":{"title":"Exercise - Todo list","level":"1.14","depth":1,"path":"lectures/01-react/17_todo_exercise.md","ref":"lectures/01-react/17_todo_exercise.md","articles":[{"title":"Exercise - Todo list - part 2","level":"1.14.1","depth":2,"path":"lectures/01-react/18_todo_exercise_continued.md","ref":"lectures/01-react/18_todo_exercise_continued.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js","language":"en","gitbook":"*"},"file":{"path":"lectures/01-react/18_todo_exercise_continued.md","mtime":"2017-05-09T20:53:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-09T21:01:15.611Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -22,7 +22,7 @@ First, in `MyList`, we define the function that will be called by the button:
 clearList (e) {
   this.setState({
     toDoItemArray: []
-  })
+  });
 }
 ```
 
@@ -46,14 +46,14 @@ class MyList extends Component {
   clearList (e) {
     this.setState({
       toDoItemArray: []
-    })
+    });
   }
 
   render() {
 
     let todoItems = this.state.toDoItemArray.map( (item, index) => (
       <ListItem doThis={item} key={index} />
-    ))
+    ));
 
     return (
       <div>
@@ -104,7 +104,7 @@ Now when we click on the button, the following will occur:
    console.log("Clearing list!");
    this.setState({
      toDoItemArray: []
-   })
+   });
  }
  ```
 

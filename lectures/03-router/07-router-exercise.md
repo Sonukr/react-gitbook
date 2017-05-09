@@ -28,11 +28,11 @@ Task:
   - These pages don't need to have much content - just the header at the top saying what the page is and a paragraph description of your choosing.
 
 
-> *Hint*: You'll need multiple .js files
+**Hint**: You'll need multiple .js files
 
-> *Food for thought*: Do you have react-router-dom installed for this project?
+**Hint**: Do you have react-router-dom installed for this project?
 
-> *Hint*: You can instantiate a component with `props` inside of a `<Route>` element. An example is below:
+**Hint**: You can instantiate a component with `props` inside of a `<Route>` element. An example is below:
 
 
 ```js

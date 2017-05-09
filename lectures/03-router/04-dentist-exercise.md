@@ -104,14 +104,8 @@ The `App.js` file contains one component that our whole App will live inside
 of. Remember that React components have a `render(){ ... }` function that
 defines what the component will look like when it is rendered on the webpage.
 
-<details>
-  <summary><strong>Repetition for good practice reminder:</strong>summary>
-
-  The render function alway has to return *at most* one top-level element. It's
-  common to wrap everything in your component in a `<div>` to make sure you
+> Reminder! The render function alway has to return *at most* one top-level element. It's common to wrap everything in your component in a `div``to make sure you
   satisfy this constraint.
-
-</details>
 
 **So...**
 

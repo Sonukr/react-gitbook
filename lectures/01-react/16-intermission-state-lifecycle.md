@@ -18,7 +18,7 @@ class Post extends Component {
     let newBody = prompt("What should the new body be?")
     this.setState({
       body: newBody
-    })
+    });
   }
 
   render() {
@@ -78,7 +78,7 @@ Let's consider a data flow example.
     let newBody = prompt("What should the new body be?")
     this.setState({
       body: newBody
-    })
+    });
   }
   ```
 

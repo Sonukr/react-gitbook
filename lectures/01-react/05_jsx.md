@@ -42,6 +42,4 @@ In your component, return multiple lines. Instead of just the "Hello World!" hea
 > Hint: Remember, the return statement in `render` can only return one DOM element. You can, however, place multiple elements within a parent `div` element.*
 
 
-> Once you have a solution:
-
-You can check your <a href="solution-jsx.html" target="_blank" >solution here!</a>
+**Once you have a solution:** Check it <a href="solution-jsx.html" target="_blank" >here!</a>
