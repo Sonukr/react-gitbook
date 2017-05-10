@@ -82,7 +82,7 @@ class Hello extends Component {
 }
 ```
 
-Now, let's make sure we display that information to the user. Still in `App.js`, in your `render` method, we'll let the user know how many mood points they are at by adding in a line:
+Now let's make sure we display that information to the user. Still in `App.js`, in your `render` method, we'll let the user know how many mood points they are at by adding in a line:
 
 ```html
 // note how similar this looks to accessing props
@@ -126,7 +126,7 @@ increaseMood(e) {
 
 Note that we call `this.setState` to change the state.
 
-Now, we'll create the button to trigger calling this function. The button will be displayed to the user, so we'll add it to the `render` function. When the user clicks it, we'll call the `increaseMood` function.
+Now we'll create the button to trigger calling this function. The button will be displayed to the user, so we'll add it to the `render` function. When the user clicks it, we'll call the `increaseMood` function.
 
 ```js
   render () {

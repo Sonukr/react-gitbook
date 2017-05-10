@@ -2,7 +2,7 @@
 # The Plan: Our Example Dentist Website
 We'll make an example Dentist website that has a `Home` page, a page that lists
 available `Procedures` and a page displaying `Contact` information. Each of
-these pages of content will be built into their own regular **React** component,
+these pages of content will be built into their own regular **React** component;
 then we'll create a unique URL route that leads to each component.
 
 Here's how we'll route our Single Page Application.
@@ -71,7 +71,7 @@ Make sure you can do simple things first. Don't start with complex things; many 
 Let's set up a new React project and install **React Router**.
 > Remember to stop the React project you currently have running!
 
-Since React Router is a third-party library we'll need to use to download React Router and save it as
+Since React Router is a third-party library, we'll need to use to download React Router and save it as
 a dependency in our project.
 
 In your Terminal, enter:

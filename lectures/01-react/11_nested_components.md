@@ -87,4 +87,4 @@ I could call then call this object inside my `return` JSX with `{allComments}`, 
 </div>
 ```
 
- * *Note: We could have put all of our code in one file, but it's a good practice to break components out into different files to help practice separation of concerns. The only downside is we have to be extra conscious of remembering to **export / import** each component to the file where it's rendered.*
+ * *Note: We could have put all of our code in one file, but it's a good practice to break components out into different files to help practice separation of concerns. The only downside is that we have to be extra conscious of remembering to **export / import** each component to the file where it's rendered.*

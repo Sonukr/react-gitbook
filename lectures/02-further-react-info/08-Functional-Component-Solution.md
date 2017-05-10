@@ -7,10 +7,10 @@ Make a new file called `ToDoList.js` and have it look very much like the
 `const ListItem` functional component above. It should have the following
 properties:
 
-* define as `const ToDoList` similar to `ListItem`.
-* import `ListItem` because it will render `ListItems`.
-* accept `props` like `ListItem`.
-* expect there something called `toDoItemArray` attached to props.
+* Define as `const ToDoList` similar to `ListItem`.
+* Import `ListItem` because it will render `ListItems`.
+* Accept `props` like `ListItem`.
+* Expect there something called `toDoItemArray` attached to props.
 * Use `props.toDoItemArray.map(item, index)` to iterate over each item.
 * Render `<ListItem>` components inside the map.
 * Pass the proper properties (`doThis` and `key`) to the `<ListItem>` component

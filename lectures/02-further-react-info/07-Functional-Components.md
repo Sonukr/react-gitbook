@@ -98,16 +98,16 @@ const data = [
 
 [Try it yourself in this CodePen](http://codepen.io/andrewdushane/pen/rypdpq).
 
-So, when should you use Functional Components, and when should you use class Components?
+So, when should you use Functional Components, and when should you use Class Components?
 
-If you don't need anything special - if you are purely just returning JSX to render - use a functional component.
+If you don't need anything special - if you are purely just returning JSX to render -- use a functional component.
 
 But:
 
-* If you need your component to be stateful - that is, if you need the ability to use `setState` to respond to changes, use a class.
-* If you need lifecycle methods - if you need to do something when the component mounts, or receives props, or unmounts - use a class.
-* If you need a `ref` - that is, a reference to the DOM element rendered by the component, use a class.
+* If you need your component to be stateful - that is, if you need the ability to use `setState` to respond to changes -- use a class.
+* If you need lifecycle methods - if you need to do something when the component mounts, or receives props, or unmounts -- use a class.
+* If you need a `ref` -- that is, a reference to the DOM element rendered by the component - use a class.
 
-And only if you _don't_ need any of those things - use a Functional Component.
+And only if you _don't_ need any of those things -- use a Functional Component.
 
 Functional Components are a great example of what people talk about when they say that React is "declarative", or gives us a declarative API. Rather than telling the DOM _how_ to render the UI we want - which nodes to change, and how - we can use JSX to "declare" how we want the markup to look, and React alters the DOM accordingly. A Stateless Function literally makes your UI a function of the props you pass it, which is a declarative, functional approach to creating views.

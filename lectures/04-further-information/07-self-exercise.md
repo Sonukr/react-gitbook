@@ -36,7 +36,7 @@ Choose any existing website you'd like and recreate the functionality as best as
 
 - Remember that `state` represents the _state_ of your user interface component.
 - State can trigger changes in `props` or `props` can come from parent components.
-- Stick to functional programming techniques if at all possible. By that we mean, use built-in methods if available such as `.forEach()` and `.map()`
+- Stick to functional programming techniques if at all possible. By that, we mean use built-in methods such as `.forEach()` and `.map()` if available.
 - If you are rendering a list of child components (such as a _ul_ -> _li_ list), each individual child component needs a unique `id` for React to work with it. This is so React can identify each element uniquely if needed
 - Don't ever let yourself think that State and Props are the same thing. They aren't!
 

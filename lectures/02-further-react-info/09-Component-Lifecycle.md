@@ -15,7 +15,7 @@ Some common uses of lifecycle methods are making asynchronous requests, binding 
 
 ## At a very high level
 
-React components' lifecycle events fall into three broader categories:
+React components' lifecycle events fall into three broad categories:
 
 
 * **Initializing / Mounting** e.g. What happens when the component is created? Was an initial state set? Methods:
@@ -204,7 +204,7 @@ Use [`window.setTimeout`](https://developer.mozilla.org/en-US/docs/Web/API/Windo
 
 `this.setState(prevState => ({ speed: prevState.speed + 1 }));`: The `speed` state is set to one higher than it was previously - we add one.
 
-`window.setTimeout(this.incrementSpeed, 1000)`: The `incrementSpeed` method is [recursive](https://en.wikipedia.org/wiki/Recursion_(computer_science)) - it invokes itself as the timeout callback. After one second, `window.setTimeout` will call `this.incrementSpeed` again - the `speed` will go up by one, and a new timer will be set to do it again.
+`window.setTimeout(this.incrementSpeed, 1000)`: The `incrementSpeed` method is [recursive](https://en.wikipedia.org/wiki/Recursion_(computer_science) - it invokes itself as the timeout callback. After one second, `window.setTimeout` will call `this.incrementSpeed` again - the `speed` will go up by one, and a new timer will be set to do it again.
 
 
 ## `componentWillReceiveProps(newProps)`

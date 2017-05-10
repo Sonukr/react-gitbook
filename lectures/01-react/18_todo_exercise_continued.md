@@ -2,11 +2,11 @@
 
 Now we have a todo list! But.. it isn't changeable, and we can't just _think about_ eating ice cream and going to the gym forever. At some point, we have to actually eat the ice cream (deleting it from the list) and find a gym buddy (adding that to the list). In other words, we need to be able to change the list!
 
-Remember, in a React component, `state` is just another object, like `props`. The only difference is that `state` can be changed (remember, though, to always change it through the method `setState`). The exception is setting the initial state, which is only done once when initializing a React component with its constructor. In order to pass items to the `ToDoList` component and make them mutable, we'll need to set the state of our `MyList`. Let's continue refactoring our `MyList` component to change the `todoItems` array through state.
+Remember, in a React component, `state` is just another object, like `props`. The only difference is that `state` can be changed (remember, though, to always change it through the method `setState`). The exception is setting the initial state, which is only done once: when initializing a React component with its constructor. In order to pass items to the `ToDoList` component and make them mutable, we'll need to set the state of our `MyList`. Let's continue refactoring our `MyList` component to change the `todoItems` array through state.
 
 ## Clearing the items
 We're going to add a button to the list that allows users to clear away
-everything in it. First let's make sure the list is all set up to display
+everything in it. First, let's make sure the list is all set up to display
 items properly already:
 
 * At the top of the `MyList` component, create a constructor that sets an initial state for an attribute called `toDoItemArray`. It should be equal to the initial list that's passed in.
@@ -112,7 +112,7 @@ Now when we click on the button, the following will occur:
 
 Let's add one more thing to our app: an input field for more items. In order to do so, we'll need a variable to represent the new item we'll be entering.
 
-* Create a variable `newItem` in the state, to hold the new item that the user inputs.
+* Create a variable `newItem` in the state to hold the new item that the user inputs.
 
 > Make a new state attribute, initializing `newItem` to a blank string. (Hint: remember, `state` is just a JavaScript object, so you you need a comma between key-value pairs.)
 
@@ -120,11 +120,11 @@ We'll also need two additional functions to represent the following changes in s
 
 * `newItemChange`, for when we type characters into an input field and change the value of `newItem`  
  * We'll need to get the current value of the input field and set state accordingly.
- > Create this function (with an event parameter of 'e' like in `clearList`). Inside it, change the state of `newItem` to `e.target.value` - this will be the value the user entered into the form.
+ > Create this function with an event parameter of 'e' like in `clearList`. Inside the function, change the state of `newItem` to `e.target.value` - this will be the value the user entered into the form.
 
 * `addItem`, for when we submit the form
  * We'll need to make a copy of `toDoItemArray`, push the `newItem`, set `state` and finally clear `newItem`.
- > Create this function (with an event parameter of 'e'). Inside it, create a new variable initialized to the value of the array that is saved in state. Then, use `yourArray.push(<value>);` to push the new item from the state into the array. Set the `newItem` state back to an empty string, and set the `toDoItemArray` state to your new array.
+ > Create this function with an event parameter of 'e'. Inside the function, create a new variable initialized to the value of the array that is saved in state. Then, use `yourArray.push(<value>);` to push the new item from the state into the array. Set the `newItem` state back to an empty string, and set the `toDoItemArray` state to your new array.
 
 
 Lastly, we'll need to add a form to our `render` method.

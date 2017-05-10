@@ -7,7 +7,7 @@ Let's start with a video:
 Your browser does not support the video tag.
 </video>
 
-So, in React applications, data usually flows from the top down. Why do we care? How does this apply?
+In React applications, data usually flows from the top down. Why do we care? How does this apply?
 
 When several components in a view need to share state, you lift, or "hoist", the state so that it's available to all the components that need it. Let's look at a search filter as an example. This app will have two basic components - one that displays a list of data, and one that captures user input to filter the data.
 

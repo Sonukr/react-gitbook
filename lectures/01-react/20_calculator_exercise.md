@@ -26,7 +26,7 @@ Like usual, use `create-react-app` to make a new project.
 
 2. Set up the initial state of your component. What state attributes will you need to track? What values should those state items start with? Where is that state displayed in the browser?
 
-3. You will need to figure out how and when you want to listen for an event to trigger a calculation. Is it a click event, a submit event...? It's up to you to figure out what event you want to listen for, on which elements, and why. Here is a [list of events React supports](https://facebook.github.io/react/docs/events.html#supported-events) and [how to listen for them](https://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html).
+3. You will need to figure out how and when you want to listen for an event to trigger a calculation. Is it a click event? A submit event? Etc. It's up to you to figure out what events you want to listen for, on which elements, and why. Here is a [list of events React supports](https://facebook.github.io/react/docs/events.html#supported-events) and [how to listen for them](https://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html).
 
 4. Once you know what event to listen for, you'll need to create a method that accepts the triggered event, gets the input values from your form, adds them together, and sets part of the state to the new `sum`.
   > How will you handle inputs that aren't numbers?

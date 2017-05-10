@@ -4,7 +4,7 @@ In this section, we dove deeper into React. Here's what we covered:
 
 ## ES6/ES7/ESNext
 
-You learned to write cleaner, more concise and more readable code with ESNext syntax:
+You learned to write cleaner, more concise, and more readable code with ESNext syntax:
 
   - `const` and `let`: `const name = 'Jim'`; `let age = 25;`
   - Arrow functions: `const doStuff = stuff => stuff + 5;`
@@ -14,7 +14,7 @@ You learned to write cleaner, more concise and more readable code with ESNext sy
 
 ## Functional Components
 
-Functional components are React components that JavaScript functions. They take props as their argument, and return UI.
+Functional components are React components that are simply JavaScript functions. They take props as their argument and return JSX (UI!).
 
 ```javascript
 const MyFunctionalComponent = props => (
@@ -28,15 +28,15 @@ const MyFunctionalComponent = props => (
 
 React class components have lifecycle methods that are invoked at certain stages of a component's "life" on the DOM. Some of the lifecycle methods you'll use a lot are:
 
-  - `constructor()`: initialize state, bind methods
+  - `constructor()`: Initialize state, bind methods
   - `componentDidMount()`: Make AJAX requests, get DOM refs, bind event listeners, set state if necessary
   - `componentWillUnmount()`: Unbind event listeners, other cleanup
   - `componentWillReceiveProps()`: Update state based on changes in components
-  - `render()`: return markup/UI
+  - `render()`: Return markup/UI
 
-## Unidrectional Data Flow
+## Unidirectional Data Flow
 
-In React, data flows from the top down. Keep your data higher in your component tree, so it's availble to the sibling/children components that need it.
+In React, data flows from the top down. Keep your data higher in your component tree so it's available to the sibling/children components that need it.
 
 ## Immutable Data
 

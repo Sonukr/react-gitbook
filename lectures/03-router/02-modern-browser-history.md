@@ -21,7 +21,7 @@ different email inboxes, search results and then pressing the back button.
 * Click 'back' in your browser to go back to the search results
 * Wait - you end up back at wikipedia.org
 
-Gmail and most mail apps are a Single Page Applications - despite the content changing, you are always on gmail.com. Because of this, pressing the back button will take back to the previous URL they were on - in this case, Wikipedia - when really, the user just wanted to go back
+Gmail and most mail apps are a Single Page Applications - despite the content changing, you are always on gmail.com. Because of this, pressing the back button will take the user back to the previous URL they were on - in this case, Wikipedia - when really, the user just wanted to go back
 to their email search results.
 
 ## Introducing Modern Browser History Mechanics

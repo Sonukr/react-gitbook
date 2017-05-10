@@ -1,6 +1,6 @@
-## Arrow functions
+## Arrow Functions
 
-"function", "function", "function", are you tired of writing that word? So are we. The arrow function `=>` is a more concise syntax for declaring functions. It looks like a little rocket arrow, in fact, and something that cool isn't usually in javascript. Arrow functions are not _only_ different in syntax, however - their scope is also different from a regular `function` declaration.
+"function", "function", "function"... Are you tired of writing that word? So are we. The arrow function `=>` is a more concise syntax for declaring functions. It looks like a little rocket arrow, in fact, and something that cool isn't usually in javascript. Arrow functions are not _only_ different in syntax, however - their scope is also different from a regular `function` declaration.
 
 ### Basic Syntax
 

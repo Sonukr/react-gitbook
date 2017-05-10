@@ -11,7 +11,7 @@
 
 ## Why are we learning Heroku?
 
-We're using `create-react-app` to make our app, but that's local. Heroku's incredibly popular forWe can use Heroku to deploy a React application to the internet in under five minutes. Heroku also provides five free applications to every user.
+We're using `create-react-app` to make our app, but that's local. Heroku's incredibly popular for web developers. We can use Heroku to deploy a React application to the internet in under five minutes. Heroku also provides five free applications to every user.
 
 
 ## What is Heroku?
@@ -23,7 +23,7 @@ Before we start diving in, you should register an account at [Heroku](https://he
 
 ## Heroku Command Line Interface
 
-Now, you need to download install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli). You can download the installer from the provided link or `brew install heroku` from your terminal application. This tool is designed to make your life easier as a developer by integration Heroku application development and deployment directly into command line.
+Now, you need to download install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli). You can download the installer from the provided link or run `brew install heroku` from your terminal application. This tool is designed to make your life easier as a developer by integration Heroku application development and deployment directly into command line.
 
 > _Note_: You may need to restart your terminal session - just in case - before moving forward. Why? Because you just installed software to modify your terminal's environment and your environment variables may not be updated yet.
 

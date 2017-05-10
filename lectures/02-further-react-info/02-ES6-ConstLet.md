@@ -97,7 +97,7 @@ function varTest() {
 
 Despite declaring `var x` in two different places, it's the same variable, leading to some unwanted and unexpected behavior. Scoping is something that always needs to be tracked in JavaScript for precisely reasons like this.
 
-ES6 introduced `let` to fix this scoping issue. Using `let` is more predictable and straightforward. `let` is a **block scoped** variable, so its value is scoped to the nearest curly braces {} rather than the whole function. Thus, within a loop, `let` will create a new instance for each iteration - instead of changing the original variable.
+ES6 introduced `let` to fix this scoping issue. Using `let` is more predictable and straightforward. `let` is a **block scoped** variable, so its value is scoped to the nearest curly braces {} rather than the whole function. Thus, within a loop, `let` will create a new instance for each iteration instead of changing the original variable.
 
 ```js
 function letTest() {

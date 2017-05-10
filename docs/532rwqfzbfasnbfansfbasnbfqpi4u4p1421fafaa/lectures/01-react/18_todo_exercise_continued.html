@@ -1083,10 +1083,10 @@
                                 
                                 <h3 id="making-the-todo-list-dynamic">Making the todo list dynamic</h3>
 <p>Now we have a todo list! But.. it isn&apos;t changeable, and we can&apos;t just <em>think about</em> eating ice cream and going to the gym forever. At some point, we have to actually eat the ice cream (deleting it from the list) and find a gym buddy (adding that to the list). In other words, we need to be able to change the list!</p>
-<p>Remember, in a React component, <code>state</code> is just another object, like <code>props</code>. The only difference is that <code>state</code> can be changed (remember, though, to always change it through the method <code>setState</code>). The exception is setting the initial state, which is only done once when initializing a React component with its constructor. In order to pass items to the <code>ToDoList</code> component and make them mutable, we&apos;ll need to set the state of our <code>MyList</code>. Let&apos;s continue refactoring our <code>MyList</code> component to change the <code>todoItems</code> array through state.</p>
+<p>Remember, in a React component, <code>state</code> is just another object, like <code>props</code>. The only difference is that <code>state</code> can be changed (remember, though, to always change it through the method <code>setState</code>). The exception is setting the initial state, which is only done once: when initializing a React component with its constructor. In order to pass items to the <code>ToDoList</code> component and make them mutable, we&apos;ll need to set the state of our <code>MyList</code>. Let&apos;s continue refactoring our <code>MyList</code> component to change the <code>todoItems</code> array through state.</p>
 <h2 id="clearing-the-items">Clearing the items</h2>
 <p>We&apos;re going to add a button to the list that allows users to clear away
-everything in it. First let&apos;s make sure the list is all set up to display
+everything in it. First, let&apos;s make sure the list is all set up to display
 items properly already:</p>
 <ul>
 <li>At the top of the <code>MyList</code> component, create a constructor that sets an initial state for an attribute called <code>toDoItemArray</code>. It should be equal to the initial list that&apos;s passed in.</li>
@@ -1179,7 +1179,7 @@ programmer.</p>
 <h2 id="adding-items">Adding items</h2>
 <p>Let&apos;s add one more thing to our app: an input field for more items. In order to do so, we&apos;ll need a variable to represent the new item we&apos;ll be entering.</p>
 <ul>
-<li>Create a variable <code>newItem</code> in the state, to hold the new item that the user inputs.</li>
+<li>Create a variable <code>newItem</code> in the state to hold the new item that the user inputs.</li>
 </ul>
 <blockquote>
 <p>Make a new state attribute, initializing <code>newItem</code> to a blank string. (Hint: remember, <code>state</code> is just a JavaScript object, so you you need a comma between key-value pairs.)</p>
@@ -1189,7 +1189,7 @@ programmer.</p>
 <li><p><code>newItemChange</code>, for when we type characters into an input field and change the value of <code>newItem</code>  </p>
 <ul>
 <li>We&apos;ll need to get the current value of the input field and set state accordingly.<blockquote>
-<p>Create this function (with an event parameter of &apos;e&apos; like in <code>clearList</code>). Inside it, change the state of <code>newItem</code> to <code>e.target.value</code> - this will be the value the user entered into the form.</p>
+<p>Create this function with an event parameter of &apos;e&apos; like in <code>clearList</code>. Inside the function, change the state of <code>newItem</code> to <code>e.target.value</code> - this will be the value the user entered into the form.</p>
 </blockquote>
 </li>
 </ul>
@@ -1197,7 +1197,7 @@ programmer.</p>
 <li><p><code>addItem</code>, for when we submit the form</p>
 <ul>
 <li>We&apos;ll need to make a copy of <code>toDoItemArray</code>, push the <code>newItem</code>, set <code>state</code> and finally clear <code>newItem</code>.<blockquote>
-<p>Create this function (with an event parameter of &apos;e&apos;). Inside it, create a new variable initialized to the value of the array that is saved in state. Then, use <code>yourArray.push(&lt;value&gt;);</code> to push the new item from the state into the array. Set the <code>newItem</code> state back to an empty string, and set the <code>toDoItemArray</code> state to your new array.</p>
+<p>Create this function with an event parameter of &apos;e&apos;. Inside the function, create a new variable initialized to the value of the array that is saved in state. Then, use <code>yourArray.push(&lt;value&gt;);</code> to push the new item from the state into the array. Set the <code>newItem</code> state back to an empty string, and set the <code>toDoItemArray</code> state to your new array.</p>
 </blockquote>
 </li>
 </ul>
@@ -1266,7 +1266,7 @@ programmer.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Exercise - Todo list - part 2","level":"1.14.1","depth":2,"next":{"title":"Section Survey","level":"1.15","depth":1,"path":"lectures/01-react/18.1_survey.md","ref":"lectures/01-react/18.1_survey.md","articles":[]},"previous":{"title":"Exercise - Todo list","level":"1.14","depth":1,"path":"lectures/01-react/17_todo_exercise.md","ref":"lectures/01-react/17_todo_exercise.md","articles":[{"title":"Exercise - Todo list - part 2","level":"1.14.1","depth":2,"path":"lectures/01-react/18_todo_exercise_continued.md","ref":"lectures/01-react/18_todo_exercise_continued.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js","language":"en","gitbook":"*"},"file":{"path":"lectures/01-react/18_todo_exercise_continued.md","mtime":"2017-05-09T20:53:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-09T21:01:15.611Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Exercise - Todo list - part 2","level":"1.14.1","depth":2,"next":{"title":"Section Survey","level":"1.15","depth":1,"path":"lectures/01-react/18.1_survey.md","ref":"lectures/01-react/18.1_survey.md","articles":[]},"previous":{"title":"Exercise - Todo list","level":"1.14","depth":1,"path":"lectures/01-react/17_todo_exercise.md","ref":"lectures/01-react/17_todo_exercise.md","articles":[{"title":"Exercise - Todo list - part 2","level":"1.14.1","depth":2,"path":"lectures/01-react/18_todo_exercise_continued.md","ref":"lectures/01-react/18_todo_exercise_continued.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"intro.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"React.js","language":"en","gitbook":"*"},"file":{"path":"lectures/01-react/18_todo_exercise_continued.md","mtime":"2017-05-10T19:45:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-10T19:57:14.475Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
